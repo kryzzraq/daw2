@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //preguntamos pro el numero para comenzar a hacer la funcion iterativa decreciente
+        var num = parseInt(prompt("Escribe un número:"));
+        //creo array vacio
+        var array = [];
+        //copio el numero a un indice para q no me lo modifique
+        var indiceNum = num;
+
+        //creo un bucle para rellarlo
+        for(let i =0;i<num;i++){
+            array[i]=indiceNum;
+            //y decremento el indice para que me lo guarde en el proximo hueco del array
+            indiceNum--;            
+        }
+        console.log(array);
+    </script>
+</body>
+</html>

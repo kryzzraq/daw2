@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var filas = parseInt(prompt("Indica el número de filas:"));
+        var columnas = parseInt(prompt("Indica el número de columnas:"));
+        var indiceFilas =1;
+        var indiceColumnas = columnas;
+
+        for(let i =0; i<columnas; i++){
+            document.write(i+1," ");
+        }
+        
+        while(indiceFilas!=filas){
+            document.write("<br/>");
+            document.write(indiceColumnas+1);
+            indiceColumnas++;
+            indiceFilas++;
+            
+        
+            if(indiceFilas===filas){
+                document.write("<br/>");
+                for(let k=0; k<columnas;k++){
+                    indiceColumnas++;
+                    document.write(indiceColumnas," ");
+                    
+                }
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

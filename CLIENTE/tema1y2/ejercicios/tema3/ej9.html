@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = parseInt(prompt("¿De cuántos elementos va a ser el array?"));
+        var array = [];
+        for (let i = 0; i < num; i++){
+            let numtemp = prompt(`Inserta el elemento ${i+1} del array:`);
+            array[i] = numtemp;
+        }
+
+        var bool;
+        for(let i = 0; i<array.length && !bool; i++){
+            if(array[i] < array[i+1])
+                bool = true;
+            else
+                bool = false;
+        }
+
+        if(bool) 
+            document.write("El array está ordenado de menor a mayor");
+        else
+        document.write("El array no está ordenado de menor a mayor");
+            
+    </script>
+</body>
+</html>

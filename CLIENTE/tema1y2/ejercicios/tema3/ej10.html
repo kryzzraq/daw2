@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array = [];
+        var bool = true;
+        
+        for(let i = 0; i<10; i++){
+            array[i] = parseInt(prompt(`Rellena la posicion ${i+1} del array:`));
+        }
+        var k = array.length-1;
+
+        for(let j = 0; j<array.length && bool; j++){
+            if(array[j] === array[k])
+                bool = true;
+            else
+                bool = false;
+               
+            k--;
+        }
+
+        if(bool)
+            document.write(`El array es capicúa`);
+        else 
+            document.write(`El array no es capicúa`);
+    </script>
+</body>
+</html>

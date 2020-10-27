@@ -1,0 +1,1 @@
+//añade elemento al principio y evuelev el numero de elementos nuevo:

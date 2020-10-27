@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var provincias =
+        ['Alava', 'Albacete', 'Alicante', 'Almería', 'Asturias', 'Avila', 'Badajoz', 'Barcelona',
+        'Burgos', 'Cáceres','Cádiz', 'Cantabria', 'Castellón', 'Ciudad Real', 'Córdoba', 'La Coruña', 
+        'Cuenca', 'Gerona', 'Granada', 'Guadalajara','Guipúzcoa', 'Huelva', 'Huesca', 'Islas Baleares', 
+        'Jaén', 'León', 'Lérida', 'Lugo', 'Madrid', 'Málaga', 'Murcia', 'Navarra', 'Orense', 
+        'Palencia', 'Las Palmas', 'Pontevedra', 'La Rioja', 'Salamanca', 'Segovia', 'Sevilla', 'Soria', 
+        'Tarragona', 'Santa Cruz de Tenerife', 'Teruel', 'Toledo', 'Valencia', 'Valladolid', 
+        'Vizcaya', 'Zamora',
+        'Zaragoza'];
+
+        var teclProvincia = prompt(`Introduzca la provincia ha buscar:`);
+        var boolPosicion = false;
+        var numPosicion = 0;
+
+        for (let i=0; i<provincias.length;i++){
+            if(provincias[i]===teclProvincia){
+                boolPosicion = true;
+                numPosicion = i;
+            }
+        }
+
+        if(boolPosicion)
+            console.log(`La provincia está en la posición ${numPosicion}`)
+        else
+            console.log(`La provincia no ha sido encontrada.`)
+    </script>
+</body>
+</html>

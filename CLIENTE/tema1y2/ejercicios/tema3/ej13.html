@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //creamos los dos arrays, aunque de momento están vacíos.
+        array1=[];
+        array2=[];
+        var posiciones1 = parseInt(prompt(`¿Cuántas posiciones tendrá el primer array?`));
+        //se rellena el primer array
+        for(let i = 0;i<posiciones1;i++){
+            array1[i] = parseInt(prompt(`Estamos rellenando el primer array. Indique el contenido de la posicion ${i+1}`));
+        }
+        
+        var posiciones2 = parseInt(prompt(`¿Cuántas posiciones tendrá el segundo array?`));
+        //se rellena el segundo array
+        for(let i = 0;i<posiciones2;i++){
+            array2[i] = parseInt(prompt(`Estamos rellenando el segundo array. Indique el contenido de la posicion ${i+1}`));
+        }
+
+        //si el array1 tiene la misma longitud que el array2 entonces ejecutamos el producto escalar
+        if(array1.length === array2.length){
+            //inicializamos la variable a 0
+            var productoEscalar = 0;
+            //hacemos un for para realizar el producto escalar.
+            for(let i = 0; i<array1.length && i<array2.length;i++){
+                productoEscalar += array1[i]*array2[i];
+            }
+            console.log(`El producto escalar de los dos arrays es: ${productoEscalar}`);
+        //si no tienen la misma longitud no podemos realizar el producto escalar y lo indicamos.
+        }else{
+            document.write(`Le recordamos que los arrays tienen que tener la misma longitud, por favor refresque la página.`)
+        }
+        
+    </script>
+</body>
+</html>

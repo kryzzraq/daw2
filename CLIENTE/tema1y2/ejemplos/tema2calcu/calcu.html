@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <div>
+            <input id="cajaResultado" type="text" maxlength="10"> 
+        </div>
+        <div>
+            <button id="btnUno" value="1">1</button>
+            <button id="btnDos" value="2">2</button>
+            <button id="btnTres" value="3">3</button>
+        </div>
+        <div>
+           <button id="btnSuma" value="+">+</button>
+           <button id="btnResta" value="-">-</button>
+           <button id="btnIgual" value="=">=</button>
+        </div>
+    </div>
+    <script>
+        //asignando variables a los botones
+        var btnUno = document.getElementById("btnUno");
+        var btnDos = document.getElementById("btnDos");
+        var btnTres = document.getElementById("btnTres");
+        var btnSuma = document.getElementById("btnSuma");
+        var btnResta = document.getElementById("btnResta");
+        var btnIgual = document.getElementById("btnIgual");
+        var display = document.getElementById("cajaResultado");
+
+        //asignando eventos a los botones
+        btnUno.addEventListener("click", function(){fNumero(btnUno.value)});
+        btnDos.addEventListener("click", function(){fNumero(btnDos.value)});
+        btnTres.addEventListener("click", function(){fNumero(btnTres.value)});
+
+
+        function fNumero(numero){
+            if(display.value.length < 10)
+                display.value += numero;
+        }
+
+        /*
+        btnSuma.addEventListener("click", function(){fNumero(btnSuma.value)});
+        btnResta.addEventListener("click", function(){fNumero(btnResta.value)});
+        btnIgual.addEventListener("click", function(){fNumero(btnIgual.value)});*/
+
+    </script>
+</body>
+</html>

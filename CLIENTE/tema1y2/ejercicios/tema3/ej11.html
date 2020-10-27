@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pares = 0;
+        var impares = 0;
+        var array = [];
+        var longArray = parseInt(prompt(`¿De cuántos números va a constar el array?`));
+
+        for(let i = 0 ; i<longArray; i++){
+            array[i] = parseInt(prompt(`Introduzca el elemento: ${i+1}`));
+        }
+
+        for(let i = 0; i<array.length;i++){
+            if(array[i]%2===0)
+                pares++;
+            else   
+                impares ++;
+        }
+
+        document.write(`Has introducido ${pares} números pares.`);
+        document.write(`Has introducido ${impares} números impares.`);
+    </script>
+</body>
+</html>
