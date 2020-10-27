@@ -7,15 +7,21 @@
 </head>
 <body>
     <script>
-        n1= parseInt(prompt(`Elige el número del que quieres saber el factorial:`));
+        //pedimos el numero del que queremos saber el factorial
+        n1=parseInt(prompt(`Elige el número del que quieres saber el factorial:`));
+        //establecemos en 1 la variable, porque si la establecemos en 0 siempre dará 0
         var factorial =1;
-        
-        if(typeof(n1)!=='number'){
+
+        if (!Number.isInteger(n1)){
             document.write(`Por favor, introduzca un número.`);
         } else {
-            for(;n1!=0; n1--){
+            //mientras que n1 sea diferente de 0
+            while(n1!=0){
+                //factorial = factorial*n1
                 factorial*=n1;
-                }
+                //decrementamos n1
+                n1--
+            }
             document.write(factorial);
         }
     </script>

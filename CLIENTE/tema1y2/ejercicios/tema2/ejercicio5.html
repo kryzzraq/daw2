@@ -7,13 +7,17 @@
 </head>
 <body>
     <script>
+        //array:
         var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X',
             'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 
+        //pedimos el dni
         var dni = parseInt(prompt("Intruduce el DNI del que quieres saber la letra:"));
-        var letra = dni%23;
+        //calculamos el resto de dividir el DNI entre 23
+        var resto = dni%23;
 
-        prompt(`La letra de el dni introducido es: `,letras[letra],);
+        //mostramos el indice 'resto' del array letras
+        document.write(`La letra de el dni introducido es: `,letras[resto],);
     </script>
 </body>
 </html>

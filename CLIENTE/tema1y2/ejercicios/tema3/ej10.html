@@ -10,22 +10,24 @@
         var array = [];
         var bool = true;
         
+        //rellenar el array con 10 posiciones
         for(let i = 0; i<10; i++){
             array[i] = parseInt(prompt(`Rellena la posicion ${i+1} del array:`));
         }
+        //guardo la longitud del array-1 (total de elementos) en una variable
         var k = array.length-1;
-
+        //itero el array siempre y cuando bool sea true
         for(let j = 0; j<array.length && bool; j++){
-            if(array[j] === array[k])
-                bool = true;
-            else
+            //si la posicion i es diferente a la k cambio a false, por lo que ya no vuelve a iterar 
+            if(array[j] !== array[k])
                 bool = false;
-               
             k--;
         }
 
+        //por último, si el bool es true, significa que el array es capicúa
         if(bool)
             document.write(`El array es capicúa`);
+        ////si el bool es false, significa que el array NO es capicúa
         else 
             document.write(`El array no es capicúa`);
     </script>

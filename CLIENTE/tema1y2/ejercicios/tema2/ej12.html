@@ -7,33 +7,44 @@
 </head>
 <body>
     <script>
+        //pedimos el numero de filas y columnas
         var filas = parseInt(prompt("Indica el número de filas:"));
         var columnas = parseInt(prompt("Indica el número de columnas:"));
-        var indiceFilas =1;
-        var indiceColumnas = columnas;
+        //numero desde el que empiezo a pintar
+        var indiceNum = 1;
+        var totalBlancos = (filas-2)*(columnas-2);
+        var totalNumeros = filas*columnas;
+        //el último número que aparece en la segunda fila
+        var numFinal = totalNumeros - totalBlancos; 
 
-        for(let i =0; i<columnas; i++){
-            document.write(i+1," ");
+        //escribimos la primera entera
+        for(let i = 1; i<=columnas;i++){
+            document.write(indiceNum)
+            indiceNum++;
         }
-        
-        while(indiceFilas!=filas){
-            document.write("<br/>");
-            document.write(indiceColumnas+1);
-            indiceColumnas++;
-            indiceFilas++;
-            
-        
-            if(indiceFilas===filas){
-                document.write("<br/>");
-                for(let k=0; k<columnas;k++){
-                    indiceColumnas++;
-                    document.write(indiceColumnas," ");
-                    
+
+        for(let i = 0; i<filas-2;i++){
+            //cambio de linea
+            document.write('<br/>')
+            //escribo el siguiente numero
+            document.write(indiceNum);
+            //pinto los puntos correspondientes (con los espacios en blanco solo pinta 1)
+                for(let i = 0; i<columnas-2;i++){
+                    document.write(".");
                 }
-            }
+                //pinto el ultimo numero
+                document.write(numFinal);
+                //decremento e incremento los numeros de manera correspondiente
+                numFinal--
+                indiceNum++;  
         }
-        
-
+        //salto de linea
+        document.write('<br/>')
+        //pinto la última fila entera
+        for(let i = 0; i<columnas;i++){
+            document.write(indiceNum);
+            indiceNum++
+        }
     </script>
 </body>
 </html>

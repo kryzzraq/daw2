@@ -7,14 +7,19 @@
 </head>
 <body>
     <script>
+        //bucle para recorrer los 500 números
         for(let i = 1; i<=500;i++){
+            //escribimos i y además 
             document.write(i);
+            //si i es divisible entre 4, lo mostramos
             if(i%4===0){
                 document.write(" (Múltiplo de 4)");
             }
+            //si i es divisible entre 9, lo mostramos
             if(i%9===0){
                 document.write(" (Múltiplo de 9)");
             }
+            //si i es divisible entre 5, pintamos una línea horinzontal
             if(i%5===0){
                 document.write("<hr/>");
             }

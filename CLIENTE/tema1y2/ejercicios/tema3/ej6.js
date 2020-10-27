@@ -9,17 +9,9 @@ for(let i = 0; i<array.length;i++){
             cont++;
         }
     }
-    console.log(`La letra ${array[i]} aparece ${cont} veces.`);
+    console.log(`La letra ${array[i]} aparece ${cont} vez/veces.`);
 }
 
-//ordeno el array
 //Quitarlos elementos repetidos de un array.
-array.sort()
-for(let i = 0; i<array.length;i++){
-    for( let k=0; k<array.length;k++){
-        if(array[i]===array[k]){
-            array.splice(array[k],1);
-        }
-    }
-}
-console.log(array);
+var copiaArray = Array.from(new Set(array))
+console.log(copiaArray)

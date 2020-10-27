@@ -8,9 +8,18 @@
 <body>
     <script>
         var n1 = parseInt(prompt("Ingrese un número:"));
-        for(let i =0; i<n1;){
-            console.log(i+=2);
+        if(!Number.isInteger(n1)){
+            console.log("Por favor, ingrese un número");
+        }else{
+            var suma = 2;
+            //mientras que la variable suma sea menor que el numero introducido, se muestran los pares.
+            while(suma < n1){
+               console.log(suma)
+               //se incrementa en 2
+               suma +=2;
+           }
         }
+        
     </script>
 </body>
 </html>

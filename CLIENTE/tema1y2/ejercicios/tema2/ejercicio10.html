@@ -18,19 +18,25 @@
         'Zaragoza'];
 
         var teclProvincia = prompt(`Introduzca la provincia ha buscar:`);
+        //inicializamos un bool a falso
         var boolPosicion = false;
-        var numPosicion = 0;
+        var numPosicion;
 
+        //recorremos el array
         for (let i=0; i<provincias.length;i++){
+            //si la posicion i de provincias es igual a la cadena introducida por teclado
             if(provincias[i]===teclProvincia){
+                //ponemos el booleano a true y guardamos la posicion
                 boolPosicion = true;
                 numPosicion = i;
             }
         }
 
+        //si boolPosicion es true sacamos la info de la posición del array
         if(boolPosicion)
             console.log(`La provincia está en la posición ${numPosicion}`)
         else
+        //si es false, indicamos que la provincia no está
             console.log(`La provincia no ha sido encontrada.`)
     </script>
 </body>

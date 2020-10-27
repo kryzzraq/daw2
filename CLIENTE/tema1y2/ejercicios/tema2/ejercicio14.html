@@ -7,12 +7,17 @@
 </head>
 <body>
     <script>
+        //preguntamos hasta qué número vamos a hacer la pirámide
         numUsu = prompt("¿Hasta qué número hacemos la pirámide?")
         if(numUsu <50) {
+            //mientras que i sea menor que el numero introducido por teclado
             for(let i=0;i<=numUsu;i++){
+                //mientras que k sea menor o igual que i
                 for(let k =1; k<=i;k++){
+                    //escribimos en el documento k
                     document.write(k);
                 }
+                //insertamos un retorno de carro
                 document.write(`<br/>`);
             }
         } else document.write(`Por favor, introduzca un número menor de 50.`);

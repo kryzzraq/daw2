@@ -7,11 +7,13 @@
 </head>
 <body>
     <script>
+        //se pide el usuario
         var usuario = prompt(`Escriba el usuario correcto:`);
+        //mientras que el usuario sea diferente de Admin se volverá a pedir
         while (usuario != 'Admin'){
            usuario = prompt(`Usuario inválido. Vuelva a introducir el nombre de usuario:`);
         } 
-
+        //se saluda al admin
         console.log(`Hola administrador`);
     </script>
 </body>

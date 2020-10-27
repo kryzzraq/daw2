@@ -7,20 +7,28 @@
 </head>
 <body>
     <script>
+        //pedimos el número de columnas y filas
         var col = parseInt(prompt("Elige el número de columnas:"));
         var fil = parseInt(prompt("Elige el número de filas:"));
+        //sacamos el total
         var total = fil*col;
-        
+
+        //pintamos la tabla
         document.write('<table border="1">');
 
+        //recorremos las columnas y escribimos los tr
         for(let i = 0; i<col; i++){
             document.write("<tr>");
+            //recorremos las filas y escribimos los td con el valor 'total'
             for(let k = 0; k<fil; k++){
                 document.write(`<td>${total}</td>`);
+                //ademas decrementamos el total
                 total--;
             }
+            //cerramos los tr
             document.write("</tr>")
         }
+        //cerramos la tabla
         document.write("</table>");
     </script>
 </body>
