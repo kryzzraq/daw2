@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabla estilos</title>
+    <style>
+        .tabla {
+            width: 100%;
+        }
+
+        .tabla th {
+            font-weight: bold;
+            font-size: 2em;
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+
+        .tabla td, .tabla tr {
+            height: 50px;
+        }
+
+        .tabla tbody tr:nth-child(odd){
+            background-color: darkgray;
+        }
+
+        .tabla tbody tr:nth-child(even){
+            background-color: lightgray;
+        }
+        
+        .tabla td:first-child{
+            color:lightsalmon;
+        }
+
+        .tabla thead th:empty{ /* .tabla thead th:first-child */
+            background: transparent;
+        }
+
+        .tabla tbody tr:hover{
+            background-color: darkslategray;
+        }
+
+        .tabla tbody td:hover{
+            background-color: dimgray;
+        }
+        *{
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <table class="tabla">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Cabecera 1</th>
+            <th>Cabecera 2</th>
+            <th>Cabecera 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fila 1</td>
+            <td>Columna 1</td>
+            <td>Columna 1</td>
+            <td>Columna 1</td>
+        </tr>
+          <tr>
+            <td>Fila 2</td>
+            <td>Columna 2</td>
+            <td>Columna 2</td>
+            <td>Columna 2</td>
+          </tr>
+          <tr>
+            <td>Fila 3</td>
+            <td>Columna 3</td>
+            <td>Columna 3</td>
+            <td>Columna 3</td>
+          </tr>
+          <tr>
+            <td>Fila 4</td>
+            <td>Columna 4</td>
+            <td>Columna 4</td>
+            <td>Columna 4</td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>

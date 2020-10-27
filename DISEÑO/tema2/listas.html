@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/71665cb0fa.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        h2{
+            clear: both;
+            margin-bottom: 0.5em;
+            padding-top: 1em;
+        }
+        ul.lista0{
+            list-style-type: square;
+        }
+
+        ul.lista1 li{
+            float:left;
+            width: 10em;
+            background-color: greenyellow;
+            border:  2px dashed purple;
+            margin-right: 1em;
+            padding: 0.5em, 0em;
+            color: purple;
+            text-align: center;
+            list-style-type: none;
+        }
+
+        ul.lista2 li{
+            display: inline;
+            border: white 2px solid;
+            border-color: white black black white;
+            padding: 0.5em;
+            background-color: white;
+        }
+
+        ul.lista2 li:hover{
+            border: white 2px solid;
+            border-color: black white white black;
+            background-color: lightgray;
+        }
+
+        ul.lista3 li{
+            width: 10em;
+            border: black 1px solid;
+            margin: 0.5em;
+            padding: 0.5em;
+            background-color: white;
+            text-align: center;
+        }
+
+        ul.lista4{
+            text-align: center;
+        }
+        ul.lista4 li{
+            display: inline-block;
+            width: 10em;
+            padding: 0.5em 0;
+        }
+        ul.lista4 li:nth-child(odd){
+            background-color: white;
+            color: #3366cc;
+        }
+        ul.lista4 li:nth-child(even){
+            background-color: #3366cc;
+            color: white;
+        }
+
+        ul.lista5 li{
+            display: inline;
+        }
+        ul.lista5 li a{
+            text-decoration: none;
+            padding: 30px;
+        }
+        ul.lista5 li img{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+           /* vertical-align: bottom;*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Diseño de listas</h1>
+    <h2>Lista 0</h2>
+    <ul class="lista0">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3, más largo</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ul>
+
+    <h2>Lista 1</h2>
+    <ul class="lista1">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3, más largo</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ul>
+
+    <h2>Lista 2</h2>
+    <ul class="lista2">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3, más largo</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ul>
+
+    <h2>Lista 3</h2>
+    <ul class="lista3">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3, más largo</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ul>
+
+    <h2>Lista 4</h2>
+    <ul class="lista4">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3, más largo</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ul>
+
+    <h2>Lista 5</h2>
+    <ul class="lista5">
+        <li><a href="enlace1.html"><img src="https://picsum.photos/id/684/20/20" alt="descripcion"/>Elemento 1</a></li>
+        <li><a href="enlace2.html"><img src="https://picsum.photos/id/189/20/20" alt="desc">Elemento 2</a> </li>
+        <li><a href="enlace3.html"><img src="https://picsum.photos/id/945/20/20" alt="d"> Elemento 3, más largo</a></li>
+    </ul>
+
+    <h2>Lista 6</h2>
+    <ul class="lista6">
+        <li><i class="fab fa-amazon"></i>Elemento 1</li>
+        <li><i class="fas fa-american-sign-language-interpreting"></i> Elemento 2</li>
+        <li><span class="material-icons">
+            gesture
+            </span>Elemento 3, más largo</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ul>
+</body>
+</html>

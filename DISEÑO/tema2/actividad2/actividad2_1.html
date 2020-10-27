@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table thead{
+            color: seagreen;
+            text-align: left;
+        }
+
+        table, input, select {
+            border-radius: 10px;
+        }
+        
+        table{
+            border-radius: 10px;
+            background-color: lightgray;
+            font-family: Impact;
+        }
+
+        .tabla tbody td:first-child{
+            text-align: right;
+        }
+
+        .tabla tfoot {
+            text-align: right;
+        }
+
+        .tabla tbody tr td input:hover{
+            background-color:lightsteelblue;
+        }
+        .tabla select:hover{
+            background-color:lightsteelblue;
+        }
+
+        .tabla input:focus{
+            border-radius: 10px;
+            background-color: lightsteelblue;
+        }
+        #enviar:active{
+            background-color: mediumseagreen;
+            color: white;
+        }
+        #borrar:active{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th colspan="2"><h2>&nbsp; PROCESO DE REGISTRO</h2></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Razon social</td>
+                    <td><input type="text" name="social"></td>
+                </tr>
+                <tr>
+                    <td>Dirección</td>
+                    <td><input type="text" name="direccion"></td>
+                </tr>
+                <tr>
+                    <td>Provincia</td>
+                    <td><input type="text" name="provincia"></td>
+                </tr>
+                <tr>
+                    <td>País</td>
+                    <td><input type="text" name="pais"></td>
+                </tr>
+                <tr>
+                    <td>Número de colegiado</td>
+                    <td><input type="text" name="coleg"></td>
+                </tr>
+                <tr>
+                    <td>Idioma</td>
+                    <td><select name="idioma">
+                        <option value="cast">Castellano</option>
+                        <option value="ing">Inglés</option>
+                        <option value="fr">Francés</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Teléfono móvil</td>
+                    <td><input type="tel" name="tlfnmv"></td>
+                </tr>
+                <tr>
+                    <td>Teléfono de contacto</td>
+                    <td><input type="tel" name="tlfn"></td>
+                </tr>
+                <tr>
+                    <td>Nombre de usuario</td>
+                    <td><input type="text" name="usu"></td>
+                </tr>
+                <tr>
+                    <td>Contraseña</td>
+                    <td><input type="password" name="pswd"></td>
+                </tr>
+                <tr>
+                    <td>Repetir contraseña</td>
+                    <td><input type="password" name="pswd"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Enviar" id="enviar">
+                    <input type="reset" value="Borrar" id="borrar"></td>
+                </tr>
+                <tr><td> </td></tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>

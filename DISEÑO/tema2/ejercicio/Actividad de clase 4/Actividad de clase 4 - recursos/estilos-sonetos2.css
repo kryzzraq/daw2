@@ -1,0 +1,40 @@
+html{
+    text-align: center;
+}
+body{
+    background: url(fondos/corazon-1.svg) repeat-y left;
+    background-size: 150px;
+    background: url("fondos/corazon-2.svg") repeat-y right;
+    background-size: 150px ;
+}
+h1{
+    font-size: 2rem;
+}
+div{
+    border: 2px solid black;
+    margin: 10px 150px;
+    font-weight: bold;
+}
+div.s1{
+    background: url("fondos/manchas.png");
+    color: white;
+}
+div.s2{
+    background: url("fondos/fuego.svg") no-repeat bottom right,
+                url("fondos/fuego.svg") no-repeat bottom left,
+                url("fondos/tallos.jpg");
+    color: yellow;
+}
+div.s3 {
+    background: url("fondos/ojo.svg") no-repeat center,
+                url("fondos/hexagonos.jpg");
+    background-size: contain, auto;
+    color: red;
+}
+div.s4{
+    padding-bottom: 50px;
+    background: url("fondos/caballo.svg") repeat-x bottom,
+                url("fondos/estrellas.png");
+    background-size: 100px, auto;
+    color: green;
+}

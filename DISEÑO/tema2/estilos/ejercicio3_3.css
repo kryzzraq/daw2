@@ -1,0 +1,25 @@
+.cabecera{
+    background-color: midnightblue;
+    border-bottom: dotted 1px white;
+    ruby-span: initial;
+    color: white;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.text {
+    width: 300px;
+    height: 400px;
+    color: white;
+    margin: 3px;
+    background-color: blue;
+    float: left;
+
+}
+
+.cabecera:hover{
+    background-color: green;
+}
