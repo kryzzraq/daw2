@@ -9,3 +9,5 @@ if (cadena.endsWith('.'))
     console.log("Lo dice Florentino.");
 else 
     console.log("No termina en punto.");
+
+    //ejemplo 
