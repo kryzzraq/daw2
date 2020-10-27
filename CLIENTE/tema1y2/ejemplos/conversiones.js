@@ -13,4 +13,4 @@ console.log(intEdad,strEdad);
 var strPi = "3.14";
 console.log("conversion de un String a un float", parseFloat(strPi));
 console.log("conversion de un String a un int", parseInt(strPi));
-
+//VCMJKFCVM WDFJKXCWDKLKFMJK
