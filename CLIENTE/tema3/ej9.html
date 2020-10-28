@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //pedimos el número de indices:
+        var num = parseInt(prompt("¿De cuántos elementos va a ser el array?"));
+        //creamos el array
+        var array = [];
+        //rellenamos el array
+        for (let i = 0; i < num; i++){
+            let numtemp = prompt(`Inserta el elemento ${i+1} del array:`);
+            array[i] = numtemp;
+        }
+
+        //creamos un booleano y lo inicializamos a verdadero
+        var bool = true;
+        //recorremos el array y si salimos del bucle si bool es falso
+        for(let i = 0; i<array.length && bool; i++){
+            //si array i es mayor que array i+ ponemos el bool a false,
+            //por lo que ya no vuelve a iterar
+            if(array[i] > array[i+1])
+                bool = false;
+        }
+
+        //por último, si el bool es true, significa que el array está ordenado de menor a mayor
+        if(bool) 
+            document.write("El array está ordenado de menor a mayor");
+            //si el bool es false, significa que el array está ordenado de mayor a menor
+        else
+        document.write("El array no está ordenado de menor a mayor");
+            
+    </script>
+</body>
+</html>

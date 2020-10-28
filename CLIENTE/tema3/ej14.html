@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //creamos los dos arrays, aunque de momento están vacíos.
+        array1=[];
+        array2=[];
+        array3=[];
+        var posiciones1 = parseInt(prompt(`¿Cuántas posiciones tendrá el primer array?`));
+        //se rellena el primer array
+        for(let i = 0;i<posiciones1;i++){
+            array1[i] = parseInt(prompt(`Estamos rellenando el primer array. Indique el contenido de la posicion ${i+1}`));
+        }
+        
+        var posiciones2 = parseInt(prompt(`¿Cuántas posiciones tendrá el segundo array?`));
+        //se rellena el segundo array
+        for(let i = 0;i<posiciones2;i++){
+            array2[i] = parseInt(prompt(`Estamos rellenando el segundo array. Indique el contenido de la posicion ${i+1}`));
+        }
+
+        //si la dimension del array1 es mayor que la del array2 se establece como dimension del array3
+        //la dimension del array1; si no la del array2
+        if(array1.length > array2.length){
+            //miramos cual es la diferencia entre los dos arrays
+            let difetencia = array1.length-array2.length;
+            //rellenamos con 0s todos los elementos "vacíos" del array más pequeño
+            for(let i = 0; i < difetencia; i++){
+                array2.push(0);
+            }
+            //sumamos los valores y lo guardamos en un tercer array
+            for(let i=0; i<array1.length;i++){
+                array3[i] = array1[i]+array2[i]
+            }
+        }else{
+            //miramos cual es la diferencia entre los dos arrays
+            let difetencia = array2.length-array1.length;
+            //rellenamos con 0s todos los elementos "vacíos" del array más pequeño
+            for(let i = 0; i < difetencia; i++){
+                array1.push(0);
+            }
+            //sumamos los valores y lo guardamos en un tercer array
+            for(let i=0; i<array2.length;i++){
+                array3[i]=array1[i]+array2[i]
+            }
+        }
+
+        //mostramos el resultado de la suma de los arrays
+        console.log(`La suma de los dos arrays es: ${array3}`);
+    </script>
+</body>
+</html>
