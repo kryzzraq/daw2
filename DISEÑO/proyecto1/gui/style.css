@@ -40,4 +40,13 @@ header{
 }
 .c2{
     background-image: url("images/arribaizq.jpg");
+    background-size: cover;
+}
+.c3{
+    background-image: url("images/florizq.jpg");
+    background-size: cover;
+}
+.c6{
+    background-image: url("images/abajoizq.png");
+    background-size: cover;
 }
