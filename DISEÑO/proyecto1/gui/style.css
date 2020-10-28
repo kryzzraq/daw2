@@ -1,0 +1,43 @@
+
+*{
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+}
+body{
+    background-image: url("images/background.jpg");
+    background-attachment: fixed;
+}
+header{
+    margin: auto;
+    background-color:rgba(255, 255, 255,0.7);
+    height: 8%;
+    width: 70%;
+    border-radius: 30px 30px 0px 0px;
+}
+#contenedorTitulo{
+    width: 70%;
+    margin: auto;
+}
+#contenedor{
+    position: relative;
+    height: 1530px;
+    background-color: rgba(255, 255, 255,0.7);
+    margin: auto;
+    width: 95%;
+    border-radius: 20px;
+}
+#fila{
+    margin: auto;
+    padding: 15px;
+}
+#celda{
+    float: left;
+    width: 49%;
+    background-color: thistle;
+    height: 500px;
+}
+.c2{
+    background-image: url("images/arribaizq.jpg");
+}

@@ -25,7 +25,7 @@ btnNueve.addEventListener("click",function(){actualizarDisplay(btnNueve.value)})
 btnCero.addEventListener("click",function(){actualizarDisplay(btnCero.value)})
 
 
-function actualizarDisplay(numero){
+const actualizarDisplay = (numero)=>{
     if(display.value.length <10)
         display.value += numero
 }
