@@ -12,7 +12,7 @@ body{
 header{
     margin: auto;
     background-color:rgba(255, 255, 255,0.8);
-    height: 10%;
+    height: 15%;
     width: 70%;
     border-radius: 30px 30px 0px 0px;
 }
@@ -28,16 +28,13 @@ header{
     width: 95%;
     border-radius: 20px;
 }
-#logo{
-    float: left;
-    width: 20%;
-    height: 100px;
-    background-image: url("images/logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+
+#nombre{
+    font-family: 'Ruthie', cursive;
+    font-size: 400%;
+    text-align: center;
 }
 #fila{
-    margin: auto;
     padding: 15px;
 }
 #celda{
@@ -49,7 +46,6 @@ header{
     background-image: url("images/celda1.png");
     background-repeat: no-repeat;
     background-position: right;
-    opacity: 1;
 }
 .c2{
     background-image: url("images/arribaizq.jpg");
@@ -59,7 +55,41 @@ header{
     background-image: url("images/florizq.jpg");
     background-size: cover;
 }
+.c4{
+    
+    background-image: url("images/celda3.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.c5{
+    background-image: url("images/celda6.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
 .c6{
     background-image: url("images/abajoizq.png");
     background-size: cover;
+}
+#fila4{
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    background-color:rgba(255, 255, 255,0.8);
+    height: 20%;
+    width: 9%;
+    border-radius: 50% 50% 50% 50%;
+}
+#celda1{
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 40% 40% 40% 40%;
+    height: 100%;
+    width: 100%;
+}
+#celda1:hover{
+    background-color: rgba(238, 130, 238, 0.3);
+    border-radius: 50% 50% 50% 50%;
+    transition: 2s;
 }
