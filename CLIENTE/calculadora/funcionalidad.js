@@ -10,6 +10,7 @@ var btnOcho = document.getElementById("btnOcho");
 var btnNueve = document.getElementById("btnNueve");
 var btnCero = document.getElementById("btnCero");
 var display = document.getElementById("pantalla");
+var btnDosCeros = document.getElementById("btnDosCero");
 
 
 //Añadir funcionalidad a los botones del 0 al 9:
@@ -23,6 +24,7 @@ btnSiete.addEventListener("click",function(){actualizarDisplay(btnSiete.value)})
 btnOcho.addEventListener("click",function(){actualizarDisplay(btnOcho.value)})
 btnNueve.addEventListener("click",function(){actualizarDisplay(btnNueve.value)})
 btnCero.addEventListener("click",function(){actualizarDisplay(btnCero.value)})
+btnDosCeros.addEventListener("click",function(){actualizarDisplay(btnDosCeros.value)})
 
 
 const actualizarDisplay = (numero)=>{

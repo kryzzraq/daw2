@@ -4,32 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel=StyleSheet href="estilos.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="contenedor">
-        <input type="text" name="display" id="pantalla" readonly="readonly">
-        <div>
-            <button id="btnSiete" value="7">7</button>
-            <button id="btnOcho" value="8">8</button>
-            <button id="btnNueve" value="9">9</button>
-            <button id="btnMultiplicar" value="x">x</button>
-        </div>
-        <div>
-            <button id="btnCuatro" value="4">4</button>
-            <button id="btnCinco" value="5">5</button>
-            <button id="btnSeis" value="6">6</button>
-            <button id="btnRestar" value="-">-</button>
-        </div>
-        <div>
-            <button id="btnUno" value="1">1</button>
-            <button id="btnDos" value="2">2</button>
-            <button id="btnTres" value="3">3</button>
-            <button id="btnSumar" id="+">+</button>
-        </div>
-        <div>
-            <button id="btnCero" value="0">0</button>
-            <button id="btnPunto" value=",">,</button>
-            <button id="btnIgual" value="=">=</button>
+    <div id="calculadora">
+        <span id="marca">Lauriki - Casio ®</span>
+        <input type="text" name="display" id="pantalla" readonly="readonly" class="pantalla">
+        <div id="botones">
+            <div>
+                <button id="cientifica" value="7"  class="boton">&nbsp;</button>
+                <button id="btnPorcentaje" value="%" class="boton">%</button>
+                <button id="btnC" value="c" class="boton">C</button>
+                <button id="btnDividir" value="/" class="boton">/</button>
+            </div>
+            <div>
+                <button id="btnSiete" value="7"  class="boton">7</button>
+                <button id="btnOcho" value="8" class="boton">8</button>
+                <button id="btnNueve" value="9" class="boton">9</button>
+                <button id="btnMultiplicar" value="x" class="boton">x</button>
+            </div>
+            <div>
+                <button id="btnCuatro" value="4" class="boton">4</button>
+                <button id="btnCinco" value="5" class="boton">5</button>
+                <button id="btnSeis" value="6" class="boton">6</button>
+                <button id="btnRestar" value="-" class="boton">-</button>
+            </div>
+            <div>
+                <button id="btnUno" value="1" class="boton">1</button>
+                <button id="btnDos" value="2" class="boton">2</button>
+                <button id="btnTres" value="3" class="boton">3</button>
+                <button id="btnSumar" id="+" class="boton">+</button>
+            </div>
+            <div>
+                <button id="btnDosCero" value="00" class="boton">00</button>
+                <button id="btnCero" value="0" class="boton">0</button>
+                <button id="btnPunto" value="," class="boton">.</button>
+                <button id="btnIgual" value="=" class="boton">=</button>
+            </div>
         </div>
     </div>
     <script src="funcionalidad.js"></script>
