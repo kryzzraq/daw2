@@ -13,6 +13,7 @@ var display = document.getElementById("pantalla")
 var btnDosCeros = document.getElementById("btnDosCero")
 //botones operaciones
 var btnC = document.getElementById("btnC")
+var btnCE = document.getElementById("btnCE")
 var btnSuma = document.getElementById("btnSumar")
 var bntResta = document.getElementById("btnRestar")
 var btnMultiplicar = document.getElementById("btnMultiplicar")
@@ -35,6 +36,7 @@ btnCero.addEventListener("click",function(){actualizarDisplay(btnCero.value)})
 btnPunto.addEventListener("click",function(){actualizarDisplay(btnPunto.value)})
 btnDosCeros.addEventListener("click",function(){actualizarDisplay(btnDosCeros.value)})
 btnC.addEventListener("click", function(){borrarDisplay()})
+btnC.addEventListener("click", function(){borrarTodo()})
 btnSuma.addEventListener("click",function(){operar(btnSuma.value)})
 btnIgual.addEventListener("click", function(){igual()})
 bntResta.addEventListener("click",function(){operar(bntResta.value)})
@@ -47,6 +49,9 @@ const actualizarDisplay = (numero)=>{
 }
 const borrarDisplay = () =>{
     display.value = ""
+}
+const borrarTodo = () =>{
+    borrarDisplay()
     ope = ""
     num1=""
     num2=""
