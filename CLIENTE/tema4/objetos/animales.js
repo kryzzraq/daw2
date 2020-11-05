@@ -16,7 +16,6 @@ class Animal{
 }
 
 class Perro extends Animal{
-    
     constructor(tipo, raza){
         super(tipo)
         this.raza = raza

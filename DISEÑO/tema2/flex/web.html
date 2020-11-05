@@ -9,60 +9,82 @@
         * {
             box-sizing: border-box;
         }
-        header, footer {
+
+        header,
+        footer {
             display: flex;
-            background-color:lightblue;
+            background-color: lightblue;
             height: 20vh;
             align-items: center;
             justify-content: center;
         }
 
-        section, aside {
+        section, aside, nav {
             background-color: teal;
             padding: 2em;
             margin: 1% 0;
+            text-align: justify;
         }
-        #main{
+
+        #main {
             display: flex;
             flex-direction: row;
             align-items: stretch;
         }
-        section{
+
+        section {
             flex: 1 1 75vw;
             margin-right: 1%;
         }
-        aside{
+        nav{
+            flex: 1 1 20vw;
+            margin-right: 1%;
+        }
+
+        aside {
             flex: 1 1 25vw;
         }
     </style>
 </head>
 
 <body>
-    <header><h3>Header</h3></header>
-        <div id="main">
-            <section>
-                <h3>Sección</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, perferendis rerum, laborum iste voluptas
+    <header>
+        <h3>Header</h3>
+    </header>
+    <div id="main">
+        <nav>
+            <h3>Nav</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, modi nihil non distinctio omnis
+                ex! Accusantium dignissimos voluptatum, quaerat enim, quis distinctio architecto quam cumque adipisci
+                facilis, ullam quia animi?
+            </p>
+        </nav>
+        <section>
+            <h3>Sección</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, perferendis rerum, laborum iste voluptas
                 quaerat accusamus error nostrum ratione natus, repudiandae maiores ad ipsum cupiditate? Esse deleniti
                 sint in aspernatur.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas vel reiciendis cumque! Accusantium minima
-                    in vel dolorem cupiditate temporibus velit enim rerum cumque, possimus quo esse sequi sapiente? Quos,
-                    sint.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum voluptatum iure natus! Repudiandae
-                    nisi accusamus, minima libero adipisci ipsa sapiente qui enim! Excepturi saepe eligendi reiciendis?
-                    Soluta, ullam eos!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugiat hic, quos quaerat soluta,
-                    praesentium aliquid laborum nisi fuga animi labore rerum quae, iste distinctio repellat accusamus.
-                    Cumque, modi nam?</p>
-            </section>
-            <aside>
-                <h3>Aside</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta beatae possimus quibusdam reprehenderit,
-                    nulla quisquam, saepe quos, quo dolores impedit sunt. Illum illo perspiciatis tempore ipsum cumque fuga
-                    voluptates optio?</p>
-            </aside>
-        </div>
-        <footer><h3>Footer</h3></footer>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas vel reiciendis cumque! Accusantium minima
+                in vel dolorem cupiditate temporibus velit enim rerum cumque, possimus quo esse sequi sapiente? Quos,
+                sint.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum voluptatum iure natus! Repudiandae
+                nisi accusamus, minima libero adipisci ipsa sapiente qui enim! Excepturi saepe eligendi reiciendis?
+                Soluta, ullam eos!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugiat hic, quos quaerat soluta,
+                praesentium aliquid laborum nisi fuga animi labore rerum quae, iste distinctio repellat accusamus.
+                Cumque, modi nam?</p>
+        </section>
+        <aside>
+            <h3>Aside</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta beatae possimus quibusdam reprehenderit,
+                nulla quisquam, saepe quos, quo dolores impedit sunt. Illum illo perspiciatis tempore ipsum cumque fuga
+                voluptates optio?</p>
+        </aside>
+    </div>
+    <footer>
+        <h3>Footer</h3>
+    </footer>
 </body>
 
 </html>

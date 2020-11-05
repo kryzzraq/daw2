@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="boton">Púlsame</button>
+
+    <script>
+        class Perro {
+            constructor(raza, tamaño){
+                this.raza = raza;
+                this.tamaño = tamaño
+            }
+            ladrar(){
+                console.log(`El ${this.raza} está ladrando`)
+            }
+        }
+
+        canela = new Perro ('labrador','grande')
+
+        var boton = document.getElementById("boton")
+
+        boton.addEventListener("click",function(){canela.ladrar()})
+
+    </script>
+</body>
+</html>
