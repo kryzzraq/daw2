@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #container{
+            width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        #container>div{
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+        }
+        #container>div>label, #container>div input{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid black;
+            width: 50%;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="container">
+        <div>
+            <label for="">FIRST NAME</label>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            <label for="">LAST NAME</label>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            <label for="">EMAIL</label>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            <label for="">PHONE</label>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            <label for="">NUMBER</label>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="">MESSAGE</label>
+            <input type="radio" name="" id="">20-29
+            <input type="radio" name="" id="">30-39
+            <input type="radio" name="" id="">40-49
+            <input type="radio" name="" id="">50-49
+            <input type="radio" name="" id="">60-69
+        </div>
+    </form>
+</body>
+</html>
