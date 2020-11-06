@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor>.titulo{
+            background-color: rgb(59, 59, 59);
+            color: white;
+            padding: 10px;
+        }
+        .contenido{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .contenido>.tarjeta{
+            width: 150px;
+            border: 1px solid black;
+            text-align: justify;
+        }
+        img{
+            width: 100%;
+        }
+        .tarjeta>.titulo{
+            text-align: center;
+            padding: 5px;
+            background-color: rgb(187, 187, 187);
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="titulo">
+            <h2>Flex-box: Catálogo de imágenes y texto</h2>
+        </div>
+        <div class="contenido">
+            <div class="tarjeta">
+                <img src="https://picsum.photos/id/1076/600/400" alt="">
+                <div class="titulo">Building 1</div>
+                <div class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam unde dolores illo
+                    in sint odio eveniet! Officiis, ad eveniet, aspernatur vitae hic deleniti facilis minima nihil
+                    magnam alias velit maxime.</div>
+            </div>
+            <div class="tarjeta">
+                <img src="https://picsum.photos/id/1081/600/400" alt="">
+                <div class="titulo">Building 2</div>
+                <div class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam unde dolores illo
+                    in sint odio eveniet! Officiis, ad eveniet, aspernatur vitae hic deleniti facilis minima nihil
+                    magnam alias velit maxime.</div>
+            </div>
+            <div class="tarjeta">
+                <img src="https://picsum.photos/id/743/600/400" alt="">
+                <div class="titulo">Building 3</div>
+                <div class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam unde dolores illo
+                    in sint odio eveniet! Officiis, ad eveniet, aspernatur vitae hic deleniti facilis minima nihil
+                    magnam alias velit maxime.</div>
+            </div>
+            <div class="tarjeta">
+                <img src="https://picsum.photos/id/870/600/400" alt="">
+                <div class="titulo">Building 1</div>4
+                <div class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam unde dolores illo
+                    in sint odio eveniet! Officiis, ad eveniet, aspernatur vitae hic deleniti facilis minima nihil
+                    magnam alias velit maxime.</div>
+            </div>
+            <div class="tarjeta">
+                <img src="https://picsum.photos/id/945/600/400" alt="">
+                <div class="titulo">Building 5</div>
+                <div class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam unde dolores illo
+                    in sint odio eveniet! Officiis, ad eveniet, aspernatur vitae hic deleniti facilis minima nihil
+                    magnam alias velit maxime.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

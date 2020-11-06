@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: .5em; /* .5 = 0.5*/
+        }
+        .formulario{
+            display: flex;
+            direction: row;
+            width: 50vw;
+            background-color: pink;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        .mensaje{
+            display: flex;
+            flex-direction: column;
+        }
+        .mensaje>textarea{
+            flex:1;
+            width: 20vw;
+        }
+        .contacto{
+            flex: 1;
+        }
+        .contacto>input{
+            width: 100%;
+        }
+        .contacto>button{
+            background-color: white;
+            color: violet;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="formulario">
+        <div class="mensaje">
+            <label for="msg">Mensaje:</label>
+            <textarea name="" id="msg" ></textarea>
+        </div>
+        <div class="contacto">
+            <label for="">Nombre</label>
+            <input type="text" name="" id="nombre">
+
+            <label for="">Ciudad</label>
+            <input type="text" name="" id="Ciudad">
+
+            <label for="">Email</label>
+            <input type="text" name="" id="Email">
+
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

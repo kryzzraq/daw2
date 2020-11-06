@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: .5em;
+        }
+        #container{
+            background-color: cornflowerblue;
+            border: solid 2px black;
+            border-radius: 10px;
+            width: 40vw;
+            margin: 0 auto;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .row>label{
+            flex: 1;
+        }
+        .row>input{
+            flex:2;
+        }
+        .row>button{
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form action="" class="formulario">
+            <div class="row">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="" id="ciudad">
+            </div>
+            <div class="row">
+                <label for="nombre">Ciudad</label>
+                <input type="text" name="" id="ciudad">
+            </div>
+            <div class="row">
+                <label for="nombre">Email</label>
+                <input type="text" name="" id="ciudad">
+            </div>
+            <div class="row">
+                <button type="submit">Enviar</button>  
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
