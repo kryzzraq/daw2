@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #contenido{
+            display: flex;
+            flex-direction: row; 
+            height: 100vh;
+         }
+        #contenido>div{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        img{
+            object-fit: cover;
+            width: 100%;
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Portfolio</h2>
+        <div id="contenido">
+            <div id="row">
+                <img src="https://picsum.photos/id/684/600/400" alt="">
+                <img src="https://picsum.photos/id/231/600/400" alt="">
+            </div>
+            <div id="row">
+                 <img src="https://picsum.photos/id/235/600/400" alt="">
+            </div>
+            <div id="row">
+                <img src="https://picsum.photos/id/377/600/400" alt="">
+                <img src="https://picsum.photos/id/393/600/400" alt="">
+                <img src="https://picsum.photos/id/906/600/400" alt="">
+            </div>
+            <div id="row">
+                <img src="https://picsum.photos/id/908/600/400" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

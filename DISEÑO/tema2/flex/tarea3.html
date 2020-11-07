@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #contenedor #titulo{
+            background-color: rgb(71, 71, 71);
+            color: white;
+            padding: 10px 0px 10px 0px;
+        }
+        #contenido{
+            display: flex;
+            flex-direction: row;   
+            flex-wrap: wrap;     
+            justify-content: space-between;
+        }
+        #contenido #tarjeta{
+            display: flex;
+            flex-direction: row;
+            width: 300px;
+            border: 2px solid black;
+            margin-top: 10px;
+
+        }
+        img{
+            object-fit: cover;
+            width: 40%;
+            border-right: 2px solid black;
+        }
+        #contenido #tarjeta #texto p{
+            padding:5px;
+            text-align: justify;
+        }
+        #contenido #tarjeta #texto h4{
+            background-color: grey;
+            padding: 1em;
+            margin: 0 auto;
+            border-bottom: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <div id="titulo">
+            <h2>Flex-Box: Catálogo de imágenes y texto</h2>
+        </div>
+        <div id="contenido">
+            <div id="tarjeta">
+                <img src="https://picsum.photos/id/1076/600/400" alt="">
+                <div id="texto">
+                    <h4>Building 1</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quos, soluta praesentium voluptatum
+                        numquam inventore molestiae autem est, laboriosam id eveniet nemo veritatis similique temporibus qui
+                        cum repudiandae eum quo.</p>
+                </div>
+            </div>
+            <div id="tarjeta">
+                <img src="https://picsum.photos/id/1081/600/400" alt="">
+                <div id="texto">
+                    <h4>Building 2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quos, soluta praesentium voluptatum
+                        numquam inventore molestiae autem est, laboriosam id eveniet nemo veritatis similique temporibus qui
+                        cum repudiandae eum quo.</p>
+                </div>
+            </div>
+            <div id="tarjeta">
+                <img src="https://picsum.photos/id/743/600/400" alt="">
+                <div id="texto">
+                    <h4>Building 3</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quos, soluta praesentium voluptatum
+                        numquam inventore molestiae autem est, laboriosam id eveniet nemo veritatis similique temporibus qui
+                        cum repudiandae eum quo.</p>
+                </div>
+            </div>
+            <div id="tarjeta">
+                <img src="https://picsum.photos/id/870/600/400" alt="">
+                <div id="texto">
+                    <h4>Building 4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quos, soluta praesentium voluptatum
+                        numquam inventore molestiae autem est, laboriosam id eveniet nemo veritatis similique temporibus qui
+                        cum repudiandae eum quo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
