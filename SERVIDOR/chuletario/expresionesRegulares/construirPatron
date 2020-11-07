@@ -1,0 +1,5 @@
+Construir un patrón:​
+
+A la hora de crear un patrón para comparar o buscar dentro de una cadena, se construye la 
+expresión regular y se encierra entre un carácter delimitador que suele ser la barra (/).​
+    $patron = '/php/';​

@@ -1,0 +1,38 @@
+· Ordenar --> sort($array , [metodo de ordenacion])
+    Ordena la matriz en orden ascendente. Es case sensitive.
+    --> Método de ordenación: 
+        · SORT_REGULAR (predeterminada)
+        · SORT_NUMERIC 
+        · SORT_STRING
+        · SORT_NATURAL
+        · SORT_FLAG_CASE
+
+· Ordenar matrices asociativas --> asort() , ksort()
+    El  proceso de ordenacion exige que se mantengan los pares claves-valor
+    y por tanto tendremos que elegir si deseamos ordenar por valor ( asort()) o por clave (ksort()).
+
+· Invertir el orden --> rsort(), arsort(), krsort() (Funcionan igual que arriba)
+
+· Desordenar --> shuffle($array)
+
+· Invertir --> array_reverse($array)
+
+· Aplicar una función a cada elemento del array: array_walk()
+    Permite aplicar la misma funcion a todos los elementos del array
+        array_walk($array, "funcion")
+            
+· Buscar un elemento: in_array()
+
+· Cuantificar repeticiones de valores: array_count_values()
+
+· Desplazamiento en matrices:
+    Las matrices tienen un puntero interno que apunta al elemento actual de la matriz:
+        · current(), pos() --> Devuelven el elemento actual
+        · each() --> devuelve el elemento actual y avanza una posicion
+        · next() --> avanza una posición y devuelve el elemento
+        · prev() --> retrocede una posicion y devuelve el elemento
+        · reset() --> retrocede al primer elemento y devuelve su valor
+        · end() --> avanza hasta el último elemento y devuelve su valor
+
+· Cargar un fichero como un array -> file()
+    $lineas = file("https://www.ejemplo.com/");

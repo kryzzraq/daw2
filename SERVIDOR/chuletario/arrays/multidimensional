@@ -1,0 +1,19 @@
+Multidimensional numérico
+    $alumnos = array (
+        array("ana","sanchez","daw1",949535353),
+        array("juan","perez","asir2",949737828),
+        array("carlos","muñoz","daw2",949929292)
+    );
+
+    Para acceder a un elemento necesitaremos dos índices:
+    $alumnos[1][2] nos indicará ---> asir2
+
+Multidimensional asociativo:
+    $alumnos = array (
+            alumno1("nombre" => "ana","apellido" => "sanchez", "curso" => "daw1", "telefono" => 949535353),
+            alumno2("nombre" => "juan","apellido" =>" perez", "curso" => "asir2", "telefono" => 949737828),
+            alumno3("nombre" => "carlos","apellido" => "muñoz", "curso" => "daw2", "telefono" => 949929292)
+        );
+
+    Para acceder a un elemento necesitaremos dos indices:
+    $alumnos["alumno2"]["apellido"]: --> perez

@@ -1,0 +1,19 @@
+· Union de dos matrices (+)
+    Añadirá los elementos de la segunda matriz al final de la primera pero evitando repeticiones, 
+    es decir, si un indice de la matriz b ya existe en la a no se añadirán.
+
+· Copia de matrices (=)
+    Hace una copia exacta del array
+
+· Igualdad (==)
+    Compara dos matrices y devuelve true si ambas contienen las mismas parejas clave-valor
+
+· Identidad (===)
+    Compara dos matrices y devuelve true si ambas contienen las mismas parejas clave valor 
+    en el mismo orden y del mismo tipo.
+
+· Desigualdad (!=, <>)
+    Compara dos matrices y devuelve true si no son iguales
+
+· Desidentidad (!==):
+    Compara dos matrices y devuelve true si no son idénticas

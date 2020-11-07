@@ -12,6 +12,11 @@ Para recoger los valores y las claves del array:
 
     $array = [1,2,3,4];
     foreach($array as $indice => $valor){
-        echo "{$clave} => {$valor}";
-        print_r{$array};
+        echo "{$clave} => {$valor} <br/>";
     }
+
+--> Esto imprimiría:
+    0 => 1
+    1 => 2
+    2 => 3 
+    3 => 4

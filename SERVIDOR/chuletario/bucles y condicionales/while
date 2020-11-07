@@ -1,0 +1,12 @@
+$num = 1;
+
+while ($num <= 10){
+    echo $num . "<br/>";
+    $num++;
+}
+
+$num2 = 100;
+do{
+    echo $num2;
+    $num2 = $num2 - 10;
+} while ($num2 < 10)

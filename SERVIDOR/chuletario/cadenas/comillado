@@ -1,0 +1,23 @@
+· Entrecomillado simple: 
+    Se muestra texto de forma literal, solo se escapa la propia comilla simple con la barra atrás:
+        echo 'Arnold una vez dijo : "I\'ll be back"';
+            resultado --> Arnord una vez dijo: "I'll be back"
+
+· Entrecomillado doble:
+    Todo se coge como texto menos los caracteres especiales indicados con barra atrás
+
+· Sintaxis heredoc: 
+    Se usa el operando <<<
+        $str = <<<EOD​
+        Ejemplo de una cadena​
+        expandida en varias líneas​
+        empleando la sintaxis heredoc.​
+        EOD;
+
+· Sintaxis nowdoc:
+    Se usa el operando <<< pero el operador tiene que estar delimitado por ''.
+        $str = <<<‘EOD’​
+        Ejemplo de una cadena​
+        expandida en varias líneas​
+        empleando la sintaxis heredoc.​
+        EOD;

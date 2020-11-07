@@ -1,0 +1,48 @@
+Un array es un matriz que permite guardar datos.
+En PHP los arrays pueden tener tipos mezclados o contener otra matriz.
+Los arrays pueden tener un índice numérico o una cadena de texto (array asociativo).
+
+Array numérico:
+Cada elemento de la matriz es accedido a través de un índice numérico que 
+comienza en 0.
+    Crear la matriz asignándole directamente los valores:
+        · $alumnos = array ("Ana","Juan","Pedro");
+    Crear matrices con una secuencia ascendente de números o caracteres:
+        · $numeros = range(1,100,5) --> range(inicio,fin,[incremento])
+    Conocer el número de elementos del array:
+        · count($array)
+        · sizeof($array)
+
+    Recorrer matriz numérica con el bucle foreach:
+        foreach($numeros as $valor){
+            echo $valor;
+        }
+
+        foreach($numeros as $indice => $valor){
+            echo "numeros[$indice] = $valor";
+        }
+
+Array asociativo:
+Permite establecer un nombre para cada una de las posiciones del array
+$capitales['españa'] = 'madrid';
+$capitales['italia'] = 'roma';
+$capitales['francia'] = 'paris';
+
+    Crear la matris asociativa asignándole directamente los valores:
+        · $capitales = array ("españa" => "madrid", "italia" => "roma", "francia" => "paris")ç
+    Para recorrer la matriz podemos usar un foreach o las funciones each() y list()
+        ·   reset($capitales); --> robobina al primer elemento del array
+            while(list($pais, $cap) = each($capitales)){
+                echo "$pais: $cap";
+            }
+
+        ·   foreach($capitales as $indice => $valor){
+                echo "$indice: $valor";
+            }
+
+        ·   while($elemento = each($capitales)){
+                echo $elemento['key'] . " : " ;
+                echo $elemento['value'];
+            }
+
+

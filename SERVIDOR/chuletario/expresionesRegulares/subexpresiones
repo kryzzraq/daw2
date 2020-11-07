@@ -1,0 +1,31 @@
+Subexpresiones:
+Permiten dividir la expresión en partes y fijar que elementos deberá tener 
+la expresión en su conjunto, para ellos se utilizan los paréntesis ().
+
+Ejemplo: (muy )* grande
+    Significa cualquier numero de "muy" seguido de "grande":
+        1. "grande"
+        2. "muy grande"
+        3. "muy muy grande"
+
+Contar Subexpresiones:
+Se puede especificar el numero de rep de un elemento utilizando expresiones numericas entre {}
+    (muy ){2}: exactamente 2 reps
+    (muy ){1,3}: entre 1 y 3
+    (muy ){2,}: al menos dos reps.
+
+Opción:​
+Se puede establecer que el carácter o expresión sea uno entre un conjunto de opciones utilizando una barra: |​
+    · 1|2|3 : uno de los tres caracteres​
+    · (com)|(net)|(edu) : una de las tres cadenas​
+
+Anclajes al principio y al final de la cadena:​
+    · ^(file): la cadena debe comenzar con “file”.​
+    · [a-z]$: la cadena debe finalizar con una letra (a-z).
+
+Caracteres especiales:​
+Habrá que ser cuidadoso a la hora de buscar coincidencias con caracteres especiales
+tales como: .,\|()[]{}^$-+*.​
+habrá que utilizar la barra invertida delante para quitar el significado: \
+algunos de esos caracteres como \ y $ ya tienen un significado especial en PHP por lo que para evitar que se empleen con 
+el significado que tienen en PHP habrá que duplicar las barras: \\\\ y \\\$.

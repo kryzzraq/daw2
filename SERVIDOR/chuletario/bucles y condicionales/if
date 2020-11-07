@@ -15,3 +15,11 @@ if($nota >= 9){
 }else{
     echo "suspenso";
 }
+
+-------------------------------
+
+Sintaxis alternativa:
+if( $cantidad == 0):
+    echo "No ha introducido la cantidad";
+    exit;
+endif;

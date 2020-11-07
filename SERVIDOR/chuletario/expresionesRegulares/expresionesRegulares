@@ -1,0 +1,39 @@
+Caracteres básicos:
+    -> . Cualquier caracter individual excepto \n
+    -> [aeiou] Valores: Cualquier caracter de los indicados entre []
+    -> [a-z] rango: Cualquier caracter comprendido entre la a y la z
+    -> [a-zA-Z] Conjuto de rangos
+    -> [^a] Exclusión: cualquier caracter excepto a
+    -> [^a-z] Exclusión de rango
+
+Conjuntos de caracteres:
+    -> [[:alnum:]]  Caracteres alfanuméricos
+    -> [[:alpha:]]  Caracteres alfabéticos
+    -> [[:lower:]]  Letras minusculas
+    -> [[:upper:]]  Letras mayúsculas
+    -> [[:digit:]]  Digitos decimales
+    -> [[:xdigit:]]  Digitos hexadecimales
+    -> [[:punct:]]  Puntuación
+    -> [[:blank:]]  Tabuladores y espacios
+    -> [[:space:]]  espacios
+    -> [[:cntrl:]]  Caracteres de control
+    -> [[:print:]]  Caracteres imprimibles
+    -> [[:graph:]]  Caracteres imprimibles excepto espacios
+
+Repetición:
+    -> * el patron se repite 0 o más veces
+    -> + el patron se repite 1 o más veces
+
+Caracteres genéricos:
+    -> \b  Límite de una palabra, como un espacio o un retorno de carro
+    -> \B  Cualquiera que no sea un límite de palabra
+    -> \d  Cualquier caracter de digito, equivalente a [0-9]
+    -> \D  Cualquier caracter que no sea un digito, equivalente a [^0-9]
+    -> \f  Salto de página
+    -> \n  Salto de línea
+    -> \r  retorno de carro
+    -> \s  Cualquier caracter individual de espacio en blanco (espacios, tabs, \f o \n)
+    -> \S  Cualquier caracter individual que no sea un espacio en blanco
+    -> \t  Tabulador
+    -> \w  Cualquier caracter alfanuméricos, incluido subrayado. Equivalente a [A-Za-z0-9_]
+    -> \W  Cualquier caracter que no sea alfanuméricos

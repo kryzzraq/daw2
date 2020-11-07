@@ -1,0 +1,122 @@
+· Eliminar blancos: 
+    · trim($cadena) --> Elimina espacios en blanco al principio y al final de la cadena.
+    · ltrim($cadena) --> Solo al principio de la cadena
+    · rtrim($cadena) --> Solo al final de la cadena
+    Estas funciones admiten después de la cadena otro parametro especificando que más caracteres se quieren eliminar.
+
+· Formato HTML: nl2br()
+    Sustituye todos los saltos de línea de la cedena por <br/>
+        $texto = “Una linea\nY otra linea”;​
+        echo nl2br($texto)
+
+· Formato para almacenamiento: 
+        A la hora de almacenar los datos en una base de datos, hay caracteres que pueden causar problemas porque
+        pueden ser interpretados como caracteres de control: comillas (simples y dobles), 
+        barras invertidas y NULL. ​
+        Para evitarlo esos caracteres especiales deben ser marcados agregando una barra invertida delante de ellos. Las funciones addslashes y stripslashes, se utilizan para añadir y eliminar esas 
+        barras de forma automática respectivamente.​
+
+            · $campo=addslashes(trim($_POST[‘campo’]));​
+
+· Formato de impresión --> printf(), sprintf()
+    Ambas funciones permiten aplocar un formato a una cadena y funcionan de forma análoga, 
+    la diferencia es que printf() muestra la cadena resultante y sprintf() la devuelve
+        · printf("Importe total: %5.2f", $total)
+
+            % [‘carácter_relleno’] [-] [anchura] [.precision] tipo​
+                Tipo de la variable:​
+                - s: cadena.​
+                - c: entero representado como carácter.​
+                - d: entero representado en decimal.​
+                - u: entero representado en decimal sin signo.​
+                - b: entero representado en binario.​
+                - o: entero representado en octal.​
+                - x, X: entero representado en decimal.​
+                - f: doble representado en coma flotante.​
+
+· strtoupper($cadena) --> convierte una cadena a mayúsculas
+
+· strtolower($cadena) --> convierte a minúsculas una cadena
+
+· ucfirst($cadena) --> Pone en mayus el primer caracter de la cadena si es alfabetico
+
+· ucwords($cadena) --> Pone en mayus la primera letra de todas las palabras
+
+· explode("separador", $cadena, [limite]) --> divide una cadena por el separador indicado
+
+· implode("separador", $array) || join()
+
+· Extraer partes de una cadena: strtok("cadena","separador")
+    En la primera llamada habrá que especificar la cadena, pero en las sucesivas sólo es necesario indicar el separador.​
+    string strtok (string texto, string separador)​
+    string strtok (string separador)​
+
+    $palabra= strtok($texto, “ “);​
+    while ($palabra!= “”) {​
+        echo $palabra.”<br/>”;​
+        $palabra = strtok(“ “);​
+    }​
+
+· Obtener una subcadena: substr("texto", inicio, fin, [longitud]) -->
+    · Inicio: Si el valor es positivo se cuenta desde el principio de la cadena 
+    y si es negativo desde el final.​
+    · longitud: si es positivo indica el número de caracteres que se quieren obtener desde inicio, 
+    si es negativo los caracteres que se dejan fuera contados desde el final de la cadena. 
+    Si no se indica nada se toman todos los caracteres desde inicio hasta el final de la cadena.​
+   
+        $subcadena= substr($texto, 5, -10);
+
+· Comprobar la longitud de una cadena: strlen($cadena)
+
+· Comparar y ordenar cadenas
+    ·strcmp($cad1, $cad2) --> devuelve un número en funcion de su comparación alfabetica:
+        Si son iguales devuelve 0
+        Si cad1 va antes que cad2 devuelve un negativo
+        Si cad1 va después que cad2 devuelve positivo
+
+    · strcasecmp() --> es igual pero no es case sensitive
+
+    · strnatcmp() / strnatcasecmp()  --> comparan utilizando el orden natural en lugar del alfabético,
+    es decir, interpretan la cadena2 como menor que 12.. Es útil para números o nombres de archivos.
+
+· Buscar cadenas en cadenas:
+    ·strstr($cad1, $cad2, [bool]) / strchr($cad1, $cad2, [bool]) 
+    Por defecto devuelve la parte de la primera cadena dsede la primera ocurrencia de la segunda cadena hasta el final
+    Si se añade "true" devuelve la parte anterior a la primera ocurrencia de la cadena1
+
+    · stristr($cad1, $cad2, [bool]) -> es igual pero no es case sensitive
+
+    · strrchr() --> devuelve la cadena1 desde la ultima ocurrencia de cadena2
+
+· Posición de una subcadena: 
+    ·strpos($cad1, $cad2, [desp]) --> devuelve un numérico desde la 
+    primera instancia de la cadena2 en la cadena1
+    El parametro desp permite indicar la posicion a partir de la que comenzar a buscar
+
+    ·strrpos($cad1, $cad2, [desp]) --> es igual pero devuelve la última instancia.
+
+    Ambas devolveran false si no hay ninguna ocurrencia.
+
+    Para distinguir el false de 0 tenemos que utilizar (===)
+        if ($pos === false) {​
+            echo “No encontrado”;​
+        } else {​
+            echo “Encontrado: $pos”;​
+        }​
+
+· Reemplazar cadenas 
+    · str_replace("cadena1","cadena2","cadena3",[num])
+        La función de buscar y reemplazar puede resultar muy útil: personalizar documentos, corregir 
+        ortografía, censurar términos, etc.​   
+        Esta función admite matrices
+        Busca cadena1 y la reemplaza por cadena2 en cadena3
+        num almacena el número de sustituciones realizadas.
+
+    · substr_replace("cadena1","cadena2",inicio,[longitud])
+        Sustituirá la parte de la cadena1 desde la posicion de inicio con el contenido de cadena2
+        Esta función admite matrices
+        Si el valor de inicio es positivo se empieza desde el principio, si es negativo desde el final.
+
+        Si la longitud es positiva indica los caracteres a sustituir
+        si es 0 se inserta sustitucion sin borrar caracteres
+        si es negativa indica el punto donde se detrendrá desde el final.
