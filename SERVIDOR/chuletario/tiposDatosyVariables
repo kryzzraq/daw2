@@ -1,0 +1,78 @@
+Los tipos de datos en php se dividen en:
+    1. Escalares:
+        · boolean
+        · integer
+        · float 
+        · string
+    2. Compuestos:
+        · array
+        · object
+        · callable (Tipo utilizado para las funciones de retorno)
+        · iterable (Introducido en php 7.1 para usar el foreach)
+    3. Especiales:
+        · resource (tipo que apunta a un recurso externo)
+        · NULL
+
+    4. Constantes:
+        Permiten guardar valores escalares (bool, int, float, string) que no se podrán modificar en ningún punto del sistema.
+        A partir de PHP7 se pueden definir constantes de arrays.
+        Para crear una constante se utiliza:
+            - define("CONSTANTE", "valor");  --> define("PRECIO",100);
+            - const PI = 3.1416; (No usa memoria)
+
+PHP es un lenguaje debilmente tipado, las variables pueden cambiar de tipo según las vayamos asignando.
+Para obtener el tipo de una varible se usan la funciones
+    1. gettype($variable)
+    2. boolean is_array($variable)
+    3. boolean is_float($variable)
+    4. boolean is_int($variable)
+    5. boolean is_object($variable)
+    6. boolean is_string($variable)
+
+Forzado de tipos: 
+Hay dos formas de cambiar el tipo de una varible
+    1. $cantidad = 0;
+       $resultado = (string)$cantidad
+        ---> (int)|(bool)|(float)|(double)|(real)|(string)|(array)|(object)|(unset) -> fuerza a NULL en PHP5
+
+    2. Se puede usar la función settype($variable, string de la variable)
+
+Para comprobar si existe una variable:
+    · isset($variable)
+
+Para suprimir una variable:
+    · unset($variable)
+
+Para comprobar si una variable existe y está vacía:
+    · empty($variable)
+
+VARIABLES POR REFERENCIA
+Se usa el operador &
+    $ejemplo = "Laura";
+    $nombre = &$ejemplo;  --> referencia por memoria a $ejemplo
+    $nombre = "María";    --> también se cambia $ejemplo
+    
+ÁMBITO DE LAS VARIABLES:
+    1. Variables superglobales:
+        . $GLOBALS
+        · $_ENV
+        · $_SERVER
+        · $_REQUEST
+        · $_GET
+        · $_POST
+        · $_COOKIE
+        · $_SESSION
+        · $_FILES
+    
+    2. Variables globales:
+        Son visibles en el bloque de código en el que son declaradas pero no en las funciones.
+
+    3. Variables de función:
+        Visibles solo dentro de la función
+
+    4. Variables de función globales:
+        Hacen referencia a la variable global del mismo nombre. Se usa la clave global para acceder dentro de una función a la variable externa con dicho nombre. Se pueden usar en el array $GLOBALS, en vez de global.
+
+    5. Variables estáticas:
+        Mantienen su valor entre llamadas
+        · static $variable;

@@ -1,0 +1,50 @@
+Son símbolos que representan una acción concreta que se realizará sobre variables o valores.
+1. Aritméticos:
+    Permiten realizar las operaciones matemáticas de uso más frecuente
+    ·  suma(+)  resta(-)  multiplicación(*)  división(/)  módulo(%)  exponienciación(**) 
+
+2. Asignación:
+    · =
+
+3. Combinación de operadores aritméticos con operadores de asignación
+    · $a += 5  --> Equivale a    $a = $a + 5;
+
+4. Incremento y decremento:
+    · Si el operador precede a la variable primero modifica el valor y luego usa la variable. (++$a)
+    · Si el operador va después de la variable primero usa la variable y luego modifica su valor. ($a--)
+
+5. Comparación:
+    Devuelve true o false dependiendo de la condición:
+        · igual (==)  idéntico(===)  distinto(!=, <>)  menor(<)  mayor(>)  menor o igual(<=)  mayor o igual(>=)  barco de batalla(<=>) --> Este último a partir de PHP7
+
+6. Lógicos:
+    Permiten combinar los resultados de las condiciones y las operaciones:
+        · NOT(!)  AND(&&, and)  OR(||, or)
+        · Bit a bit: permiten tratar a un dato como una secuencia de bits:
+            - NOT bit a bit (~)
+            - AND bit a bit (&)
+            - OR bit a bit (|)
+            - XOR bit a bit (^)
+            - desplazamiento a la izq (<<)
+            - desplazamiento a la drcha (>>)
+
+7. Concatenación:
+    En PHP se usa el (.)
+    $curso = "DAW 2":
+    $nombre = $curso . "Desarrollo web";
+
+8. Otros operadores:
+    - Ternario: su uso es similar a la estructura if-else
+        · ($nota >= 5 ? 'Aprobado' : 'Suspenso');
+
+    - Fusión de null (??): devuelve de izq a drcha el primer operador que exista, es la combinación del ternario + isset() --> PHP7
+
+    -Ejecución: permite ejecutar comandos del SO, para ello se coloca el comando entre dos acentos graves (´´)
+        · $out = ´ls-la´
+          echo '<pre>' . $out . '</pre>'
+
+    -Supresión de errores (@): Permite eliminar los avisos de error que se pueden generar al ejecutar una instrucción.
+        · $a @(5/0): no se mostrará el error de dividir entre 0.
+
+    - instanceof: determina si un objeto pertenece a una clase:
+        · $varObjeto instanceof className;

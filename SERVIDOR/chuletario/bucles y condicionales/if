@@ -1,0 +1,17 @@
+if ($nota >= 5){
+    echo "Aprobado";
+} else{
+    echo "Suspenso";
+}
+
+-------------------------------
+
+if($nota >= 9){
+    echo "sobresaliente";
+}elseif ($nota >= 7){
+    echo "notable";
+}elseif ($nota >=){
+    echo "aprobado";
+}else{
+    echo "suspenso";
+}

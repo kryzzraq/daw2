@@ -1,0 +1,16 @@
+switch ($nota){
+    case 10: 
+    case 9:
+        echo "Sobresaliente";
+        breack;
+    case 8:
+    case7: 
+        echo "notable";
+        breack;
+    case 6:
+    case 5:
+        echo "aprobado";
+        breack;
+    defaul:
+        echo "suspenso";
+}

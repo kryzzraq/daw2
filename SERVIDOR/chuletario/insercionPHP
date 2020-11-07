@@ -1,0 +1,7 @@
+Para insertar php se pueden usar las siguientes etiquetas:
+    1. <?           ?>      Está muy obsoleta y debe activarse.
+    2. <?php        ?>      Es la forma recomendada actualmente, no se puede desactivar. Está presente en los svs.
+    
+    EN DESUSO:
+        <script language="php"></script>
+        <%      %>

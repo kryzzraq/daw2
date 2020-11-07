@@ -1,0 +1,24 @@
+Las variables súperglobales están presentes en todos los ámbitos de un programa PHP y 
+recogen info valiosa para el programa.
+
+    1. $_GET['nombre de la etiqueta']: Accedemos a los datos mandados desde los forms mediante 
+    el método GET después de un submit.
+
+    2. $_POST['nombre de la etiqueta']: Accedemos a los datos mandados desde los forms mediante
+    el método POST después de un submit.
+
+    3. $_REQUEST['nombre de la etiqueta']: Accedemos a los datos mandados desde los forms mediante
+    los métodos POST y GET indistintamente después de un submit.
+
+En el caso de los checkbox y los buttom, los valores sólo se envían en caso de ser seleccionados,
+por eso hay que comprobar que existen antes de intentar recogerlos o nos saldrá un error.
+    · $check = isset($_REQUEST['checkbox']) ? $_REQUEST['checkbox]: 'No pulsado';
+        o bien....
+    · $check = $_REQUEST['checkbox'] ?? "No pulsado"; --> PHP7
+
+Las variables súperglobales son:
+    · $GLOBALS (Todas las variables súperglobales)
+    · $_SERVER (Acceso a datos del sv)
+    · $_FILES (Acceso a los ficheros enviados desde los clientes en los forms)
+    · $_COOKIE (Cookies enviadas por el cliente)
+    · $_SESSION (Datos de sesión)
