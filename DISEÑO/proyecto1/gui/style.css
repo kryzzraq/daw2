@@ -68,7 +68,7 @@ li a:hover{
     height: 400px;
 }
 .c1>div, .c4>div, .c5>div{
-    height: 40%;
+    height: 50%;
     margin-top: 200px;
     transform: translate(0%,-50%);
     text-align: justify;
