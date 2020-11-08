@@ -47,7 +47,7 @@ li a:hover{
 }
 #contenedor{
     position: relative;
-    height: 1250px;
+    height: 1650px;
     background-color: rgba(255, 255, 255,0.8);
     margin: auto;
     width: 95%;
@@ -61,6 +61,7 @@ li a:hover{
 }
 #fila{
     padding: 15px;
+    background-color: aqua;
 }
 #celda{
     float: left;
@@ -152,4 +153,15 @@ li a:hover{
     position: fixed;
     bottom: 10px;
     left: 30px;
+}
+#fila8{
+    height: 400px;
+    width: 1000px;
+    margin:0 auto;
+    text-align: center;
+    font-family: 'Verdana';
+}
+#fila8 div{
+    float: left;
+    margin: 60px 5px;
 }
