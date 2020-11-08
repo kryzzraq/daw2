@@ -82,10 +82,10 @@ li a:hover{
     transform: translate(-50%);
     text-align: center;
 }
-.c2 div, .c3 div, .c6 div{
-    margin-top:30%;
+.c2>div, .c3>div, .c6>div{
+    margin-top: 200px;
     margin-left: 50%;
-    transform: translate(-50%,-100%);
+    transform: translate(-50%,-50%);
     height: 28%;
     width: 60%;
     text-align: center;
@@ -125,7 +125,7 @@ li a:hover{
 #fila4{
     position: fixed;
     top: 10px;
-    left: 50px;
+    left: 60px;
     background-color:rgba(255, 255, 255,0.8);
     height: 110px;
     width: 110px;
