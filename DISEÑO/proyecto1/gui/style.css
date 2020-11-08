@@ -127,16 +127,16 @@ li a:hover{
     top: 10px;
     left: 40px;
     background-color:rgba(255, 255, 255,0.8);
-    height: 20%;
-    width: 10%;
-    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    border-radius: 60%;
 }
 #celda1{
     background-image: url(images/logo.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    border-radius: 50% ;
+    border-radius: 600px ;
     height: 100%;
     width: 100%;
 }
