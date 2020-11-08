@@ -22,8 +22,10 @@ header{
     text-align: center;
 }
 ul{
+    height: 20%;
     margin-top: 0px;
     list-style-type: none;
+background-color: blue;
 }
 li{
     display: inline-block;
