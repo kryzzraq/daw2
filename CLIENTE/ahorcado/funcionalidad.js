@@ -1,12 +1,9 @@
-var arrayPalabras = ["SABIO", "CASADO", "JUBILADO", "CAMPING", "VAMPIRO", "HIJOS", "TESTAMENTO", "VIDRIO", "HUESO", "AGUACERO", 
-"REALIDAD", "RELLENO", "MERCADO", "MEDICINA", "PROHIBIR"];
-arrayLetrasDichas = ["A","H","E","I"]
-var contador = 0;
 //VARIABLES:
-    var arrayPalabras = ["Sabio", "Casado", "Jubilado", "Camping", "Vampiro", "Hijos", "testamento", "Vidrio", "Hueso", "Aguacero", 
-    "Realidad", "Relleno", "Mercado", "Medicina", "Prohibir"]
-    arrayLetrasDichas = []
-    const FALLOS = 8
+    const arrayPalabras = ["SABIO", "CASADO", "JUBILADO", "CAMPING", "VAMPIRO", "HIJOS", "TESTAMENTO", "VIDRIO", "HUESO", "AGUACERO", 
+    "REALIDAD", "RELLENO", "MERCADO", "MEDICINA", "PROHIBIR"]
+    arrayPalabra = []
+    const FALLOS = 7
+    numeroFallos = 0;
 
     //botones del abecedario
     var btnA = document.getElementById("btn_a")
@@ -37,44 +34,117 @@ var contador = 0;
     var btnY = document.getElementById("btn_y")
     var btnZ = document.getElementById("btn_z")
 
+    //variables de div
+    var divPalabra = document.getElementById("palabraHTML")
+    var imgAhorcado = document.getElementById("imagen")
+
     //añadir funcionalidad a los botones
-    btnA.addEventListener("click",function(){pulsarBoton(btnA)})
-    btnB.addEventListener("click",function(){pulsarBoton(btnB)})
-    btnC.addEventListener("click",function(){pulsarBoton(btnC)})
-    btnD.addEventListener("click",function(){pulsarBoton(btnD)})
-    btnE.addEventListener("click",function(){pulsarBoton(btnE)})
-    btnF.addEventListener("click",function(){pulsarBoton(btnF)})
-    btnG.addEventListener("click",function(){pulsarBoton(btnG)})
-    btnH.addEventListener("click",function(){pulsarBoton(btnH)})
-    btnI.addEventListener("click",function(){pulsarBoton(btnI)})
-    btnJ.addEventListener("click",function(){pulsarBoton(btnJ)})
-    btnK.addEventListener("click",function(){pulsarBoton(btnK)})
-    btnL.addEventListener("click",function(){pulsarBoton(btnL)})
-    btnM.addEventListener("click",function(){pulsarBoton(btnM)})
-    btnN.addEventListener("click",function(){pulsarBoton(btnN)})
-    btnÑ.addEventListener("click",function(){pulsarBoton(btnÑ)})
-    btnO.addEventListener("click",function(){pulsarBoton(btnO)})
-    btnP.addEventListener("click",function(){pulsarBoton(btnP)})
-    btnQ.addEventListener("click",function(){pulsarBoton(btnQ)})
-    btnR.addEventListener("click",function(){pulsarBoton(btnR)})
-    btnS.addEventListener("click",function(){pulsarBoton(btnS)})
-    btnT.addEventListener("click",function(){pulsarBoton(btnT)})
-    btnU.addEventListener("click",function(){pulsarBoton(btnU)})
-    btnV.addEventListener("click",function(){pulsarBoton(btnV)})
-    btnW.addEventListener("click",function(){pulsarBoton(btnW)})
-    btnX.addEventListener("click",function(){pulsarBoton(btnX)})
-    btnY.addEventListener("click",function(){pulsarBoton(btnY)})
-    btnZ.addEventListener("click",function(){pulsarBoton(btnZ)})
+    btnA.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnA))})
+    btnB.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnB))})
+    btnC.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnC))})
+    btnD.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnD))})
+    btnE.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnE))})
+    btnF.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnF))})
+    btnG.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnG))})
+    btnH.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnH))})
+    btnI.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnI))})
+    btnJ.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnJ))})
+    btnK.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnK))})
+    btnL.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnL))})
+    btnM.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnM))})
+    btnN.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnN))})
+    btnÑ.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnÑ))})
+    btnO.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnO))})
+    btnP.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnP))})
+    btnQ.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnQ))})
+    btnR.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnR))})
+    btnS.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnS))})
+    btnT.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnT))})
+    btnU.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnU))})
+    btnV.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnV))})
+    btnW.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnW))})
+    btnX.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnX))})
+    btnY.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnY))})
+    btnZ.addEventListener("click",function(){compararArrays(arrayPalabra,arrayDelJugador,pulsarBoton(btnZ))})
 
 
 
 //Funciones
-const generarPosicionAleatoria = () =>{
-    var num = Math.floor(Math.random() * arrayPalabras.length);
+const generarNumeroAleatorio = () =>{
+    var num = Math.floor(Math.random() * arrayPalabras.length)
     return num;
 }
 
-var numero = generarPosicionAleatoria()
-var palabra = arrayPalabras[numero]
-console.log(arrayPalabras[numero])
-console.log(numero)
+const seleccionarPalabraAleatoria = () =>{
+    var palabraAdivinar = arrayPalabras[generarNumeroAleatorio()]
+    return palabraAdivinar
+}
+
+const dividirPalabraArray = (palabra) =>{
+    var arrayPalabra = palabra.split("")
+    return arrayPalabra;
+}
+
+const crearArrayJugador = (array) => {
+    var arrayJugador = []
+    for(let i = 0; i<array.length; i++){
+        arrayJugador[i] = "_"
+    }
+    return arrayJugador
+}
+const compararArrays = (arrayPalabra, arrayJugador, valorLetra) =>{
+    for(let i = 0; i<arrayPalabra.length; i++){
+        if(arrayPalabra[i] == valorLetra){
+            arrayJugador[i] = valorLetra
+        }
+    }
+    console.log(numeroFallos)
+    numFallos(numeroFallos)
+    divPalabra.innerHTML = arrayJugador
+    console.log(arrayDelJugador)
+    return arrayJugador
+}
+const pulsarBoton = (letra) =>{
+    //deshabilito el boton
+    letra.disabled = true
+    return letra.value
+}
+
+const numFallos = (fallos) =>{
+    switch(fallos){
+        case 1:
+            imgAhorcado.innerHTML = "<img src='gui/fallos1.jpg'>"
+            break
+        case 2:
+            imgAhorcado.innerHTML = "<img src='gui/fallos2.jpg'>"
+            break
+        case 3:
+            imgAhorcado.innerHTML = "<img src='gui/fallos3.jpg'>"
+            break
+        case 4:
+            imgAhorcado.innerHTML = "<img src='gui/fallos4.jpg'>"
+            break
+        case 5:
+            imgAhorcado.innerHTML = "<img src='gui/fallo5.jpg'>"
+            break
+        case 6:
+            imgAhorcado.innerHTML = "<img src='gui/fallos6.jpg'>"
+            break
+        case 7:
+            imgAhorcado.innerHTML = "<img src='gui/fallos7.jpg'>"
+            break
+        default:
+            imgAhorcado.innerHTML = "<img src='gui/fallos0.jpg'>"
+    }
+}
+
+
+ //prueba de que el juego comienza:
+var palabraAjugar = seleccionarPalabraAleatoria();
+console.log(palabraAjugar)
+
+var arrayPalabra = dividirPalabraArray(palabraAjugar)
+console.log(arrayPalabra)
+
+var arrayDelJugador = crearArrayJugador(arrayPalabra)
+console.log(arrayDelJugador)

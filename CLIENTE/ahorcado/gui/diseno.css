@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding:2px;
+}
+#imagen{
+    text-align: center;
+}
+#palabraHTML{
+    text-align: center;
+    font-size: 40px;
+}
+#botones{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#fila1, #fila2, #fila3{
+    width: 400px;
+    text-align: center;
+    padding: 4px;
+}
+button{
+    height: 40px;
+    width: 30px;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(189, 189, 189);
+}
