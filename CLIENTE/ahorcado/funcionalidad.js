@@ -1,6 +1,6 @@
-var arrayPalabras = ["Sabio", "Casado", "Jubilado", "Camping", "Vampiro", "Hijos", "testamento", "Vidrio", "Hueso", "Aguacero", 
-"Realidad", "Relleno", "Mercado", "Medicina", "Prohibir"];
-arrayLetrasDichas = []
+var arrayPalabras = ["SABIO", "CASADO", "JUBILADO", "CAMPING", "VAMPIRO", "HIJOS", "TESTAMENTO", "VIDRIO", "HUESO", "AGUACERO", 
+"REALIDAD", "RELLENO", "MERCADO", "MEDICINA", "PROHIBIR"];
+arrayLetrasDichas = ["A","H","E","I"]
 var contador = 0;
 
 //Funciones
@@ -28,7 +28,6 @@ const pulsarBoton = (boton) => {
 var numero = generarPosicionAleatoria()
 var palabra = arrayPalabras[numero]
 console.log(arrayPalabras[numero])
-console.log(palabra)
 console.log(numero)
 
 
