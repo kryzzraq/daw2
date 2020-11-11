@@ -93,10 +93,17 @@ const crearArrayJugador = (array) => {
     return arrayJugador
 }
 const compararArrays = (arrayPalabra, arrayJugador, valorLetra) =>{
+    //indicador de encuentro de letra -> Lo inicializamos a "false"
+    var encontrado = false
+
     for(let i = 0; i<arrayPalabra.length; i++){
         if(arrayPalabra[i] == valorLetra){
             arrayJugador[i] = valorLetra
+            encontrado = true
         }
+    }
+    if(!encontrado){
+        numeroFallos++
     }
     console.log(numeroFallos)
     numFallos(numeroFallos)
@@ -125,7 +132,7 @@ const numFallos = (fallos) =>{
             imgAhorcado.innerHTML = "<img src='gui/fallos4.jpg'>"
             break
         case 5:
-            imgAhorcado.innerHTML = "<img src='gui/fallo5.jpg'>"
+            imgAhorcado.innerHTML = "<img src='gui/fallos5.jpg'>"
             break
         case 6:
             imgAhorcado.innerHTML = "<img src='gui/fallos6.jpg'>"

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contenedor{
+            display: flex;
+            flex-direction: row;
+        }
+        .cuadrado{
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+        .triangulo{
+            margin: 10px;
+            width: 0;
+            height: 0;
+            border-left: 100px solid black;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+        }
+        .triangulo1{
+            margin: 10px;
+            width: 0;
+            height: 0;
+            border-top: 100px solid black;
+            border-left: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+        .triangulo2{
+            margin: 10px;
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-left: 50px solid black;
+            border-bottom: 50px solid black;
+            border-right: 50px solid transparent;
+        }
+        .trapecio{
+            margin: 10px;
+            width: 100px;
+            height: 0;
+            border-bottom: 100px solid black;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent ;
+        }
+        .ovalo{
+            margin: 10px;
+            width: 200px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .bordegradiente{
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            border: 10px solid;
+            border-image-source: linear-gradient(45deg, lime, yellow);
+            border-image-slice: 1;
+        }.circulo{
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(80deg, yellow, lime);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div class="cuadrado"></div>
+        <div class="triangulo"></div>
+        <div class="triangulo1"></div>
+        <div class="triangulo2"></div>
+        <div class="trapecio"></div>
+        <div class="ovalo"></div>
+        <div class="circulo"></div>
+        <div class="bordegradiente"></div>
+    </div>
+</body>
+</html>
