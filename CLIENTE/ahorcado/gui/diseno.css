@@ -5,20 +5,10 @@
 #imagen{
     text-align: center;
 }
-#palabraHTML{
+#palabraHTML, #titulo{
     text-align: center;
     font-size: 40px;
-}
-#botones{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-}
-#fila1, #fila2, #fila3{
-    width: 400px;
-    text-align: center;
-    padding: 4px;
+    margin-bottom: 20px;
 }
 button{
     height: 40px;
@@ -26,6 +16,18 @@ button{
     padding: 5px 10px;
     border: 0;
     border-radius: 5px;
+}
+#divBotones{
+    display: flex;
+    justify-content: center;
+}
+#fila4{
+    display: flex;
+    justify-content: center;
+}
+#fila4>button{
+    width: 120px;
+    margin-left: 4px;
 }
 button:hover{
     background-color: rgb(189, 189, 189);
