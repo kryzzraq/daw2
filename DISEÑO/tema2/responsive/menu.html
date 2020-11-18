@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            text-align: center;
+            color: white;
+            background-color: rgb(56, 56, 56);
+            padding: 10px;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            background-color: gray;
+            justify-content: space-around;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            border: 1px white solid;
+            height: 50px;
+            padding: 15px;
+        }
+        a:hover{
+            background-color: rgb(75, 75, 75);
+        }
+        @media screen and (max-width:640px){
+            nav{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Flexbox</h1></header>
+    <nav>
+            <a href="#">Enlace 1</a>
+            <a href="#">Enlace 2</a>
+            <a href="#">Enlace 3</a>
+            <a href="#">Enlace 4</a>
+    </nav>
+</body>
+</html>

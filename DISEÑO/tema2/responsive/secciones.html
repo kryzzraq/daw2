@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        section{
+            height: 30vh;
+            border: 1px solid black;
+        }
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .columna1,.columna2,.columna3,.columna4,.columna5{
+            width: 100%;
+        }
+        /* tablets */
+        @media screen and (min-width:600px){
+            .columna2,.columna3,.columna4,.columna5{
+                width: 50%;
+            }
+        }
+
+        /* dispositivos mas grandes*/
+        @media screen and (min-width: 800px){
+            .columna1,.columna2{
+                width: 50%;
+            }
+            .columna3,.columna4,.columna5{
+                width: 33.333%;
+            }
+            .container{
+                width: 800px;
+                margin: 0 auto;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>Nav bar</nav>
+    <div class="container">
+        <section class="columna1">Sección 1</section>
+        <section class="columna2">Sección 2</section>
+        <section class="columna3">Sección 3</section>
+        <section class="columna4">Sección 4</section>
+        <section class="columna5">Sección 5</section>
+    </div>
+</body>
+</html>

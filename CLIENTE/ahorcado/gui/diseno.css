@@ -17,18 +17,33 @@ button{
     border: 0;
     border-radius: 5px;
 }
-#divBotones{
+#botonesLetras{
+    display: none;
+}
+#divBotones, #fila4{
     display: flex;
     justify-content: center;
 }
-#fila4{
-    display: flex;
-    justify-content: center;
+.oportunidad{
+    display: none;
+    flex-direction: column;
+    padding: 5px;
+    width: 300px;
+    margin: 0 auto;
+}
+#volverAJugar{
+    display:none;
+}
+input{
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 3px;
+    border-radius: 5px;
 }
 #fila4>button{
     width: 120px;
     margin-left: 4px;
 }
-button:hover{
+button:hover, #enviarRespuesta:hover{
     background-color: rgb(189, 189, 189);
 }

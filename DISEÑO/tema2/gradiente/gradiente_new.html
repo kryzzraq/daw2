@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html, body{
+            height: 90vh;
+            width: 99vw;
+        }
+        body{
+            background-color: orange;
+        }
+        #container{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 3% auto;
+            width: 400px;
+            height: 500px;
+            background: linear-gradient(135deg, rgba(255,231,76,1) 0%, rgba(255,116,10,1) 100%);
+            -webkit-box-shadow: -24px 24px 44px -7px rgba(0,0,0,0.75);
+            -moz-box-shadow: -24px 24px 44px -7px rgba(0,0,0,0.75);
+            box-shadow: -24px 24px 44px -7px rgba(0,0,0,0.75);
+        }
+        #forma1{
+            position: absolute;
+            top: 60px;
+            margin: 3px;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: linear-gradient(to bottom, rgba(254,182,69,0.8) 0%, rgba(255,249,178,0.8) 100%);
+        }
+        #forma2{
+            position: absolute;
+            top: 120px;
+            margin: 3px;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: linear-gradient(to bottom, rgba(255,249,178,0.8) 0%, rgba(254,182,69,0.8) 100%);
+        }
+        #texto{
+            margin-top: 70%;
+            color: white;
+            padding: 30px;
+        }
+        #titulo{
+            padding-bottom: 20px;
+            font-family: "impact";
+            font-weight: lighter;
+            font-size: 40px;
+        }
+        #texto1{
+            font-family: sans-serif;
+            font-size: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="forma1"></div>
+        <div id="forma2"></div>
+        <div id="texto">
+            <div id="titulo">IGNITE THE SPARK</div>
+            <div id="texto1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt eum natus, distinctio
+                expedita voluptatum asperiores aut sint officia doloribus amet quidem a veritatis fuga veniam corporis
+                magnam molestias? Dolor, quisquam?
+            </div>
+         </div>
+    </div>
+</body>
+
+</html>
