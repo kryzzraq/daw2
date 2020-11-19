@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    margin-bottom: 40px;
+    background: rgba(33,181,226,1);
+    background: -moz-linear-gradient(45deg, rgba(33,181,226,1) 0%, rgba(183,222,237,1) 50%, rgba(183,222,237,1) 51%, rgba(33,181,226,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(33,181,226,1)), color-stop(50%, rgba(183,222,237,1)), color-stop(51%, rgba(183,222,237,1)), color-stop(100%, rgba(33,181,226,1)));
+    background: -webkit-linear-gradient(45deg, rgba(33,181,226,1) 0%, rgba(183,222,237,1) 50%, rgba(183,222,237,1) 51%, rgba(33,181,226,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(33,181,226,1) 0%, rgba(183,222,237,1) 50%, rgba(183,222,237,1) 51%, rgba(33,181,226,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(33,181,226,1) 0%, rgba(183,222,237,1) 50%, rgba(183,222,237,1) 51%, rgba(33,181,226,1) 100%);
+    background: linear-gradient(45deg, rgba(33,181,226,1) 0%, rgba(183,222,237,1) 50%, rgba(183,222,237,1) 51%, rgba(33,181,226,1) 100%);
+}
+h1{
+    display: block;
+    margin: 100px auto 0px auto;
+    letter-spacing: 3px;
+    font-family: miFuente;
+}
+#formulario{
+    background-color: white;
+    border-radius: 40px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 130px auto 200px auto;
+    background-image: url("../imagenes/S20.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 600px;
+}        
+#frmContacto{
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    margin: 0 auto;
+    padding: 50px;
+}
+#nombreApellidos{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 20px;
+    background-color: white;
+}
+input:focus{
+    outline:0;
+}
+textarea{
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+textarea:focus{
+    outline:0;
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    width: 200px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+button:active{
+    outline:0;
+}

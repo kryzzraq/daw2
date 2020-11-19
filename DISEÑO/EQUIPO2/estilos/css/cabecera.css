@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "miFuente";
+    src: url("Silverstone-Sans.otf");
+}
+*{
+    font-family: miFuente;
+    box-sizing: border-box;
+}
+html {
+    min-height: 100%;
+    position: relative;
+}
+div.menu{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:65px;
+    text-align:center;
+    background-color:black;
+    font-size: 20px;
+}
+div ul li{
+    display: inline;
+    margin: 0px 25px;
+}
+div ul li a{
+    color:white;
+    text-decoration: none;
+    border-radius: 30px;
+    padding:5px 20px;
+    letter-spacing: 2px;
+}
+div ul li a:hover{
+    background-color: white;
+    color:rgb(0, 0, 0);
+}
