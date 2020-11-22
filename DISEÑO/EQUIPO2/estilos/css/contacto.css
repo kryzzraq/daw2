@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    margin-bottom: 40px;
     background: rgba(33,181,226,1);
     background: -moz-linear-gradient(45deg, rgba(33,181,226,1) 0%, rgba(183,222,237,1) 50%, rgba(183,222,237,1) 51%, rgba(33,181,226,1) 100%);
     background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(33,181,226,1)), color-stop(50%, rgba(183,222,237,1)), color-stop(51%, rgba(183,222,237,1)), color-stop(100%, rgba(33,181,226,1)));
@@ -11,7 +10,7 @@ body {
 }
 h1{
     display: block;
-    margin: 100px auto 0px auto;
+    margin: 60px auto 0px auto;
     letter-spacing: 3px;
     font-family: miFuente;
 }
@@ -21,11 +20,11 @@ h1{
     width: 800px;
     display: flex;
     flex-direction: column;
-    margin: 130px auto 200px auto;
+    margin: 130px auto;
     background-image: url("../imagenes/S20.png");
     background-repeat: no-repeat;
     background-position: left;
-    height: 600px;
+    height: 500px;
 }        
 #frmContacto{
     display: flex;
@@ -49,9 +48,11 @@ input:focus{
     outline:0;
 }
 textarea{
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 10px;    
+    width: 400px;
+    height: 130px;
 }
 textarea:focus{
     outline:0;
@@ -69,4 +70,40 @@ button{
 }
 button:active{
     outline:0;
+}
+
+@media screen and  (max-width: 570px){
+    h1{
+        margin: 40px auto 20px auto;
+    }
+    #formulario{
+        width: 300px;
+        height: 500px;
+    }
+    textarea{
+        width: 230px;
+        height: 100px;
+    }
+    #frmContacto{
+        width: 250px;
+        padding:0;
+        margin: 0 auto; 
+    }
+    #nombreApellidos{
+        flex-direction: column;
+    }
+}
+@media screen and  (min-width: 570px) and (max-width: 1000px){
+  #formulario{
+       width: 600px;
+       height: 500px;
+   }
+   textarea{
+       width: 400px;
+       height: 160px;
+   }
+   #frmContacto{
+       width: 400px;
+       padding:0;
+   }
 }

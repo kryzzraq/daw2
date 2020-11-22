@@ -1,21 +1,27 @@
 footer {
     background-color: black;
-    position: absolute;
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    flex-direction: row;
-    color: white;
-    
+    color: white;  
 }
-footer .redes{
+
+footer .condiciones{
+   display: flex;
+   margin-top :20px;
+}
+footer .condiciones a{
+    margin:10px;
+    padding:15px 10px;
     text-decoration: none;
+    color:white;
+}
+footer .redes{    
     display: flex;
     padding:5px;
- 
+    text-decoration: none;
 }
 footer .redes a{
     text-decoration: none;
@@ -24,14 +30,50 @@ footer .redes a{
     letter-spacing: 1px;
 
 }
-footer .condiciones{
-   
-    padding:20px;
+
+@media screen and  (min-width: 570px) and (max-width: 1000px){
+    footer{
+        flex-direction: column;
+    }
+    .condiciones{
+        flex-direction: column;
+        text-align: center;
+    }
+    .condiciones1, .condiciones2{
+        display: flex;    
+        margin: auto;
+    }
+    .redes{
+        justify-content: center;
+    }
+    footer .redes a{
+        margin: 0px 5px 5px 5px;
+    }
+    footer .condiciones a{
+        margin: 0px 5px 5px 5px;
+        padding:2px;
+    }
 }
-footer .condiciones a{
-    display: inline;
-    margin:35px;
-    padding:15px;
-    text-decoration: none;
-    color:white;
+@media screen and  (max-width: 570px){
+    footer{
+        flex-direction: column;
+    }
+    .condiciones{
+        flex-direction: column;
+        text-align: center;
+    }
+    .condiciones1, .condiciones2{
+        display: flex;
+        flex-direction: column;
+    }
+    .redes{
+        justify-content: center;
+    }
+    footer .redes a{
+        margin: 0px 5px 5px 5px;
+    }
+    footer .condiciones a{
+        margin: 0px 5px 5px 5px;
+        padding:2px;
+    }
 }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="estilos/css/home.css" rel="stylesheet" type="text/css">
+    <link href="estilos/css/footer.css" rel="stylesheet" type="text/css">
+    <link href="estilos/css/cabecera.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="menu">
+        <ul class="nav">
+            <li id="lilogo" class="lilogo"><a href="index.html"><img src="estilos\imagenes\logo.png"></a></li>
+            <li class="lidesp"><a href="producto1.html">PRODUCTO</a></li>
+            <li><a href="contacto.html">CONTÁCTANOS</a></li>
+            <li id="buscador" class="buscador"><input type="text"/><a href="" id="idbuscador"><img src="estilos\imagenes\lupa1.png"></a><a href=""><img src="estilos\imagenes\carrito.png" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="contenido">
+        <div class="imagen">
+        </div>
+    </div>    
+    <h1 class="moviles">Móviles</h1>
+    <div id="tiposDeMovil">
+        <div class="contenidoCentrado">
+            <button class="botonBasic" onclick="imagen('1')">iOrange nebula n20</button>
+            <button class="botonBasic" onclick="imagen('2')">iOrange nebula n18</button>
+            <button class="botonBasic" onclick="imagen('3')">Nebula z kink 2</button>
+            <button class="botonBasic" onclick="imagen('4')">iOrange watch 3</button>
+            <button class="botonBasic" onclick="imagen('5')">Nebula tab s7</button>
+        </div>
+        <div class="jsmovil" id="jsmovil">
+            <img id="imagenJS" src="estilos/imagenes/s20.jpg">
+        </div>
+    </div>
+    <h1 class="moviles">Pantallas</h1>
+    <div class="upFooter">       
+        <div class="upBotones">
+            <button class="upButton" onclick="backImagen('1')"> QLED8K </button>
+            <button class="upButton" onclick="backImagen('2')"> Smart TV</button>
+            <button class="upButton" onclick="backImagen('3')"> The Frame </button>
+        </div> 
+        <img src="estilos/imagenes/QLED8K.jpg" id="upBackground">
+    </div>
+
+    <footer class="footer">
+        <div class="condiciones">
+            <div class="condiciones1">
+                <a href=""> Ayuda sobre accesibilidad</a>
+                <a href=""> Condiciones de compra </a>
+                <a href=""> Politica de privacidad</a>
+            </div>
+            <div class="condiciones2">
+                <a href=""> Politica de cookies</a>
+                <a href=""> Aviso legal </a>
+                <a href=""> Mapa del sitio</a>
+            </div>            
+    </div>
+    <div class="redes">
+        <a href="https://www.twitter.com">TWITTER</a>
+        <a href="https://www.faceook.com">FACEBOOK</a> 
+        <a href="https://www.instagram.com">INSTAGRAM</a>
+    </div>
+</footer>
+    <script>
+        function imagen(num){
+            switch(num){
+                case '1':                
+                    document.getElementById('imagenJS').src="estilos/imagenes/s20.jpg";
+                    break;
+
+                case '2':                
+                    document.getElementById('imagenJS').src="estilos/imagenes/s18.jpg";
+                    break;
+
+                case '3':                
+                    document.getElementById('imagenJS').src="estilos/imagenes/fold2.jpg";
+                    break;
+
+                case '4':
+                    document.getElementById('imagenJS').src="estilos/imagenes/watch3.jpg";                    
+                break;
+
+                case '5':                
+                    document.getElementById('imagenJS').src="estilos/imagenes/galaxytab.jpg";
+                    break;
+            }
+        }
+        function backImagen(num){
+            switch(num){
+                case '1':                
+                    document.getElementById('upBackground').src="estilos/imagenes/QLED8K.jpg";                    
+                    break;
+                case '2':                
+                    document.getElementById('upBackground').src="estilos/imagenes/smartTV.jpg";                  
+                    break;
+                case '3':                
+                    document.getElementById('upBackground').src="estilos/imagenes/theframe.jpg";                    
+                    break;
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+html {
+    min-height: 100%;
+    position: relative;
+    margin: 0;
+    padding:0;
+}
+body {
+    margin: 0;
+    padding:0;
+}
+
+h1{
+    display: block;
+    margin: 100px auto 0px auto;
+    letter-spacing: 3px;
+}
+
+.botonBasic{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    width: 10%;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: Verdana;
+}
+
+.botonBasic:hover{
+    cursor:pointer;
+    background-color: rgb(59, 59, 59);
+}
+
+.botonBasic:focus{
+    background-color: rgb(90, 90, 90);
+    outline: 0;
+}
+
+.upButton{
+    background: none;
+    border:none;
+    font-size: 15px;
+    margin-top: 5%;
+    text-decoration: underline;
+    padding: 2px 4px;
+    font-family: Verdana;
+}
+
+.upButton:hover{
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.upButton:active{
+    outline:0;
+    border:0;
+}
+
+.upButton:focus{
+    outline:0;
+    border:0;
+}
+
+.botonBasic:focus{
+    text-decoration: underline;
+}
+
+.contenido{
+    margin-top: 2.5%;  
+    width:100%;
+    height:60vh;
+}
+
+.imagen{
+    margin-top: 60px;
+    background-image: url("../imagenes/blackfriday.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: fl;
+    min-width:10    0%; 
+    min-height:100%;
+}
+
+.imagen .h2{
+    color:white;
+}
+
+.contenidoCentrado{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.moviles{
+    text-align: center;
+    margin:50px 0px 30px 0px;
+}
+
+.jsmovil{
+    display: flex;
+    justify-content: center;
+    margin:50px;
+}
+
+.upFooter{
+    display: flex;flex-direction: column;
+    justify-content: center;
+    width:100%;
+    height:700px;
+    margin-bottom: 60px;            
+}
+
+.upFooter #upBackground{
+    max-width: 80%;
+    max-height: 80%;
+    margin: 20px auto 0 auto;
+}
+
+.upBotones{
+    display: flex;
+    margin: 0 auto;
+    width:300px;
+}
+
+.upBotones .upButton{
+    width:30%;
+}
+#tiposDeMovil{
+    display: flex;
+    flex-direction: column;
+}
+.jsmovil>img{
+    height: 400px;
+}
+
+@media screen and  (max-width: 570px){
+    .imagen{
+        margin-top: 0;
+        background-image: url("../imagenes/blackfriday2.jpg");
+        background-position: center;
+    }
+    .contenido{
+        margin-top :0;
+        height: 150px;
+        
+    }
+    #tiposDeMovil{
+        flex-direction: row;
+        height: 400px;
+    }
+    .contenidoCentrado{
+        flex-direction: column;
+        width: 30vw;
+    }
+    .jsmovil{
+        height: 400px;
+        width: 70vw;
+        margin:auto;
+    }
+    .botonBasic{
+        margin:0 auto;
+        width: 90px;
+        font-size: 9px;
+    }
+    .jsmovil>img{
+        margin: auto;
+        height:  auto;
+        width: 200px;
+    }
+    .upFooter{
+        height: 300px;
+        margin-bottom: 40px;
+    }
+    .upFooter>img{
+        margin:auto;
+        height: 200px;
+        width: auto;
+    }
+    .upFooter>.upBotones{
+        width: 300px;
+    }
+    .upButton{
+        margin: auto;
+    }
+}
+@media screen and  (min-width: 570px) and (max-width: 1000px){
+    .imagen{
+        margin-top: 0;
+        background-image: url("../imagenes/blackfriday2.jpg");
+        background-position: center;
+    }
+    .contenido{
+        margin-top :0;
+        height: 230px;
+        
+    }
+    #tiposDeMovil{
+        flex-direction: row;
+        height: 400px;
+    }
+    .contenidoCentrado{
+        flex-direction: column;
+        width: 25vw;
+    }
+    .jsmovil{
+        height: 400px;
+        width: 75vw;
+        margin:auto;
+    }
+    .botonBasic{
+        margin:0 auto;
+        width: 90px;
+    }
+    .jsmovil>img{
+        margin: auto;
+        height:  350px;
+        width: auto;
+    }
+    .upFooter{
+        height: 400px;
+    }
+    .upFooter>img{
+        margin:auto;
+        height: 300px;
+        width: auto;
+    }
+    .upFooter>.upBotones{
+        width: 400px;
+    }
+    .upButton{
+        margin: auto;
+    }
+}
