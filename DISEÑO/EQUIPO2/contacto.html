@@ -9,44 +9,47 @@
     <link href="estilos/css/footer.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="menu">
-        <ul class="nav">
-            <li id="lilogo" class="lilogo"><a href="index.html"><img src="estilos\imagenes\logo.png"></a></li>
-            <li class="lidesp"><a href="producto1.html">PRODUCTO</a></li>
-            <li><a href="contacto.html">CONTÁCTANOS</a></li>
-            <li id="buscador" class="buscador"><input type="text"/><a href="" id="idbuscador"><img src="estilos\imagenes\lupa1.png"></a><a href=""><img src="estilos\imagenes\carrito.png" alt=""></a></li>
-        </ul>
+    <div id="contenidoContacto">
+        <div class="menu">
+            <ul class="nav">
+                <li id="lilogo" class="lilogo"><a href="index.html"><img src="estilos\imagenes\logo.png"></a></li>
+                <li class="lidesp"><a href="producto1.html">PRODUCTO</a></li>
+                <li><a href="contacto.html">CONTACTANOS</a></li>
+                <li id="buscador" class="buscador"><input type="text"/><a href="" id="idbuscador"><img src="estilos\imagenes\lupa1.png"></a><a href=""><img src="estilos\imagenes\carrito.png" alt=""></a></li>
+            </ul>
+        </div>
+        
+        <div id="formulario">
+            <h1>CONTACTO</h1>
+            <form name="frmContacto" id="frmContacto" action="mailto:mimovil@correo.com" method="post" enctype="text/plain">
+                <div id="nombreApellidos">
+                    <input type="text" minlength="1" placeholder="Nombre">
+                    <input type="text" minlength="1" placeholder="Apellidos">
+                </div>
+                <input type="text" minlength="1" placeholder="Correo electrónico">
+                <textarea name="mensaje" id="mensaje" placeholder=" Mensaje"></textarea>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+        <footer class="footer">
+                <div class="condiciones">
+                    <div class="condiciones1">
+                        <a href=""> Ayuda sobre accesibilidad</a>
+                        <a href=""> Condiciones de compra </a>
+                        <a href=""> Politica de privacidad</a>
+                    </div>
+                    <div class="condiciones2">
+                        <a href=""> Politica de cookies</a>
+                        <a href=""> Aviso legal </a>
+                        <a href=""> Mapa del sitio</a>
+                    </div>
+                </div>
+                <div class="redes">
+                    <a href="https://www.twitter.com">TWITTER</a>
+                    <a href="https://www.faceook.com">FACEBOOK</a> 
+                    <a href="https://www.instagram.com">INSTAGRAM</a>
+                </div>
+        </footer>
     </div>
-    <div id="formulario">
-        <h1>CONTACTO</h1>
-        <form name="frmContacto" id="frmContacto" action="mailto:mimovil@correo.com" method="post" enctype="text/plain">
-            <div id="nombreApellidos">
-                <input type="text" minlength="1" placeholder="Nombre">
-                <input type="text" minlength="1" placeholder="Apellidos">
-            </div>
-            <input type="text" minlength="1" placeholder="Correo electrónico">
-            <textarea name="mensaje" id="mensaje" placeholder=" Mensaje"></textarea>
-            <button type="submit">ENVIAR</button>
-        </form>
-    </div>
-    <footer class="footer">
-        <div class="condiciones">
-            <div class="condiciones1">
-                <a href=""> Ayuda sobre accesibilidad</a>
-                <a href=""> Condiciones de compra </a>
-                <a href=""> Politica de privacidad</a>
-            </div>
-            <div class="condiciones2">
-                <a href=""> Politica de cookies</a>
-                <a href=""> Aviso legal </a>
-                <a href=""> Mapa del sitio</a>
-            </div>            
-    </div>
-    <div class="redes">
-        <a href="https://www.twitter.com">TWITTER</a>
-        <a href="https://www.faceook.com">FACEBOOK</a> 
-        <a href="https://www.instagram.com">INSTAGRAM</a>
-    </div>
-</footer>
 </body>
 </html>

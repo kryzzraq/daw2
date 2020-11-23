@@ -1,27 +1,31 @@
 footer {
-    background-color: black;
+    position: absolute;
     bottom: 0;
+    background-color: black;
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     color: white;  
+    padding:20px;
 }
 
 footer .condiciones{
-   display: flex;
-   margin-top :20px;
+    display: flex;
+    text-align: center;
+   
 }
 footer .condiciones a{
-    margin:10px;
-    padding:15px 10px;
+    margin: 0px 5px 5px 5px;
     text-decoration: none;
     color:white;
 }
 footer .redes{    
-    display: flex;
+
     padding:5px;
     text-decoration: none;
+    
 }
 footer .redes a{
     text-decoration: none;

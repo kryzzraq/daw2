@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+}
+.contenido{
+    position: relative;
+    margin-top: 150px;
+    width:100%;
+    text-align: center;
+}
+.comprar{
+    margin-top: 30px;
+}
+.comprar a{
+    margin-top: 2%;
+    padding: 15px 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 40px;
+
+}
+.comprar a:hover{
+    background-color: rgb(59, 59, 59);
+    
+}
+.imagen{
+    margin-top: 20px;
+}
+.imagen img{
+    width: 100vw;
+}
+.especs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px auto 100px auto;
+    width: 1100px;
+}
+
+.especs div{
+    width: 300px;
+    text-align: justify;
+    margin: 1px;
+}
+.especs div h2{
+    text-align:center;
+}
+.camara{
+    display: flex;
+    height: 800px;
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.desc{
+    margin-top: 20px;
+    width: 25%;
+    text-align: justify;
+    
+}
+.cimagenes{
+    width: 75%;
+    padding-left: 10px;
+}
+.cimgsup{
+    display: flex;
+    height: 45%;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+.img1, .img2, .img3{    
+    width: 33%;
+    height: auto;
+}
+
+.cimgsub{
+    display: flex;
+    height: 55%;
+    justify-content: space-between;
+}
+.img4, .img5{
+    width: 49.5%;
+    height: auto;
+}
+.img1{
+    border-radius: 0 0 20px 0;
+}
+.img2{
+    border-radius: 0 0 20px 20px;
+}
+.img3{
+    border-radius: 0 0 0 20px;
+}
+.img4{
+    border-radius: 0 20px 0 0 ;
+}
+.img5{
+    border-radius: 20px 0 0 0;
+}
+
+@media screen and  (max-width: 570px){
+    .contenido{
+        margin-top: 0px;
+    }
+
+    .cabecera{
+        margin-top: 30px;
+    }
+
+    .especs{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 75vw;
+        margin-bottom: 20px;
+    }
+
+    .especs div{
+        margin-top: 30px;
+        width: 75vw;
+    }
+
+    .camara{
+        width: 90vw;
+        flex-direction: column;
+    }
+    
+    .desc{
+        width: 90vw;
+    }
+
+    .desc h2{
+        text-align: center;
+    }
+
+    .cimagenes{
+        width: 90vw;
+        margin-top: 10px
+    }
+    
+    .cimgsup{
+        flex-direction: row;
+    }
+
+    .cimgsup img{
+        width: 30vw;
+        height: 150px;
+        margin-right: 5px;
+        border-radius: 20px;
+    }
+
+    .cimgsub{
+        display: none;
+    }
+
+}
+@media screen and  (min-width: 570px) and (max-width: 1000px){
+    .contenido{
+        margin-top: 0px;
+        height: 2850px;
+    }
+
+    .cabecera{
+        margin-top: 30px;
+    }
+    .especs{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 75vw;
+    }
+
+    .especs div{
+        margin-top: 30px;
+        width: 75vw;
+    }
+
+    .camara{
+        width: 90vw;
+        flex-direction: column;
+    }
+    
+    .desc{
+        width: 90vw;
+    }
+
+    .desc h2{
+        text-align: center;
+    }
+
+    .cimagenes{
+        width: 90vw;
+        margin-top: 10px
+    }
+}
