@@ -5,18 +5,19 @@ class Calculadora{
         this.operando2 = ''
         this.operador = ''
         this.resultado = ''
+        this.boolCientifica = false;
     }
 
-    pintarEnDisplay(boton){
+    pintarEnDisplay = (boton) => {
         if(display.value.length < 10)
             display.value+=boton.value;
     }
     
-    borrarUltimoValor(){
+    borrarUltimoValor = () => {
         display.value=''
     }
 
-    borrarTodo(){
+    borrarTodo = () => {
         this.borrarUltimoValor()
         this.operando1 = ''
         this.operando2 = ''
@@ -24,16 +25,13 @@ class Calculadora{
         this.resultado=''
     }
 
-    operar(valorBoton){        
-        if(this.operador !== ''){
-            this.operar()
-        }
+    operar = (valorBoton) => {
         this.operando1 = display.value
         this.operador = valorBoton
         display.value = ''     
     }
 
-    igualar(){
+    igualar= ()=>{
         this.operando2 = display.value
         switch (this.operador){
             case '+':                
@@ -53,7 +51,25 @@ class Calculadora{
             display.value = this.resultado
     }
 
-    cientifica(){}
+    cientifica = () => {        
+        if(!this.boolCientifica){
+            BotonesCientifica.style.display = "block"
+            divCalcu.style.height="550px"            
+            this.boolCientifica = true
+        } else {
+            BotonesCientifica.style.display = "none"
+            divCalcu.style.height="490px"
+            this.boolCientifica = false
+        }
+    }
+
+    MasMenos = () =>{
+        if(display.value.search('-')){
+            display.value = "-"+display.value;
+        }else{
+            display.value = display.value.replace("-","")
+        }
+    }
     
 }
 
