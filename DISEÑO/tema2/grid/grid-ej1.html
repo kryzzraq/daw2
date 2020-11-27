@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: [x1]auto[x2] auto[x3] auto[x4];
+            grid-template-rows: [y1]80px[y2] 80px[y3];
+        }
+        #container>div{
+            border: 3px solid black;
+        }
+        #item1{
+            grid-row: 1/3;
+        }
+        #item4{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="item1">1</div>
+        <div id="item2">2</div>
+        <div id="item3">3</div>
+        <div id="item4">4</div>
+    </div>
+</body>
+</html>

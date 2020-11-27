@@ -10,11 +10,12 @@ boton6.addEventListener("click",()=>{miCalcu.pintarEnDisplay(boton6)})
 boton7.addEventListener("click",()=>{miCalcu.pintarEnDisplay(boton7)})
 boton8.addEventListener("click",()=>{miCalcu.pintarEnDisplay(boton8)})
 boton9.addEventListener("click",()=>{miCalcu.pintarEnDisplay(boton9)})
+botonPunto.addEventListener("click", () => {miCalcu.pintarPunto()})
 
 //Botones de borrar todo y poner signo mas|menos
 botonCE.addEventListener("click", ()=>{miCalcu.borrarUltimoValor()})
 botonC.addEventListener("click",()=>{miCalcu.borrarTodo()})
-botonMasMenos.addEventListener("click",()=>{miCalcu.MasMenos()})
+botonMasMenos.addEventListener("click",()=>{miCalcu.masMenos()})
 
 //Botones de operación e igualar
 botonSumar.addEventListener("click",()=>{miCalcu.operar(botonSumar.value)})
