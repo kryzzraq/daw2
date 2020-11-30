@@ -44,7 +44,7 @@ class Calculadora{
                 this.resultado = parseFloat(this.operando1) * parseFloat(this.operando2)               
                 break;
             case '/':
-                this.resultado = parseFloat(this.operando1) * parseFloat(this.operando2)               
+                this.resultado = parseFloat(this.operando1) / parseFloat(this.operando2)               
                 break;
         }
             this.operador=''
