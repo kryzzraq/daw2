@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: gainsboro;
+        }
+        #gridContainer {
+            display: grid;
+            grid-template-columns: repeat(3, 310px);
+            grid-template-rows: auto;
+            justify-content: space-evenly;
+        }
+
+        img {
+            object-fit: contain;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: white;
+            border: black 3px solid;
+            height: auto;
+            padding:20px;
+        }
+        button{
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding:10px;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover{
+            background-color: rgb(43, 43, 43);
+        }
+        p{
+            text-align: justify;
+            padding: 10px 0;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gridContainer">
+        <div id="item">
+            <div id="texto">
+                <img src="https://picsum.photos/id/908/600/400" alt="">
+            <h2>Montañas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum dolores eaque voluptate quo odio hic,
+                in voluptatum autem mollitia recusandae fuga ea laborum fugiat itaque? Vero quidem et excepturi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quidem laudantium maxime quod! Inventore,
+                delectus? Odit, sit esse veniam eum nihil quidem saepe totam at minima corrupti aspernatur, nesciunt.
+            </p>
+            </div>
+            
+            <div id="boton"><button>More...</button></div>
+        </div>
+        <div id="item">
+            <div id="texto">
+                <img src="https://picsum.photos/id/961/600/400" alt="">
+            <h2>Montañas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum dolores eaque voluptate quo odio hic,
+                in voluptatum autem mollitia recusandae fuga ea laborum fugiat itaque? Vero quidem et excepturi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quidem laudantium maxime quod! Inventore,
+                delectus? .
+            </p>
+            </div>            
+            <div id="boton"><button>More...</button></div>
+        </div>
+        <div id="item">
+            <div id="texto">
+                 <img src="https://picsum.photos/id/327/600/400" alt="">
+            <h2>Montañas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum dolores eaque voluptate quo odio hic,
+                in voluptatum autem mollitia recusandae fuga ea laborum fugiat itaque? Vero quidem et excepturi!
+            </p>
+            </div>
+           
+            <div id="boton"><button>More...</button></div>
+        </div>
+    </div>
+</body>
+
+</html>

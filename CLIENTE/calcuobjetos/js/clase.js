@@ -1,4 +1,5 @@
 //Creando mi clase Calculadora
+const LONG_DISPLAY =10;
 class Calculadora{
     constructor(){
         this.operando1 = ''
@@ -10,21 +11,23 @@ class Calculadora{
         this.boolOperado = false
     }
 
+    //Función para pintar en el display
     pintarEnDisplay = (boton) => {
-       
-        if(display.value.length < 10){
-            if(this.operador == ''){
-                display.value+=boton.value;
-                this.operando1 = display.value
-            } else{
-                if(this.boolOperado){
-                    display.value = ''
-                    this.boolOperado = false
+            if(display.value.length < LONG_DISPLAY){
+                //si el operador está vacío lo asigno
+                if(this.operador == ''){
+                    display.value+=boton.value;
+                    this.operando1 = display.value
+                } else{
+                    //si está asignado, cambio el display al operador 2
+                    if(this.boolOperado){
+                        display.value = ''
+                        this.boolOperado = false
+                    }
+                    display.value+=boton.value;
+                    this.operando2 = display.value
                 }
-                display.value+=boton.value;
-                this.operando2 = display.value
-            }
-        }
+            }        
     }
     
     borrarUltimoValor = () => {
@@ -39,15 +42,16 @@ class Calculadora{
         this.operando2 = ''
         this.operador = ''
         this.resultado=''
-        this.boolPunto = false
-        this.boolOperado = false
     }
 
+    //resolver operación 
     operar = (valorBoton) => {
         this.borrarUltimoValor()
+        //si el operador está vacío, asignamos
         if(this.operador == ''){
             this.operador = valorBoton
         }else{
+            //si no está vacío, opero
             this.igualar()
             this.boolOperado = true         
         }
@@ -55,26 +59,28 @@ class Calculadora{
     }
 
     igualar= ()=>{
-        switch (this.operador){
-           
-            case '+':                
-                this.resultado = parseFloat(this.operando1) + parseFloat(this.operando2)
-                break;
-            case '-':
-                this.resultado = parseFloat(this.operando1) - parseFloat(this.operando2)               
-                break;
-            case 'x':
-                this.resultado = parseFloat(this.operando1) * parseFloat(this.operando2)               
-                break;
-            case '/':
-                this.resultado = parseFloat(this.operando1) / parseFloat(this.operando2)               
-                break;
+        if(this.operando1 !='' && this.operando2 != '' && this.operador!='' ){
+            switch (this.operador){
+            
+                case '+':                
+                    this.resultado = parseFloat(this.operando1) + parseFloat(this.operando2)
+                    break;
+                case '-':
+                    this.resultado = parseFloat(this.operando1) - parseFloat(this.operando2)               
+                    break;
+                case 'x':
+                    this.resultado = parseFloat(this.operando1) * parseFloat(this.operando2)               
+                    break;
+                case '/':
+                    this.resultado = parseFloat(this.operando1) / parseFloat(this.operando2)               
+                    break;
+            }
+                display.value = this.resultado
+                this.operando1 = this.resultado
+                this.operando2 = ''
+                this.operador = ''
+                this.boolOperado = true
         }
-            display.value = this.resultado
-            this.operando1 = this.resultado
-            this.operando2 = ''
-            this.operador = ''
-            this.boolOperado = true
     }
 
     cientifica = () => {        
