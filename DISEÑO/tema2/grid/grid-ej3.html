@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+            grid-template-rows: [x1] 100px [x2] 100px [x3] 100px [x4] 100px [x5];
+            column-gap: 10px;
+            row-gap: 10px;
+            text-align: center;
+        }
+        #container>div{
+            background-color: tomato;
+        }
+        #item1{
+            grid-column: y1/y4;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="item1">1</div>
+        <div id="item2">2</div>
+        <div id="item3">3</div>
+        <div id="item4">4</div>
+    </div>
+</body>
+</html>

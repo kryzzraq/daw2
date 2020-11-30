@@ -43,7 +43,7 @@
 }
 #cientifica{
     background-image: url("test-tube.png");
-    background-size: contain;
+    background-size: 30px ;
     background-repeat: no-repeat;
     background-position: center;
 }

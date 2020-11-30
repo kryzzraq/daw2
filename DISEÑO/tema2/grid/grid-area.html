@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-rows: 1fr 5fr 1fr;
+            grid-template-areas:    "head head menu"
+                                    "main main main"
+                                    "foot foot foot";
+            column-gap: 20px;
+            row-gap: 40px;
+        }
+        #item1{
+            grid-area: head;
+            background-color: darkcyan;
+        }
+        #item2{
+            grid-area: menu;
+            background-color: darkred;
+        }
+        #item3{
+            grid-area: main;
+            background-color: darksalmon;
+        }
+        #item4{
+            grid-area:foot;
+            background-color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="item1">1</div>
+        <div id="item2">2</div>
+        <div id="item3">3</div>
+        <div id="item4">4</div>
+    </div>
+</body>
+</html>
