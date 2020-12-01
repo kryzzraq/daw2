@@ -10,6 +10,7 @@ let boton7 = document.getElementById("btnSiete")
 let boton8 = document.getElementById("btnOcho")
 let boton9 = document.getElementById("btnNueve")
 
+
 //Creando variables de botones de operaciones
 let botonMasMenos = document.getElementById("btnMasMenos")
 let botonPunto = document.getElementById("btnPunto")
@@ -22,6 +23,20 @@ let botonC = document.getElementById("btnC")
 let botonCE = document.getElementById("btnCE")
 let botonCientifica = document.getElementById("cientifica")
 let display = document.getElementById("pantalla")
+
+//variables de la parte cientifica
+let botonRaiz  = document.getElementById("raiz")
+let botonHyp = document.getElementById("hyp")
+let botonTan = document.getElementById("tan")
+let botonElevado = document.getElementById("elevado")
+let botonAcosh = document.getElementById("acosh")
+let botonCos = document.getElementById("cos")
+let botonMod = document.getElementById("mod")
+let botonAsinh = document.getElementById("asinh")
+let botonSin = document.getElementById("sin")
+let botonPI = document.getElementById("PI")
+let botonE = document.getElementById("e")
+let botonLog = document.getElementById("log")
 
 //divs que modifico
 let BotonesCientifica = document.getElementById("botonesCientifica")
