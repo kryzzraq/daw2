@@ -67,11 +67,9 @@ class Calculadora{
     cientifica = () => {        
         if(!this.boolCientifica){
             BotonesCientifica.style.display = "block"
-            divCalcu.style.height="580px"            
             this.boolCientifica = true
         } else {
             BotonesCientifica.style.display = "none"
-            divCalcu.style.height="490px"
             this.boolCientifica = false
         }
     }
@@ -128,41 +126,43 @@ class Calculadora{
     operacionCientifica = (value) =>{
         this.borrarUltimoValor()
         this.operadorCient = value
-        switch (this.operadorCient){
-            case 'raiz':
-                if(parseFloat(this.operando1)>0)  this.resultado = Math.sqrt(parseFloat(this.operando1))
-                else {
-                    display.value = "Syntax error"
-                }
-                break
-            case 'tan':
-                this.resultado = Math.tan(parseFloat(this.operando1))
-                break
-            case 'cos':
-                this.resultado = Math.cos(parseFloat(this.operando1))
-                break;
-            case 'log':
-                this.resultado = Math.log(parseFloat(this.operando1))
-                break
-            case 'sin':
-                this.resultado = Math.sin(parseFloat(this.operando1))
-                break
-            case 'atan':
-                this.resultado = 1 / Math.atan(parseFloat(this.operando1))
-                break
-            case 'acosh':
-                this.resultado = 1 / Math.acosh(parseFloat(this.operando1))
-                break
-            case 'asinh':
-                this.resultado = 1 / Math.asinh(parseFloat(this.operando1))
-                break
-        }
-        display.value = this.resultado
-        this.operando1 = this.resultado
-        this.operadorCient = ''
+        if(this.operando1 !='' ){
+            switch (this.operadorCient){
+                case 'raiz':
+                    if(parseFloat(this.operando1)>0)  this.resultado = Math.sqrt(parseFloat(this.operando1))
+                    else {
+                        display.value = "Syntax error"
+                    }
+                    break
+                case 'tan':
+                    this.resultado = Math.tan(parseFloat(this.operando1))
+                    break
+                case 'cos':
+                    this.resultado = Math.cos(parseFloat(this.operando1))
+                    break;
+                case 'log':
+                    this.resultado = Math.log(parseFloat(this.operando1))
+                    break
+                case 'sin':
+                    this.resultado = Math.sin(parseFloat(this.operando1))
+                    break
+                case 'atan':
+                    this.resultado = Math.atan(parseFloat(this.operando1))
+                    break
+                case 'acosh':
+                    this.resultado = Math.acosh(parseFloat(this.operando1))
+                    break
+                case 'asinh':
+                    this.resultado = Math.asinh(parseFloat(this.operando1))
+                    break
+            }
+            display.value = this.resultado
+            this.operando1 = this.resultado
+            this.operadorCient = ''
+        }        
     }
 
-    igualar= ()=>{
+    igualar = ()=>{
         if(this.operando1 !=='' && this.operando2 !== '' && this.operador!==''){
             switch (this.operador){            
                 case '+':                

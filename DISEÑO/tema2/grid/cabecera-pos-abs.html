@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bloqueCabecera{
+            position: relative;
+            height: 60vh;
+        }
+        .bloqueCabecera >img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .grid-container{
+            width: 500px;
+            position: absolute;
+            top:50%;
+            left: 80px;
+            transform: translate(0%, -50%);
+        }
+        .item1{
+            letter-spacing: 5px;
+            font-size: 30px;
+        }
+        .item2{
+            line-height: 140%;
+        }
+        .item3{
+            margin-top:20px;
+            text-align: center;
+        }
+        button{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloqueCabecera">
+        <img src="https://picsum.photos/id/1068/1300/600" alt="">
+        <div class="grid-container">        
+            <div class="grid-item item1">STATE OF THE ART</div>
+            <div class="grid-item item2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sint non laborum excepturi beatae earum qui, exercitationem aperiam a voluptates blanditiis accusantium esse deserunt modi, cum ratione praesentium delectus quod.</div>
+            <div class="grid-item item3"><button>TAKE A LOOK</button></div>
+        </div>
+    </div>    
+</body>
+</html>

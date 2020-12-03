@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: 40%;
+            grid-template-rows: 20% 25% 20%;
+            align-content: center;
+            height: 60vh;
+            background-image: url("https://picsum.photos/id/189/1200/400");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .grid-item{
+            margin-left: 80px;
+        }
+        .item1{
+            letter-spacing: 4px;
+            font-size: 30px;
+            font-weight: 800;
+            text-align: center;
+            padding:20px 0px;
+        }
+        .item2{
+            text-align: justify;
+            line-height: 140%;
+        }
+        .item3{
+            align-self: end;
+            justify-self: center;
+        }
+        button{
+            background-color: black;
+            color:white;
+            border: 0;
+            padding: 15px;
+            letter-spacing: 4px;
+            font-size: 10px;
+        }
+        button:hover{
+            background-color: rgb(34, 34, 34);
+        }
+        @media screen and (max-width: 640px){
+            .grid-container{
+                justify-content: center;
+                grid-template-rows: repeat(3,auto);
+            }
+            .grid-item{
+                margin-left: 0;
+            }
+            .item3{
+                margin-top: 10px;
+            }
+        }
+        @media screen and (max-width: 1200px) and (min-width: 640px){
+            .grid-container{
+                grid-template-rows: repeat(3,auto);
+            }
+            .item3{
+                margin-top:20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">STATE OF THE ART</div>
+        <div class="grid-item item2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sint non laborum excepturi beatae earum qui, exercitationem aperiam a voluptates blanditiis accusantium esse deserunt modi, cum ratione praesentium delectus quod.</div>
+        <div class="grid-item item3"><button>TAKE A LOOK</button></div>
+    </div>
+</body>
+</html>

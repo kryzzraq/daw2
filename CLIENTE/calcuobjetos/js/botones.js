@@ -41,3 +41,4 @@ let botonLog = document.getElementById("log")
 //divs que modifico
 let BotonesCientifica = document.getElementById("botonesCientifica")
 let divCalcu = document.getElementById("calculadora")
+let divBotones = document.getElementById("botones")
