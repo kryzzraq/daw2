@@ -9,7 +9,7 @@ html,body{
 }
 header{
     height: 90px;
-    background-image: url("imagenes/cabecera.png");
+    background-image: url("imagenes/cabecera2.png");
     background-repeat: repeat-x;
     display: grid;
     grid-template-columns: auto auto;
