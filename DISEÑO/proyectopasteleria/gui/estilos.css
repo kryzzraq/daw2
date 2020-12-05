@@ -2,6 +2,7 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'Verdana';
 }
 html,body{
     width: 100vw;
@@ -9,7 +10,11 @@ html,body{
 }
 header{
     height: 90px;
+<<<<<<< HEAD
     background-image: url("imagenes/cabecera2.png");
+=======
+    background-image: url("imagenes/cabecera/cabecera2.png");
+>>>>>>> 0a36217df6a0820a7e9d153e82c4fe0133bf38b0
     background-repeat: repeat-x;
     display: grid;
     grid-template-columns: auto auto;
@@ -27,4 +32,44 @@ header{
     width: auto;
     justify-self: end;
     align-self: center;
+}
+.menuDulces{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.menuDulces>a{
+    color:#2e2e2e;
+    text-decoration: none;
+    padding:5px 10px;
+    border: 3px #ffa3f1 dashed;
+    border-radius: 10px;
+}
+.menuDulces>a:hover{
+    color: #ffa3f1;
+}
+.grid-container1{
+    
+    display: grid;
+    grid-template-columns: 30% 30% 20% 20%;
+    grid-template-rows: 30% 30% 30% 10%;
+    width: 80%;
+    height: auto;
+    border: 2px solid red;
+    margin:20px auto;}
+.grid-container1 >.item1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+
+}
+.grid-container1 >.item2{
+    grid-column: 2/5;
+    grid-row: 2/4;
+}
+.grid-container1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

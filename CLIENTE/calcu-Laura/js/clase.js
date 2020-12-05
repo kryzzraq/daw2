@@ -61,9 +61,7 @@ class Calculadora{
         this.operador = valorBoton
     }
 
-    
-
-
+    //esta función esconde o muestra la parte científica
     cientifica = () => {        
         if(!this.boolCientifica){
             BotonesCientifica.style.display = "block"
@@ -74,6 +72,8 @@ class Calculadora{
         }
     }
 
+    //esta función pone un menos si no lo encuentra o lo quita si lo encuentra
+    //además guarda el display en la variable 1 o la 2 según corresponda
     masMenos = () =>{
         if(display.value.search('-')){
             display.value = "-"+display.value;
@@ -86,6 +86,7 @@ class Calculadora{
         
     }
 
+    //esta función pone un punto si no lo encuentra
     pintarPunto = () =>{
         if(!this.boolPunto){
             if(display.value.length<1){
@@ -97,6 +98,7 @@ class Calculadora{
         }
     }
 
+    //esta función pinta el número PI o el número de eulen
     pintarPI_E = (valor) =>{   
         if(this.operando1 ===''){
             switch (valor){
@@ -123,6 +125,7 @@ class Calculadora{
         } 
     }
 
+    //Esta función hace operaciones cuando son operaciones de sólo un operador, son las operaciones científicas
     operacionCientifica = (value) =>{
         this.borrarUltimoValor()
         this.operadorCient = value
@@ -131,37 +134,39 @@ class Calculadora{
                 case 'raiz':
                     if(parseFloat(this.operando1)>0)  this.resultado = Math.sqrt(parseFloat(this.operando1))
                     else {
-                        display.value = "Syntax error"
+                        this.resultado = "Syntax 3rror"
                     }
                     break
                 case 'tan':
-                    this.resultado = Math.tan(parseFloat(this.operando1))
+                    this.resultado = (Math.tan(parseFloat(this.operando1))).toFixed(6)
                     break
                 case 'cos':
-                    this.resultado = Math.cos(parseFloat(this.operando1))
+                    this.resultado = (Math.cos(parseFloat(this.operando1))).toFixed(6)
                     break;
                 case 'log':
-                    this.resultado = Math.log(parseFloat(this.operando1))
+                    this.resultado = (Math.log(parseFloat(this.operando1))).toFixed(6)
                     break
                 case 'sin':
-                    this.resultado = Math.sin(parseFloat(this.operando1))
+                    this.resultado = (Math.sin(parseFloat(this.operando1))).toFixed(6)
                     break
                 case 'atan':
-                    this.resultado = Math.atan(parseFloat(this.operando1))
+                    this.resultado = (Math.atan(parseFloat(this.operando1))).toFixed(6)
                     break
                 case 'acosh':
-                    this.resultado = Math.acosh(parseFloat(this.operando1))
+                    this.resultado = (Math.acosh(parseFloat(this.operando1))).toFixed(6)
                     break
                 case 'asinh':
-                    this.resultado = Math.asinh(parseFloat(this.operando1))
+                    this.resultado = (Math.asinh(parseFloat(this.operando1))).toFixed(6)
                     break
             }
             display.value = this.resultado
             this.operando1 = this.resultado
+            if(this.operando1 === 'Syntax 3rror') this.operando1 = ''
             this.operadorCient = ''
         }        
     }
 
+    //funcion para operar con 2 operandos
     igualar = ()=>{
         if(this.operando1 !=='' && this.operando2 !== '' && this.operador!==''){
             switch (this.operador){            
@@ -172,10 +177,11 @@ class Calculadora{
                     this.resultado = parseFloat(this.operando1) - parseFloat(this.operando2)               
                     break
                 case 'x':
-                    this.resultado = parseFloat(this.operando1) * parseFloat(this.operando2)               
+                    this.resultado = (parseFloat(this.operando1) * parseFloat(this.operando2)).toFixed(4)            
                     break
                 case '/':
-                    this.resultado = parseFloat(this.operando1) / parseFloat(this.operando2)               
+                    if(this.operando2 == '0') this.resultado = 'Syntax 3rror'
+                    else  this.resultado = (parseFloat(this.operando1) / parseFloat(this.operando2)).toFixed(4)
                     break
                 case 'elevado':
                     this.resultado = Math.pow(parseFloat(this.operando1),parseFloat(this.operando2))
@@ -184,11 +190,12 @@ class Calculadora{
                     this.resultado = this.operando1%this.operando2
                     break
                 case 'hyp':
-                    this.resultado = Math.hypot(parseFloat(this.operando1), parseFloat(this.operando2))
+                    this.resultado = (Math.hypot(parseFloat(this.operando1), parseFloat(this.operando2))).toFixed(4)
                     break        
             }
                 display.value = this.resultado
                 this.operando1 = this.resultado
+                if(this.operando1 === 'Syntax 3rror') this.operando1 = ''
                 this.operando2 = ''
                 this.operador = ''
                 this.boolOperado = true
