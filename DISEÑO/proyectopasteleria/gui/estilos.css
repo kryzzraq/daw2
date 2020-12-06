@@ -1,8 +1,5 @@
-/* https://fonts.google.com/specimen/Pacifico?category=Handwriting&sidebar.open=true&selection.family=Pacifico */
-
 *{
     box-sizing: border-box;
-    font-family: 'Verdana';
 }
 html,body{
     width: 100vw;
@@ -10,11 +7,7 @@ html,body{
 }
 header{
     height: 90px;
-<<<<<<< HEAD
-    background-image: url("imagenes/cabecera2.png");
-=======
     background-image: url("imagenes/cabecera/cabecera2.png");
->>>>>>> 0a36217df6a0820a7e9d153e82c4fe0133bf38b0
     background-repeat: repeat-x;
     display: grid;
     grid-template-columns: auto auto;
@@ -25,7 +18,7 @@ header{
     color:white;
     -webkit-text-stroke: 2px #ffa3f1;
     letter-spacing: 4px;
-    text-shadow: rgb(158, 36, 97) 0.1em 0.1em 0.2em;
+    text-shadow: #9e2461 0.1em 0.1em 0.2em;
 }
 #icono{
     height: 80px;
@@ -41,7 +34,8 @@ header{
     margin-top: 10px;
 }
 .menuDulces>a{
-    color:#2e2e2e;
+    color:#3d3d3d;
+    font-weight: bold;
     text-decoration: none;
     padding:5px 10px;
     border: 3px #ffa3f1 dashed;
@@ -49,27 +43,148 @@ header{
 }
 .menuDulces>a:hover{
     color: #ffa3f1;
+    border: 3px #9e2461 dashed;
 }
-.grid-container1{
-    
+.grid-container1{    
     display: grid;
-    grid-template-columns: 30% 30% 20% 20%;
-    grid-template-rows: 30% 30% 30% 10%;
-    width: 80%;
-    height: auto;
-    border: 2px solid red;
-    margin:20px auto;}
-.grid-container1 >.item1{
-    grid-column: 1/3;
-    grid-row: 1/3;
-
+    grid-template-columns: 9% 4.5% 9% 18% 9% 23% 15% 12.5%;
+    grid-template-rows: repeat(5,16%) repeat(2,10%);
+    width: 70%;
+    height: 600px;
+    margin:40px auto;
 }
-.grid-container1 >.item2{
-    grid-column: 2/5;
-    grid-row: 2/4;
-}
-.grid-container1 img{
+.item3 img, .item4 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 35px;
+}
+.grid-container1 >.item3{
+    grid-column: 1/6;
+    grid-row: 1/5;
+
+}
+.grid-container1 .item4{
+    grid-column: 5/9;
+    grid-row: 4/8;
+}
+.grid-container1 .item1{
+    grid-column: 2/7;
+    grid-row: 2/6;
+    border: double 6px #ffdf7d;
+    border-radius: 10px;
+}
+.grid-container1 .item2{
+    grid-column: 4/8;
+    grid-row: 3/7;
+    background-color: #ffc2f6;
+    border-radius: 10px;
+}
+.grid-container1 .item5{
+    flex-direction:  column-reverse;
+    text-align: center;
+    grid-column: 6/8 ;
+    grid-row: 1/4 ;
+    font-family: 'Pacifico';
+    display: flex;
+    justify-content: end;
+}
+.item5>.texto{
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    color: #3d3d3d;
+    align-self: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.item5 .titulo{
+    font-family: 'Pacifico', cursive;
+    font-size: 80px;
+    color:#9e2461;    
+}
+.grid-container1>.item6{
+    justify-self: center;
+    grid-column: 2/5;
+    grid-row: 5/7;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: #3d3d3d;
+    font-size: 23px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.grid-container2, .grid-container3, .grid-container4, .grid-container5, .grid-container6{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,10% 30%) 10% ;
+    grid-template-rows: repeat(2, 10%) 60% repeat(2,10%);
+}
+.grid-container2>.item0, .grid-container4>.item0, .grid-container6>.item0{
+    grid-column: 1/7;
+    grid-row: 3/4;
+    background-color: #8edbee;
+}
+.grid-container2 .item1, .grid-container4 .item1, .grid-container6 .item1{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: #3d3d3d;
+}
+.grid-container2 .item2, .grid-container4 .item2, .grid-container6 .item2{
+    grid-column: 2/3;
+    grid-row: 2/5;
+    
+}
+.grid-container2 .item2 img ,.grid-container4 .item2 img, .grid-container6 .item2 img, 
+.grid-container3 .item2 img, .grid-container5 .item2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.grid-container2 .item3, .grid-container4 .item3, .grid-container6 .item3{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    padding-top:30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: #3d3d3d;
+    text-align: justify;
+}
+
+.grid-container3, .grid-container5{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,10% 30%) 10% ;
+    grid-template-rows: repeat(2, 10%) 60% repeat(2,10%);
+}
+.grid-container3 .item0, .grid-container5 .item0{
+    grid-column: 1/7;
+    grid-row: 3/4;
+    background-color: #ffdf7d;
+}
+.grid-container3 .item1, .grid-container5 .item1{
+    grid-column: 2/4;
+    grid-row: 2/3;    
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: #3d3d3d;
+}
+.grid-container3 .item2, .grid-container5 .item2{
+    grid-column: 4/5;
+    grid-row: 2/5;    
+}
+.grid-container3 .item3, .grid-container5 .item3{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding-top:30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: #3d3d3d;
+    text-align: justify;
 }
