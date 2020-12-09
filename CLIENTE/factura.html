@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+class Factura{
+    constructor(empresa,cliente){
+        this.Empresa = empresa
+        this.Cliente = cliente
+        this.listaProductos = []
+        this.importeTotal = 0
+        this.tipoIva = 0
+        this.formaPago = "" 
+    }
+    añadirProductos = (producto) => {
+        this.listaProductos[this.listaProductos.length] = producto
+        console.log(`Se ha añadido el producto '${producto.descripcion}' al carrito`)
+    }
+    actualizarImporteTotal = () =>{
+        debugger
+        for(let i = 0; i<this.listaProductos.length;i++){
+            this.importeTotal += (this.listaProductos[i].precio * this.listaProductos[i].cantidad)
+        }
+        let totalIva = this.importeTotal * this.tipoIva /100
+        this.importeTotal += totalIva
+        this.importeTotal = this.importeTotal.toFixed(2)
+        return this.importeTotal
+    }
+    setTipoIva = (cantidad) =>{
+        this.tipoIva = cantidad
+        console.log(`Se ha actualizado el IVA al ${cantidad}%` )
+    }
+
+    setFormaPago = (metodo) =>{
+        this.formaPago = metodo
+    }
+}
+class Producto{
+    constructor(descrip,precio,cantidad){
+        this.descripcion = descrip
+        this.precio = precio
+        this.cantidad = cantidad
+    }
+    getPrecio = () => {
+        return this.precio
+    }
+    setCantidad = (numeroDeProductos) =>{
+        this.cantidad = numeroDeProductos
+    }
+   
+}
+class Empresa{
+    constructor(nombreEm, direccionEm, telEm, nifEm){
+        this.nombre = nombreEm
+        this.direccion = direccionEm
+        this.telefono = telEm
+        this.nif = nifEm
+    }
+}
+class Cliente {
+    constructor(nombreCli,direccionCli,telCli,dniCli){
+        this.nombre= nombreCli
+        this.direccion = direccionCli
+        this.telefono = telCli
+        this.dni = dniCli
+    }
+}
+
+var empresa = new Empresa ('nombre', 'direccion',44738483, '4783563874s')
+var cliente = new Cliente ('nomCli','dirCli',394873434,'04873658d')
+var colonia = new Producto ('colonia ralph lauren', 50.32,2)
+var factura1 = new Factura(empresa,cliente)
+var penDrive = new Producto('pendrive 8gb asus',10.5,1)
+
+factura1.añadirProductos(colonia)
+factura1.añadirProductos(penDrive)
+factura1.setTipoIva(21)
+console.log(factura1.actualizarImporteTotal(),'€')
+
+    </script>
+</body>
+</html>
