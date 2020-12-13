@@ -1,0 +1,78 @@
+@font-face{
+    font-family: "fuenteTitulos";
+    src: url("../fuentes/fontTitulo2.ttf");
+}
+*{
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    margin:0;
+}
+.container{
+    height: 700px;
+    width: 100%;
+    background-image: url("../imagenes/bloque5-img1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    align-items: center;   
+}
+.item1,.item2{
+    width: 40%;
+    border-radius: 10px;
+    height: 80%;
+    display:flex;
+    flex-direction: column;
+    padding:50px;
+}
+.item1{
+    background-color: #659E9D90;
+}
+.item2{
+    background-color: #FFFFFF90;
+    
+}
+.item1 >span{
+    font-family: "fuenteTitulos";
+    font-weight: bolder;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding-bottom:20px;
+}
+.item1 .contenido{
+    border-top: white 1px solid;
+}
+.item1 .subtitulo{
+    font-weight: bolder;
+    color: #142f2f;
+}
+.item1 .texto{
+    color: #FFFFFF;
+    text-align: justify;
+}
+.item2 span{
+    font-family: "fuenteTitulos";
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.item2 input, button{
+    padding:13px;
+    margin-bottom: 40px;
+}
+input{
+    color: grey;
+    border: none;
+}
+button{
+    background-color: #659E9D;
+    border: none;
+    color: white;
+}
+button:hover{
+    background-color: #142f2f;
+}
