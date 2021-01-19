@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .containerPrincipal{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 350px;
+            column-gap: 10px;
+        }
+        .container{
+            position: relative;
+        }
+        .container img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .capa1{
+            position:absolute;
+            top: 0;
+            right: 0;
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 0;
+            height: 100%;
+
+            background-color: rgba(0,0,0,0.5);
+
+            transition: .5s ease;
+        } 
+
+        .texto{
+            color: white;
+            white-space: nowrap; /*las letras salgan separadas*/
+        }
+
+        .container:hover .capa1{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="containerPrincipal">
+        <div class="container">
+            <img src="https://picsum.photos/id/598/600/400" alt="">
+            <div class="capa1">
+                <div class="texto">Las oportunidades no pasan, las creas</div>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://picsum.photos/id/598/600/400" alt="">
+            <div class="capa2">
+                <div class="texto">Las oportunidades no pasan, las creas</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

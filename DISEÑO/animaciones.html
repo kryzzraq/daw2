@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            height: 100%;
+            width: 100%;
+        }
+        .contenedor{
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .bloque1, .bloque2, .bloque3{
+            width: 70px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .bloque1{
+            animation-name: animacion1;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: 1;
+
+        }
+        @keyframes animacion1{
+            from{
+                background-color: green;
+            }
+            to{
+                background-color: yellow;
+            }
+        }
+        .bloque1:hover{
+            animation: bote 2s ease ; 
+
+        }
+        @keyframes bote {
+            20%, 50%, 80%{
+                transform: translateY(0);
+            }
+            40%{
+                transform: translateY(30px);
+            }
+            65%{
+                transform: translateY(15px);
+            }
+        }
+
+        .bloque2{
+            animation-name: animacion2;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes animacion2 {
+            0%{
+                background-color: red;
+            }
+            50%{
+                background-color: green;
+            }
+            100%{
+                background-color: yellow;
+            }
+            
+
+            
+        }
+        .bloque3{
+            position: relative;
+            animation-name: animacion3;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            
+        }
+
+        @keyframes animacion3 {
+            0%,100%{
+                background-color: red;
+                top: 0px;
+                right: 0px;
+            }
+            25%{
+                background-color: yellow;
+                top: 200px;
+                right: 0px;
+            }
+            50%{
+                background-color:yellow;
+                top: 200px;
+                right: 200px;
+            }
+            75%{
+                background-color: rgba(134, 5, 134,0.8);
+                top: 0px;
+                right: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="bloque1"></div>
+        <div class="bloque2"></div>
+        <div class="bloque3"></div>
+    </div>
+    
+</body>
+</html>

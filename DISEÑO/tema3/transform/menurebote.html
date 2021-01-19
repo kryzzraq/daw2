@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            margin:0;
+        }
+        .container{
+            position: relative;
+        }
+        .item{
+            position: absolute;
+            width: 150px;
+            text-align: center;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            padding:12px;
+            transition:0.3s cubic-bezier(.22,-1.36,.97,1.67);
+        }
+        .item:hover{
+            left:0;
+        }
+        .item1{
+            background-color: rgb(0, 197, 223);
+            top:0;
+            left: -120px;
+        }
+        .item2{
+            top: 60px;
+            background-color: greenyellow;
+            left: -120px;
+        }
+        .item3{
+            top: 120px;
+            background-color: red;
+            left: -120px;
+        }
+        .item4{
+            top: 180px;
+            background-color: orange;
+            left: -120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Acerca de</div>
+        <div class="item item2">Carrito</div>
+        <div class="item item3">Cookies</div>
+        <div class="item item4">Mapa</div>
+    </div>
+</body>
+</html>

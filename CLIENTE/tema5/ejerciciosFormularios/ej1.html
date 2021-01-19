@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Rellenar</legend>
+
+        <input type="radio" name="idioma" id="idioma" value="idiomaingles">Inglés <br/>
+        <input type="radio" name="idioma" id="idioma" value="idiomafrances">Francés <br/>
+        <input type="radio" name="idioma" id="idioma" value="idiomaaleman">Alemán <br/>
+
+        <select name="conector" id="conector">
+            <option value="usb">USB</option>
+            <option value="paralelo">Paralelo</option>
+            <option value="ps2">PS2</option>
+        </select> <br/>
+
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre"> <br/>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos"><br/>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Indique sus preferencias, por favor</legend>
+        <select name="sexo" id="sexo" size="2">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+        </select> <br/>
+
+        <input type="checkbox" name="sexo1"  value="sexoMujer">Mujer <br/>
+        <input type="checkbox" name="sexo1" value="sexoHombre">Hombre <br/>
+
+        Elija una fecha:<input type="date" name="fecha" > <br/> <br/>
+
+        <button id="enviar" name="enviar">Enviar</button>
+    </fieldset>
+    
+    <div id="contenedor"> </div>
+    <div id="contenedorErrores"></div>
+
+    <script src="ej1.js"></script>
+    
+</body>
+</html>

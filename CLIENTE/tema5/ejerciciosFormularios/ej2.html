@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedor">
+        <form action="" method="" name="">
+            <fieldset>
+                <legend>Indique sus preferencias, por favor</legend>
+                Elija una fecha: <input type="date" name="fecha" id="fecha"><br/>
+                Elija un fichero: <input type="file" name="fichero" id="fichero"> <br/>
+                <input type="radio" name="procesador" id="" value="procesadoramd">AMD
+                <input type="radio" name="procesador" id="" value="procesadorintel_i5">Intel i5
+                <input type="radio" name="procesador" id="" value="procesadorintel_i7">Intel i7                
+            </fieldset>
+            <fieldset>
+                <legend>Indique sus preferencias, por favor</legend>
+                <input type="radio" name="asignatura"  value="asignaturamatematicas" id="">Matemáticas
+                <input type="radio" name="asignatura" value="asignaturahistoria" id="">Historia
+                <input type="radio" name="asignatura" value="asignaturageografia" id="">Geografía
+                <input type="radio" name="asignatura" value="asignaturalengua" id="">Lengua
+                <br/>
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre"> <br/>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" id=""> <br/>
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" id=""> <br/> <br/>
+
+                <label for="colorelejido">Elija un color:</label>
+                <input type="color" name="colorelejido" id=""> <br/>
+
+                <textarea name="textarea" id="" cols="59" rows="6" placeholder="Utilice este cuadro para escribir..."></textarea> <br/>
+
+                <label for="fecha">Elija una fecha:</label>
+                <input type="date" name="fecha" id=""> <br/>
+
+                <select name="idioma" id="">
+                    <option value="ingles">Inglés</option>
+                    <option value="aleman">Alemán</option>
+                    <option value="frances">Francés</option>
+                </select> <br/>
+
+                <label for="hora">Elija una hora:</label>
+                <input type="time" name="hora" id=""> <br/>
+
+                <label for="fichero">Elija un fichero:</label>
+                <input type="file" name="fichero" id=""> <br/>
+
+                <input type="checkbox" name="sexo" value="sexomujer" id="">Mujer 
+                <input type="checkbox" name="sexo" value="sexohombre" id="">Hombre <br/>
+                <button id="enviar" name="enviar">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+    <div id="contenedorErrores"></div>
+</body>
+</html>
