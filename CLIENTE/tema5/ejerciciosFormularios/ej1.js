@@ -20,7 +20,7 @@ pintarDatos = () =>{
     }
 
     //var a = frmConector.options[frmConector.selectedIndex].value;
-    //console.log(a) 
+    //console.log(a) -hfghdfghfghdf-
     
     pintar += `El nombre es: ${frmNombre.value} <br/>` 
     pintar += `Los apellidos son: ${frmApellidos.value} <br/>`
