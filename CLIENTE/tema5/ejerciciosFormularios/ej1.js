@@ -14,12 +14,14 @@ var frmFecha = document.getElementsByName("fecha")
 boton.addEventListener("click", function(){pintarDatos()})
 /* Funciones */
 pintarDatos = () =>{
-    var pintar
+    debugger
+    var pintar =""
+
     for(let i = 0; i<frmIdioma.length; i++){
         pintar += `El elemento ${frmIdioma[i].value} seleccionado es ${frmIdioma[i].checked} <br/>`
     }
 
-    pintar += `El conector elegido es: ${frmConector.value}`
+    pintar += `El conector elegido es: ${frmConector.value}<br/>`
     
     pintar += `El nombre es: ${frmNombre.value} <br/>` 
     pintar += `Los apellidos son: ${frmApellidos.value} <br/>`
