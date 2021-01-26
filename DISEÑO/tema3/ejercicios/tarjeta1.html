@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            margin:0;            
+            
+        }
+        .imagen{
+            width: 400px;
+            height: 400px;
+            background-image: url("https://picsum.photos/id/961/600/400");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .visible{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(86, 134, 197, 0.26);
+            
+            box-shadow:         inset 0px -42px 60px 0px rgba(0, 0, 0, 0.75);
+            font-family:'Times New Roman' ;
+            
+        }   
+        .texto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30%;
+            transition: 1s;
+        }     
+        .texto1{
+            font-size: 25px;
+            color: white;
+            padding: 10px;
+        }
+        .texto2{
+            color: white;
+            padding: 10px;
+            font-style: italic;
+            font-size: 13px;
+        }
+        .ralla{
+            border-top: 3px solid rgb(221, 191, 151);
+            width: 15%;
+            height: 1px;
+            transition: 1s;
+        }
+        .texto3{
+            padding: 20px;
+        }
+        .oculto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            line-height: 20px;
+            color:white;
+            opacity: 0;
+            transition: 1s;
+        }
+        button{
+            width: 30%;
+            background-color: white;
+            border: 0;
+            border-radius: 5px;
+            height: 25px;
+            color: rgb(82, 82, 82);
+            animation-name: boton;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        .visible:hover{
+            filter: grayscale();
+        }
+        .visible:hover .texto{
+            transform: translateY(-50px);
+        }
+        .visible:hover .oculto{
+            opacity: 1;
+        }
+        .visible:hover .ralla{
+            width: 50%;
+        }
+
+        @keyframes boton {
+            0%, 100%{
+                background-color: white;
+                color: rgb(82, 82, 82);
+            }
+            50%{
+                background-color:grey;
+                color: white;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="imagen">
+        <div class="visible">
+            <div class="texto">
+                <span class="texto1">10 mountains</span>
+            <div class="ralla"></div>
+            <span class="texto2">Inspiration</span>
+            <div class="oculto">
+                <span class="texto3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, corrupti illum facilis.</span>
+                <button>Read Article</button>
+            </div>
+            </div>            
+        </div>        
+                
+    </div>  
+</body>
+</html>

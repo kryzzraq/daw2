@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lista{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+        li{
+            padding: 10px;
+        }
+        .enlace1 .enlace2 .enlace3 .enlace4{
+            position: relative;
+        }
+        .enlace1 .linea{
+            height: 1px;
+            transition: 0.4s;
+            width: 0%;
+            background-color: black;
+        }
+        .enlace1:hover .linea{
+            width: 100%;
+        }
+        .enlace2 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .enlace2 .linea{
+            margin-bottom: -10px;
+            position: absolute;
+            height: 1.5px;
+            width: 0;
+            bottom: 0;
+            right: 0;
+            background-color: black;
+            transition: all 0.4s ease;
+        }
+        .enlace2:hover .linea{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <ul class="lista">
+        <li class="enlace1">
+            <div class="texto">Enlace 1</div>
+            <div class="linea"></div>
+        </li>
+        <li class="enlace2">
+            <div class="texto">Enlace 2</div>
+            <div class="linea"></div>
+        </li>
+        <li class="enlace3">
+            <div class="texto">Enlace 3</div>
+            <div class="linea"></div>
+        </li>
+        <li class="enlace4">
+            <div class="texto">Enlace 4</div>
+            <div class="linea"></div>
+        </li>
+    </ul>
+    
+</body>
+</html>

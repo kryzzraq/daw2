@@ -19,8 +19,7 @@ pintarDatos = () =>{
         pintar += `El elemento ${frmIdioma[i].value} seleccionado es ${frmIdioma[i].checked} <br/>`
     }
 
-    //var a = frmConector.options[frmConector.selectedIndex].value;
-    //console.log(a) -hfghdfghfghdf-
+    pintar += `El conector elegido es: ${frmConector.value}`
     
     pintar += `El nombre es: ${frmNombre.value} <br/>` 
     pintar += `Los apellidos son: ${frmApellidos.value} <br/>`
