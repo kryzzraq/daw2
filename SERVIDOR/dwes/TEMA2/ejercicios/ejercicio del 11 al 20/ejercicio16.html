@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicios tema2_4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="author" content="Laura Martin Vicente" />
+</head>
+<body>
+    <form name="formulario2" method="POST" action="ejercicio16.php">
+        <table>
+            <tr>
+                <td>Número 1:</td>
+                <td>
+                    <input type="text" name="numero1" size="2"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Número 2:</td>
+                <td>
+                    <input type="text" size="2" name="numero2"/>
+                </td>
+            </tr>
+            </table>
+
+            Elige la operación que quieres hacer:
+            <select checked="checked" name="operacion">
+                <option value="1">Sumar</option>
+                <option value="2">Restar</option>
+                <option value="3">Multiplicar</option>
+                <option value="4">Dividir</option>
+                <option value="5">Módulo</option>
+            </select>
+            <input type="submit" value="Enviar"/>
+    </form>
+</body>
+</html>

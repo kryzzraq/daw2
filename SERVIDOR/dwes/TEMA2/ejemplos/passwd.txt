@@ -1,0 +1,1 @@
+usuario1:FXWUuZ.vwXttg:500:501:usuario pepito:/home/usuario1:/bin/bash

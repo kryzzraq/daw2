@@ -1,0 +1,58 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    background-color: darkseagreen;
+}
+header h1{
+    text-align: center ;
+    width: 50%;
+    margin-left: 1.5em;
+}
+#iniciarsesion{
+    text-align: right;
+    border: 1px solid white;
+    width: 20%;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+#cerrarsesion{
+    text-align: center;
+    border: 1px solid white;
+    width: 10%;
+    border-radius: 10px;
+    padding: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+#cuerpo{
+    background-color: darkseagreen;
+    position: fixed;
+    left: 15%;
+    padding: 3em 1em 1em 1em;
+    height: 100%;
+}
+aside{
+    background-color: darkseagreen;
+    height: 50%;
+    width: 15%;
+    border-right: solid 1px white;
+    position: fixed;
+    left: 0%;
+    padding-left: 10px;
+    margin-top: 2.5em;
+    font-size: 1.2em;
+}
+
+footer{
+    background-color: darkseagreen;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    height: 18%;
+}

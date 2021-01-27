@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="pizza" method="GET" action="ejercicio23.php">
+        <div>
+            Elige la masa: 
+            <select name="tamano">
+                <option value="2.95">Mini</option>
+                <option  value="4.95">Mediana</option>
+                <option  value="8.95">Maxi</option>
+            </select><br/>
+            Elige la base:
+            <select name="base">
+                <option value="0">Normal</option>
+                <option value="1">Crujiente</option>
+                <option value="2">Rellena</option>
+            </select><br/>
+            Salsa:
+            <select name="salsa">
+                <option value="0">Ninguna</option>
+                <option value="0.95">Barbacoa</option>
+                <option value="1.45">Carbonara</option>
+            </select><br/>
+            Ingredientes: <br/>
+            Pollo <input type="radio" name="pollo" value="0.55"> <br/>
+            Bacon <input type="radio" name="bacon" value="0.75"> <br/>
+            Jamón <input type="radio" name="jamon" value="0.95"> <br/>
+            Cebolla <input type="radio" name="cebolla" value="0.45"> <br/>
+            Aceitunas <input type="radio" name="aceitunas" value="0.55"> <br/>
+            Pimiento <input type="radio" name="pimiento" value="0.65"> <br/>
+
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .contenedor{
+            position: relative;
+            text-align: center;
+            height: 80px;
+            margin: 200px auto 0 auto;
+            width: 200px;
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        .texto{
+            font-size: 20px;
+        }
+        .borde{
+            position: absolute;
+            background-color: black;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        .bordeArriba{            
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            animation-name: bordeArr;
+            
+        }
+        .bordeDerecha{
+            top: 0;
+            right: 0;
+            width: 3px;
+            height: 0;
+            animation-name: bordeDerec;
+            animation-delay: 1s;
+        }
+        .bordeAbajo{            
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 3px;
+            animation-name: bordeAb;
+            animation-delay: 2s;
+            
+        }
+        .bordeIzquierda{
+            bottom: 0;
+            left: 0;
+            width: 3px;
+            height: 0;
+            animation-name: bordeIzq;
+            animation-delay: 3s;
+        }
+        @keyframes bordeArr{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 100%;
+            }
+        }
+        @keyframes bordeDerec {
+            0%{
+                height: 0;
+            }
+            100%{
+                height: 100%;
+            }
+        }
+        @keyframes bordeAb {
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 100%;
+            }
+        }
+        @keyframes bordeIzq {
+            0%{
+                height: 0;
+            }
+            100%{
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="borde bordeArriba"></div>
+        <div class="borde bordeDerecha"></div>
+        <div class="borde bordeAbajo"></div>
+        <div class="borde bordeIzquierda"></div>
+        <span class="texto">Lorem Ipsum</span>
+    </div>
+</body>
+</html>

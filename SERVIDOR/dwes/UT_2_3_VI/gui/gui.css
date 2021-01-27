@@ -1,0 +1,140 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+body {
+    margin: 0;
+    margin-bottom: 40px;
+}
+/* CSS de la barra de navegación*/
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+* {
+    margin:0px;
+}
+ul.menu li {
+    float: left;
+}
+
+ul.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li.separador {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    cursor: none;
+}
+
+ul.menu li a:hover {
+    background-color: #111;
+}
+
+/* CSS de la cabecera */
+header.cabecera{
+    height: 10%;
+    background-color: #D2D2D2;
+}
+header.cabecera div{
+    display: inline;
+}
+div.login{
+    float: right;
+    border-color: #333333;
+    border-width: 1px;
+    border-style: inset;
+    border-radius: 5px;
+    width: 300px;
+    height: 80%;
+    margin: 3px;
+    padding: 2px 4px;
+}
+
+div.titulo{
+    font-family: "Comic Sans MS";
+    font-size: xx-large;
+    margin-left: 10px;
+    text-align: center;
+    width: 60%;
+    height: 80%;
+    float: left;
+    margin-top: 5px;
+}
+/* CSS del pie  */
+footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    color: white;
+    font-family: "Comic Sans MS";
+    font-size: x-large;
+    text-align: center;
+}
+
+/*  CSS del cuerpo */
+div.cuerpo{
+    background-color: #D2D2D2;
+    height: 86%;
+    min-height: 600px;
+}
+.cajatexto{
+    background-color:#DDD ;
+    color: black;
+    border-style: ridge;
+}
+.boton{
+    cursor: pointer;
+}
+.boton:hover{
+    background-color: #D2D2D2;
+}
+
+form.tbl{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4px;
+    grid-auto-rows: minmax(10px, auto);
+}
+
+label.etiqueta{
+    text-align: right;
+}
+
+form.tbl_datos{
+    display: grid;
+    grid-template-columns: 8% 10%;
+    grid-gap: 4px;
+    grid-auto-rows: minmax(10px, auto);
+    margin-top: 10px;
+}
+p.nota{
+    width: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+form.gridDatos{
+    display: grid;
+    grid-template-columns: 8% 10%;
+    grid-gap: 4px;
+    grid-auto-rows: minmax(10px, auto);
+    padding-top: 10px;
+}

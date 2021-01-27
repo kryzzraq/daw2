@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicios 17</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="author" content="Laura Martin Vicente" />
+</head>
+<body>
+    <form method="GET" action="ejercicio17.php" name="ejercicio17">
+        <fieldset>
+        <legend>Características del borde:</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="tamaño">Tamaño:</label>
+                    </td>
+                    <td>
+                        <input type="number" max="10" min="0" name="tamaño">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="estilo">Estilo:</label>
+                    </td>
+                    <td>
+                        <label for="color">Color:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="estilo">
+                            <option value="solid">Liso</option>
+                            <option value="double">Doble</option>
+                            <option value="dotted">Punteado</option>
+                            <option value="hidden">Oculto</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="color">
+                            <option value="black">Negro</option>
+                            <option value="red">Rojo</option>
+                            <option value="blue">Azul</option>
+                            <option value="yellow">Amarillo</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br/>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

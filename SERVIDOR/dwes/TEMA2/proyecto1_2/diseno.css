@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+h1{
+    text-align: center;
+    font-family: 'Times New Roman';
+}
+
+body{
+    background-image: url("gradiente.jpg");
+    background-size: 100%;
+}
+#contenedor{
+    position:relative;
+    border: black 3px solid;
+    border-radius: 13px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 800px;
+    padding: 40px;
+    margin: 0 auto;
+    height: 380px;
+    margin-top: 30px;
+}
+.row{
+    width: 100%;
+    height: auto;
+    float: left;
+    
+}
+.col{
+    width: 50%;
+    height: auto;
+    padding: 0px 20px;
+    float: left;
+}
+.colAbajo{
+    width: 50%;
+    height: auto;
+    padding: 0px 20px;
+    float: right;
+}
+#datos{
+    display: inline-block;
+    width: 200px;
+    padding: 2px;
+    margin-bottom: 2px;
+    font-family: 'Times New Roman';
+}
+label{
+    display: inline-block;
+    width: 80px;
+    padding: 2px;
+    margin-bottom: 2px;
+    font-family: 'Times New Roman';
+}
+#guardar{
+    margin-top: 3px;
+    background-color: lightgray;
+    border-color: lightgray;
+    font-family: 'Times New Roman';
+}
+#guardar:hover{
+    background-color: rgb(181, 181, 181) ;
+    border-color:rgb(181, 181, 181);
+}
+#select{
+    height: 102px;
+    width: 200px;
+    padding:10px;
+    font-family: 'Times New Roman';
+    font-size: 14px;
+}
+option:hover{
+    background-color: lightskyblue;
+}
+textarea{
+    height: 112px;
+    width: 200px;
+    padding: 10px;
+    font-family: 'Times New Roman';
+    font-size: 14px;
+}

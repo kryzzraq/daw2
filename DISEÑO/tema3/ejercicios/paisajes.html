@@ -45,6 +45,9 @@
             margin: 20px auto 0 auto;
             padding: 5px;
             font-family: arial;
+            opacity: 0;
+            transition: 0.5s;
+            transition-delay: 0.5s;
         }
         .item1{
             background-image: url("https://picsum.photos/id/684/600/400");
@@ -56,6 +59,9 @@
             background-image: url("https://picsum.photos/id/393/600/400");
         }
         .item:hover .capaOculta{
+            opacity: 1;
+        }
+        .item:hover .texto1{
             opacity: 1;
         }
     </style>
