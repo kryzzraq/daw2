@@ -25,7 +25,7 @@ class Aplicacion
         $bbdd = new BBDD();
         $tiposvias = $bbdd->getTiposVias();
         unset($bbdd);
-        echo '<select name="tipovia">';
+        echo '<select name="tipovia" required="required">';
         foreach ($tiposvias as $tipovia)
             echo "<option value=\"{$tipovia['cod']}\">{$tipovia['descri']}</option>";
         echo '</select>';
@@ -34,7 +34,6 @@ class Aplicacion
         $this->printHead();
         $this->printBody();
     }
-
     public function runInsertar($r=null){
         $this->printHead();
         $conex = new BBDD();
@@ -42,16 +41,24 @@ class Aplicacion
           $this->printFormInsertar();
         }else{
             $person = new Persona($r['nombre'],$r['apellidos'],$r['dni'],$r['fechaNac'],$r['tipovia'],$r['nombrevia'],$r['numVia'],$r['telefono'],$r['localidad']);
-            //var_dump($person);
-            var_dump($conex);
+
             $conex->insertar($person);
         }
     }
+    public function runModificar($requ=null){
+        $this->printHead();
+        $conex = new BBDD();
+        if($requ==null){
+            $this->printFormModificar();
+        }
+    }
 
+    public function printFormModificar(){
+        include_once("gui/formularioModificar.php");
+    }
     /*
     public function runListar($requ){
     }
-    public function runModificar($requ){
-    }
+
     */
 }

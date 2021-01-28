@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            margin:0;
+            height: 100%;
+            width: 100%;
+        }
+        .contenedor{
+            position: relative;
+        }
+        .tarjeta{
+            height: 400px;
+            width: 300px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+            transition: 2s;
+        }
+        .contenedor:hover .tarjeta{
+            transform: rotate3d(0,1,0,180deg);
+        }
+        .tarjeta-front{
+            background-image: url("https://picsum.photos/id/314/600/400");
+            background-size: cover;
+            
+        }
+        .tarjeta-back{
+            background-image: url("https://picsum.photos/id/191/600/400");
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="tarjeta tarjeta-front"></div>
+        <div class="tarjeta tarjeta-back"></div>
+    </div>
+</body>
+</html>

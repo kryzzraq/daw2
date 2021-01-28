@@ -1,6 +1,6 @@
 <?php
 class Cuadrado{
-    private $lado;
+    public $lado;
 
     public function setLado($atrib){
         $this->lado = $atrib;
@@ -14,6 +14,9 @@ class Cuadrado{
         return pow($this->lado,2);
     }
 
+    public function __clone(){
+        $this->lado = $this->lado*2;
+    }
 }
 $c1= new Cuadrado();
 $c1->setLado(4);
@@ -22,7 +25,6 @@ $c2 = $c1;
 $c2->setLado(2);
 
 $c3= clone $c1;
-$c3->setLado(5);
 
 
 //Son iguales porque apuntan a la misma referencia de memoria.
@@ -34,4 +36,3 @@ echo "Área de c2: ".$c2->getArea() . "<br/>";
 //Las clonaciones no apuntan a la misma dirección de memoria.
 echo "Perimetro de c3: ".$c3->getPerimetro() . "<br/>";
 echo "Área de c3: ".$c3->getArea() . "<br/>";
-
