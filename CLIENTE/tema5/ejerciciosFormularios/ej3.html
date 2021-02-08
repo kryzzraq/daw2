@@ -7,45 +7,48 @@
 </head>
 <body>
     <div id="contenedor">
-        <form action="" method="" name="">
+        <form id='formulario'>
             <fieldset>
                 <legend>Completar</legend>
                 <label for="color">Elija un color:</label>
-                <input type="color" name="color" id=""> <br/>
+                <input type="color" name="color" id="color"> <br/>
 
-                <textarea name="textarea" id="" cols="53" rows="5" placeholder="Por favor, escriba aquí..."></textarea> <br/>
+                <textarea name="textarea" id="textarea" cols="53" rows="5" placeholder="Por favor, escriba aquí..."></textarea> <br/>
                 
-                <select name="lenguaje" id="">
+                <select name="lenguaje" id="lenguaje">
                     <option value="java">Java</option>
                     <option value="phyton">Phyton</option>
                     <option value="html">HTML</option>
                     <option value="visual_basic">Visual Basic</option>
                 </select> <br/>
 
-                <input type="checkbox" name="ciclo" id="" value="ciclosmir">SMIR
-                <input type="checkbox" name="ciclo" value="cicloasir" id="">ASIR
-                <input type="checkbox" name="ciclo" value="ciclodam" id="">DAM
-                <input type="checkbox" name="ciclo" value="ciclodaw" id="">DAW
+                <input type="checkbox" name="ciclo" id="ciclo" value="ciclosmir">SMIR
+                <input type="checkbox" name="ciclo" value="cicloasir" id="ciclo">ASIR
+                <input type="checkbox" name="ciclo" value="ciclodam" id="ciclo">DAM
+                <input type="checkbox" name="ciclo" value="ciclodaw" id="ciclo">DAW
             </fieldset>
             <fieldset>
                 <legend>Rellene las siguientes opciones</legend>
                 <label for="fecha">Elija una fecha:</label>
-                <input type="date" name="fecha" id=""> <br/>
+                <input type="date" name="fecha" id="fecha"> <br/>
 
                 <label for="fichero">Elija un fichero:</label>
-                <input type="file" name="fichero" id=""> <br/>
+                <input type="file" name="fichero" id="fichero"> <br/>
 
-                <select name="ciclo" id="" size="4">
+                <select name="ciclo1" id="ciclo1" size="4">
                     <option value="smir">SMIR</option>
                     <option value="asir">ASIR</option>
                     <option value="dam">DAM</option>
                     <option value="daw">DAW</option>
                 </select> <br/>
 
-                <button value="enviar" id="enviar" name="enviar">Enviar</button>
+              
             </fieldset>
         </form>
+          <button id="enviar" name="enviar">Enviar</button>
     </div>
+    <div id="contenedorCorrecto"></div>
     <div id="contenedorErrores"></div>
+    <script src="ej3.js"></script>
 </body>
 </html>

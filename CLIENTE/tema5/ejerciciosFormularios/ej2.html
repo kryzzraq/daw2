@@ -7,7 +7,7 @@
 </head>
 <body>
     <div id="contenedor">
-        <form action="" method="" name="">
+        <form id='formulario'>
             <fieldset>
                 <legend>Indique sus preferencias, por favor</legend>
                 Elija una fecha: <input type="date" name="fecha" id="fecha"><br/>
@@ -32,24 +32,24 @@
                 <input type="text" name="direccion" id=""> <br/> <br/>
 
                 <label for="colorelejido">Elija un color:</label>
-                <input type="color" name="colorelejido" id=""> <br/>
+                <input type="color" name="colorelejido" id="color"> <br/>
 
-                <textarea name="textarea" id="" cols="59" rows="6" placeholder="Utilice este cuadro para escribir..."></textarea> <br/>
+                <textarea name="textarea" id="textarea" cols="59" rows="6" placeholder="Utilice este cuadro para escribir..."></textarea> <br/>
 
                 <label for="fecha">Elija una fecha:</label>
-                <input type="date" name="fecha" id=""> <br/>
+                <input type="date" name="fecha2" id="fecha2"> <br/>
 
-                <select name="idioma" id="">
+                <select name="idioma" id="idioma">
                     <option value="ingles">Inglés</option>
                     <option value="aleman">Alemán</option>
                     <option value="frances">Francés</option>
                 </select> <br/>
 
                 <label for="hora">Elija una hora:</label>
-                <input type="time" name="hora" id=""> <br/>
+                <input type="time" name="hora" id="hora"> <br/>
 
                 <label for="fichero">Elija un fichero:</label>
-                <input type="file" name="fichero" id=""> <br/>
+                <input type="file" name="fichero" id="fichero"> <br/>
 
                 <input type="checkbox" name="sexo" value="sexomujer" id="">Mujer 
                 <input type="checkbox" name="sexo" value="sexohombre" id="">Hombre <br/>
@@ -57,6 +57,8 @@
             </fieldset>
         </form>
     </div>
-    <div id="contenedorErrores"></div>
+    <div id="contenedorErrores" ></div>
+    <div id="contenedorCorrecto"></div>
+    <script src="ej2.js"></script>
 </body>
 </html>

@@ -1,32 +1,44 @@
 /*Declaración de elementos*/
 var boton = document.getElementById("enviar")
-var divContenedor = document.getElementById("contenedor")
-var divErrores = document.getElementById("contenedorErrores")
-var frmIdioma = document.getElementsByName("idioma")
-var frmConector = document.getElementsByName("conector")
-var frmNombre = document.getElementById("nombre")
-var frmApellidos = document.getElementById("apellidos")
-var frmSexo = document.getElementsByName("sexo")
-var frmSexo1 = document.getElementsByName("sexo1")
-var frmFecha = document.getElementsByName("fecha")
+var form = document.getElementById("formulario")
+var frmIdioma = form.idioma
+var frmConector = form.conector
+var frmNombre = form.nombre
+var frmApellidos = form.apellidos
+var frmSexo = form.sexo
+var frmSexo1 = form.sexo1
+var frmDate = form.fecha
+var regexNombre = /^[a-zA-Z]*$/;
+var correcto = ''
+var incorrecto = ''
 
-/* Evento */
-boton.addEventListener("click", function(){pintarDatos()})
-/* Funciones */
-pintarDatos = () =>{
-    debugger
-    var pintar =""
+var divCorrecto = document.getElementById("contenedor")
+var divIncorrecto = document.getElementById("contenedorErrores")
 
-    for(let i = 0; i<frmIdioma.length; i++){
-        pintar += `El elemento ${frmIdioma[i].value} seleccionado es ${frmIdioma[i].checked} <br/>`
+const validar = () => {
+    var regexNombre = /^[a-zA-Z]*$/;
+    var halladoNombre = frmNombre.value.match(regexNombre)
+    var halladoApellidos = frmApellidos.value.match(regexNombre)
+    
+    correcto += frmIdioma.value + '<br/>'
+    correcto += frmConector.value + '<br/>'
+ 
+
+    if(halladoNombre.length>= 1){correcto += frmNombre.value+ '<br/>'}
+    else{incorrecto += frmNombre.value + '<br/>'}
+    
+    if(halladoApellidos.length>= 1){correcto += frmApellidos.value+ '<br/>'}
+    else{incorrecto += frmApellidos.value+ '<br/>'}
+
+    correcto += frmSexo.value + '<br/>'
+debugger
+    for(i=0;i<frmSexo1.length;i++){
+        if(frmSexo1[i].checked) {correcto += frmSexo1[i].value + '<br/>'}
     }
 
-    pintar += `El conector elegido es: ${frmConector.value}<br/>`
-    
-    pintar += `El nombre es: ${frmNombre.value} <br/>` 
-    pintar += `Los apellidos son: ${frmApellidos.value} <br/>`
+    divCorrecto.innerHTML = correcto
+    divIncorrecto.innerHTML = incorrecto
 
-    pintar += `El elemento ${frmSexo1.value} seleccionado es ${frmSexo1.checked}<br/>`
-    pintar += `La fecha seleccionada es: ${frmFecha.value}`
-    divContenedor.innerHTML = pintar
 }
+
+boton.addEventListener('click',()=>{validar()})
