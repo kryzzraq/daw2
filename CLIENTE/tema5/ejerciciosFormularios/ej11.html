@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedor">
+        <form id='formulario'>
+            <fieldset>
+                <input type="checkbox" name="asignatura" value="asignaturageografia" id="asignatura">Geografía
+                <input type="checkbox" name="asignatura" value="asignaturalengua" id="asignatura">Lengua
+                <input type="checkbox" name="asignatura" value="asignaturamatematicas" id="asignatura">Matemáticas
+                <input type="checkbox" name="asignatura" value="asignaturahistoria" id="asignatura">Historia
+                <br/>
+                <textarea name="textarea" id="textarea" cols="56" rows="8" placeholder="Escriba aquí, por favor..."></textarea> <br/>
+             
+                DNI:<input type="text" name="dni" id="dni"> <br/>
+                Nombre:<input type="text" name="nombre" id="nombre"> <br/>
+                Apellidos:<input type="text" name="apellidos" id="apellidos"> <br/>
+
+                <input type="date" name="fecha" id="fecha"> <br/>
+                <input type="color" name="color" id="color"> <br/>
+                <input type="time" name="hora" id="hora"> <br/>
+
+                <select name="velocidad" id="velocidad">
+                    <option value="100_Mbits">100 Mbits</option>
+                    <option value="1000_mbits">1000_mbits</option>
+                </select> <br/>
+
+                <input type="radio" name="lenguaje" value="lenguajepython" id="lenguaje">Phyton <br/>
+                <input type="radio" name="lenguaje" value="lenguajehtml" id="lenguaje">HTML <br/>
+                <input type="radio" name="lenguaje" value="lenguajevisual_basic" id="lenguaje">Visual Basic <br/>
+                <input type="radio" name="lenguaje" value="lenguajejava" id="lenguaje">Java <br/>
+
+                <input type="file" name="fichero" id="fichero"> <br/>
+
+                <input type="radio" name="hardware" value="hardwaretarjeta_aceleradora" id="hardware">Tarjeta aceleradora <br/>
+                <input type="radio" name="hardware" value="hardwaremonitor_led" id="hardware">Monitor LED <br/>
+                <input type="radio" name="hardware" value="hardwaressd" id="lenguaje">SSD <br/>              
+        </form>
+        <button name="enviar" id="enviar">Enviar</button>
+    </div>
+    <div id="contenedorCorrecto"></div>
+    <div id="contenedorErrores"></div>
+    <script src="ej11.js"></script>
+</body>
+</html>

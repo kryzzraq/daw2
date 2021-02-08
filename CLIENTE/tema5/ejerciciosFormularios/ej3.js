@@ -12,7 +12,6 @@ const validar = () =>{
     correcto += "Texto del textarea: " + form.textarea.value + "<br/>"
     correcto += "Texto del select: " + form.lenguaje.value + "<br/>"
 
-    debugger
     for(let i = 0; i<form.ciclo.length; i++){
         if(form.ciclo[i].checked){
             correcto += "Opción de ciclo: " + form.ciclo[i].value + "<br/>"

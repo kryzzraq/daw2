@@ -7,30 +7,31 @@
 </head>
 <body>
     <div id="contenedor">
-        <form action="">
+        <form id='formulario'>
             <fieldset>
                 <legend>Rellenar</legend>
-                <input type="radio" name="asignatura" value="asignaturalengua" id="">Lengua <br/>
-                <input type="radio" name="asignatura" value="asignaturamatematicas" id="">Matemáticas <br/>
-                <input type="radio" name="asignatura" value="asignaturahistoria" id="">Historia <br/>
-                <input type="radio" name="asignatura" value="asignaturageografia" id="">Geografía <br/><br/>
+                <input type="radio" name="asignatura" value="asignaturalengua" id="asignatura">Lengua <br/>
+                <input type="radio" name="asignatura" value="asignaturamatematicas" id="asignatura">Matemáticas <br/>
+                <input type="radio" name="asignatura" value="asignaturahistoria" id="asignatura">Historia <br/>
+                <input type="radio" name="asignatura" value="asignaturageografia" id="asignatura">Geografía <br/><br/>
                 
-
-                <input type="checkbox" name="editor" value="editornotepad" id="">NotePad
-                <input type="checkbox" name="editor" value="editoremacs" id="">Emacs
-                <input type="checkbox" name="editor" value="editorotro" id="">Otro
+                <input type="checkbox" name="editor" value="editornotepad" id="editor">NotePad
+                <input type="checkbox" name="editor" value="editoremacs" id="editor">Emacs
+                <input type="checkbox" name="editor" value="editorotro" id="editor">Otro
                 <br/>
-                <textarea name="textarea" id="" cols="59" rows="5" placeholder="Escriba aquí, por favor..."></textarea> <br/>
+                <textarea name="textarea" id="textarea" cols="59" rows="5" placeholder="Escriba aquí, por favor..."></textarea> <br/>
 
                 <select name="procesador" id="">
                     <option value="amd">AMD</option>
                     <option value="intel_i5">Intel i5</option>
                     <option value="intel_i7">Intel i7</option>
-                </select> <br/>
-                <button name="enviar" id="enviar">Enviar</button>
+                </select>                
             </fieldset>
         </form>
+        <button name="enviar" id="enviar">Enviar</button>
     </div>
+    <div id="contenedorCorrecto"></div>
     <div id="contenedorErrores"></div>
+    <script src="ej4.js"></script>
 </body>
 </html>
