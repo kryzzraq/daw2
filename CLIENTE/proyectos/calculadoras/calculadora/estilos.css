@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+#calculadora{
+    text-align: center;
+    height: 520px;
+    width: 350px;
+    background-color: rgb(54, 54, 54);
+    padding: 30px 20px 10px 20px;
+    border-radius: 10px;
+}
+#marca{
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.pantalla{
+    text-align: right;
+    font-size: 28px;
+    font-family: 'Press Start 2P', cursive;
+    height: 70px;
+    width: 300px;
+    background-color: seagreen;
+    color: rgb(13, 39, 24);
+}
+#fila{
+    padding: 2px;
+}
+#botones{
+    margin-top: 50px;
+}
+.boton{
+    height: 60px;
+    width: 60px;
+    padding: 4px;
+    font-size: 30px;
+    border-radius: 6px;
+    border: rgb(90, 90, 90) 2px inset;
+}
+.boton:active{
+    border: rgb(90, 90, 90) 2px outset;
+    background-color: rgb(182, 182, 182) ;
+}
+#cientifica{
+    background-image: url("test-tube.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
