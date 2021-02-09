@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedor">
+        <form id='formulario'>
+            <fieldset>
+                <legend>Complete, por favor</legend>
+                <input type="date" name="fecha" id="fecha"><br/>
+                <input type="file" name="fichero" id="fichero"><br/>
+                <input type="color" name="color" id="color"><br/>
+
+                <select name="provincia" id="provincia">
+                    <option value="Albacete">Albacete</option>
+                    <option value="Ciudad_Real">Ciudad Real</option>
+                    <option value="Cuenca">Cuenca</option>
+                    <option value="Guadalajara">Guadalajara</option>
+                    <option value="Toledo">Toledo</option>Toledo
+                </select>  <br/> 
+
+                <input type="radio" name="conector" value="USB" id="conector">USB <br/>
+                <input type="radio" name="conector" value="Paralelo" id="conector">Paralelo <br/>
+                <input type="radio" name="conector" value="PS2" id="conector">PS2 <br/>
+
+               
+            </fieldset>
+        </form>
+        <button name="enviar" id="enviar">Enviar</button>
+    </div>
+    <div id="contenedorCorrecto"></div>
+    <div id="contenedorErrores"></div>
+    <script src="ej36.js"></script>
+</body>
+</html>

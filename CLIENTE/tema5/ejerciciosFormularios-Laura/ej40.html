@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedor">
+        <form id='formulario'>
+            <fieldset>
+                <legend>Preferencias</legend>
+                <select name="velocidad" id="velocidad">
+                    <option value="100Mbits">100Mbits</option>
+                    <option value="1000Mbits">1000Mbits</option>
+                </select>  <br/>
+
+                DNI: <input type="text" name="dni" id="dni"><br/>
+                Nombre: <input type="text" name="nombre" id="nombre"><br/>
+                Apellidos: <input type="text" name="apellidos" id="apellidos"><br/>
+                E-mail: <input type="email" name="mail" id="mail"><br/>
+
+                <input type="color" name="color" id="color"><br/>
+                <textarea name="textarea" id="textarea" cols="59" rows="5" placeholder="Inserte aquí el texto"></textarea> <br/>
+
+                <input type="checkbox" name="procesador" value="AMD" id="procesador">AMD <br/>
+                <input type="checkbox" name="procesador" value="Ryzen_7" id="procesador">Ryzen 7 <br/>
+                <input type="checkbox" name="procesador" value="Intel_i7" id="procesador">Intel i7 <br/>
+
+                Elije una hora: <input type="time" name="hora" id="hora"><br/>
+
+                <input type="radio" name="velocidad1" value="2G" id="velocidad1">2G<br/>
+                <input type="radio" name="velocidad1" value="3G" id="velocidad1">3G <br/>
+                <input type="radio" name="velocidad1" value="4G" id="velocidad1">4G <br/>
+            </fieldset>
+        </form>
+        <button name="enviar" id="enviar">Enviar</button>
+    </div>
+    <div id="contenedorCorrecto"></div>
+    <div id="contenedorErrores"></div>
+    <script src="ej40.js"></script>
+</body>
+</html>

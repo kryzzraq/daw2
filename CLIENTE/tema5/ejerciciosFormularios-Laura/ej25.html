@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedor">
+        <form id='formulario'>
+            <fieldset>
+                <legend>Por favor, complete estas opciones</legend>
+                <input type="file" name="fichero" id="fichero"><br/>
+                <input type="date" name="fecha" id="fecha"><br/>
+
+                <select name="diasemana" id="diasemana">
+                    <option value="lunes">Lunes</option>
+                    <option value="martes">Martes</option>
+                    <option value="miercoles">Miercoles</option>
+                    <option value="jueves">Jueves</option>
+                    <option value="viernes">Viernes</option>
+                    <option value="sabado">Sabado</option>
+                    <option value="domingo">Domingo</option>
+                </select>  <br/>
+
+
+                <input type="radio" name="sexo" value="mujer" id="sexo">Mujer
+                <input type="radio" name="sexo" value="hombre" id="sexo">Hombre <br/>
+
+                <input type="checkbox" name="componente" value="monitor_led" id="componente">Monitor LED
+                <input type="checkbox" name="componente" value="disco_ssd" id="componente">SSD <br/>
+
+                <textarea name="textarea" id="textarea" cols="59" rows="5" placeholder="Inserte aquí el texto"></textarea> <br/>
+                
+                Instituto: <input type="text" name="instituto" id="instituto"><br/>
+                Estudios: <input type="text" name="estudios" id="estudios"><br/>
+
+                Elije una hora: <input type="time" name="hora" id="hora">
+
+            </fieldset>
+        </form>
+        <button name="enviar" id="enviar">Enviar</button>
+    </div>
+    <div id="contenedorCorrecto"></div>
+    <div id="contenedorErrores"></div>
+    <script src="ej25.js"></script>
+</body>
+</html>
