@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const tratarDatos = (misDatos)=>{
+            console.log(misDatos)
+          
+        }
+        async function getJSON(){
+            let response = await fetch("facil.json")
+            let datosJSON = await response.json();
+            tratarDatos(datosJSON)
+            console.log(datosJSON.nombre +" " +datosJSON.apellidos)
+        }
+
+        getJSON()
+    </script>
+</body>
+</html>

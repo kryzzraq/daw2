@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedor">
+        <form id='formulario'>
+            <fieldset>
+                <legend>Rellene complete estas opciones</legend>
+                <textarea name="textarea" id="textareaid" cols="59" rows="5" placeholder="Inserte aquí el texto"></textarea> <br/>
+                <input type="date" name="fecha" id="fecha"><br/>
+                <input type="checkbox" name="sexo" value="mujer" id="sexo">Mujer <br/>
+                <input type="checkbox" name="sexo" value="hombre" id="sexo">Hombre <br/>
+                Elije una hora: <input type="time" name="hora" id="hora"><br/>
+                <select name="asignatura" id="asignatura">
+                    <option value="geografia">Geografía</option>
+                    <option value="matematicas">Matemáticas</option>
+                    <option value="lengua">Lengua</option>
+                </select>  <br/>
+                Instituto: <input type="text" name="instituto" id="instituto"><br/>
+                Estudios: <input type="text" name="estudios" id="estudios"><br/>
+            </fieldset>
+            <fieldset>
+                <legend>Preferencias</legend>
+                <input type="date" name="fecha1" id="fecha1"><br/>
+                Elije una hora: <input type="time" name="hora1" id="hora1"><br/>
+                <input type="checkbox" name="asignatura1" value="geografia" id="asignatura1">Geografía <br/>
+                <input type="checkbox" name="asignatura1" value="matematicas" id="asignatura1">Matemáticas <br/>
+                <input type="checkbox" name="asignatura1" value="lengua" id="asignatura1">Lengua <br/>
+                <input type="checkbox" name="asignatura1" value="historia" id="asignatura1">Historia <br/>
+                <select name="periferico" id="periferico">
+                    <option value="monitor_led">Monitor LED</option>
+                    <option value="ratonRGB">Ratón Gaming RBG</option>
+                    <option value="tecladoMecanico">Teclado mecánico</option>
+                </select>  <br/>
+                <input type="radio" name="lenguaje" value="java" id="lenguaje">Java
+                <input type="radio" name="lenguaje" value="phyton" id="lenguaje">Phyton
+                <input type="radio" name="lenguaje" value="HTML" id="lenguaje">HTML
+                <input type="radio" name="lenguaje" value="visual_basic" id="lenguaje">Visual Basic 
+                <input type="radio" name="lenguaje" value="CSS" id="lenguaje">CSS<br/>
+            </fieldset>
+        </form>
+        <button name="enviar" id="enviar">Enviar</button>
+    </div>
+    <div id="contenedorCorrecto"></div>
+    <div id="contenedorErrores"></div>
+    <script src="ej28.js"></script>
+</body>
+</html>

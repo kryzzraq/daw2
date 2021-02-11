@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedor">
+        <form id='formulario'>
+            <fieldset>
+                <legend>Completar estas opciones</legend>
+
+                <input type="checkbox" name="curso" value="ASIR" id="curso">ASIR <br/>
+                <input type="checkbox" name="curso" value="DAM" id="curso">DAM <br/>
+                <input type="checkbox" name="curso" value="DAW" id="curso">DAW <br/>
+
+                <select name="curso1" id="curso1">
+                    <option value="ASIR">ASIR</option>
+                    <option value="DAW">DAW</option>
+                    <option value="DAM">DAM</option>
+                    <option value="SMIR">SMIR</option>
+                </select>  <br/>
+
+                <textarea name="textarea" id="textarea" cols="59" rows="5" placeholder="Inserte aquí el texto"></textarea> <br/>
+                
+                DNI: <input type="text" name="dni" id="dni"><br/>
+                Nombre: <input type="text" name="nombre" id="nombre"><br/>
+                Apellidos: <input type="text" name="apellidos" id="apellidos"><br/>
+                Telefono: <input type="text" name="tel" id="tel"><br/>
+
+            </fieldset>
+        </form>
+        <button name="enviar" id="enviar">Enviar</button>
+    </div>
+    <div id="contenedorCorrecto"></div>
+    <div id="contenedorErrores"></div>
+    <script src="ej34.js"></script>
+</body>
+</html>

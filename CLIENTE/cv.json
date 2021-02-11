@@ -1,9 +1,9 @@
 {
-    "Datos_basicos": {
+    "datos_basicos": {
         "nombre": "Laura",
-        "Apellidos": "Martín Vicente",
+        "apellidos": "Martín Vicente",
         "email": "lauramartinv394@gmail.com",
-        "phone": "(+34)680883622",
+        "telefono": "(+34)680883622",
         "concepto": "Desarrolladora de aplicaciones web",
         "localizacion": {
         "direccion": "Calle La Luna nº18",
@@ -16,54 +16,54 @@
                 "empresa": "XPO Supply Chain Spain",
                 "fechaComienzo": "06/2016",
                 "fechaFin": "07/2016",
-                "summary": "picking y empaquetado de pedidos"
+                "ocupacion": "picking y empaquetado de pedidos"
             },
             {
                 "empresa": "XPO Supply Chain Spain",
-                "fechaComienzo": "09/2016",
+                "fechaInicio": "09/2016",
                 "fechaFin": "01/2018",
-                "summary": "picking, ubicacion y empaquetado de pedidos"
+                "ocupacion": "picking, ubicacion y empaquetado de pedidos"
             },
             {
                 "empresa": "Plataforma Lógistica Meco,",
-                "fechaComienzo": "02/2018",
+                "fechaInicio": "02/2018",
                 "fechaFin": "06/2018",
-                "summary": "Sección de paquetería y apoyo a otras secciones." 
+                "ocupacion": "Sección de paquetería y apoyo a otras secciones." 
             },
             {
                 "empresa": "Plataforma Lógistica Meco,",
-                "fechaComienzo": "07/2018",
+                "fechaInicio": "07/2018",
                 "fechaFin": "11/2018",
-                "summary": "Sección de paquetería y apoyo a otras secciones." 
+                "ocupacion": "Sección de paquetería y apoyo a otras secciones." 
             },
             {
                 "empresa": "Plataforma Lógistica Meco,",
-                "fechaComienzo": "02/2019",
+                "fechaInicio": "02/2019",
                 "fechaFin": "06/2019",
-                "summary": "Sección de paquetería y apoyo a otras secciones." 
+                "ocupacion": "Sección de paquetería y apoyo a otras secciones." 
             }
         ],
         "estudios": [
             {
                 "instituto": "Escuela de Artes",
                 "area": "artes",
-                "studyType": "bachiller",
-                "startDate": "2010",
-                "endDate": "2013"
+                "nivelEstudios": "bachiller",
+                "fechaInicio": "2010",
+                "fechaFin": "2013"
             }, 
             {
                 "instituto": "IES Luis de Lucena",
                 "area": "estetica y belleza",
-                "studyType": "FP Estética Personal Decorativa",
-                "startDate": "2014",
-                "endDate": "2015"
+                "nivelEstudios": "FP Estética Personal Decorativa",
+                "fechaInicio": "2014",
+                "fechaFin": "2015"
             },  
             {
                 "instituto": "IES Arcipreste de Hita",
                 "area": "informatica",
-                "studyType": "FP Desarrollo de Aplicaciones Web",
-                "startDate": "2019",
-                "endDate": "2021"
+                "nivelEstudios": "FP Desarrollo de Aplicaciones Web",
+                "fechaInicio": "2019",
+                "fechaFin": "2021"
             }
         ],
         "idiomas": [
@@ -74,6 +74,16 @@
             {
                 "idioma": "Inglés",
                 "nivel": "B1+"
+            }
+        ],
+        "carnets":[
+            {
+                "tipo": "A2",
+                "vehiculoPropio": "si"
+            },
+            {
+                "tipo": "B",
+                "vehiculoPropio": "si"
             }
         ]
     }
