@@ -87,9 +87,9 @@
             grid-template-rows: 100px auto;
         }
 
-        .textoCerezo {
+        .textoCerezo, .container3 .titulo {
             grid-row: 1/2;
-            grid-column: 2/4;
+            grid-column: 1/5;
             text-align: center;
             padding: 20px;
             font-family: Portada;
@@ -115,8 +115,6 @@
         .texto1 {
             text-align: justify;
             line-height: 25px;
-        }
-        .tarjeta1{
         }
         .tarjeta1 .titulo{
             border-radius: 5px 5px 0 0;
@@ -146,6 +144,41 @@
         .ciudades ul li .fecha{
             font-size: 12px;
             font-weight: normal;
+        }
+        .celda2{
+            grid-row: 2/3;
+            grid-column: 4/5;
+            background-image: url("imagenes/mapjapan.png");
+            background-position:-200px -200px;
+            filter: blur(10px);
+        }
+        .celda3{
+            grid-row: 2/3;
+            grid-column: 1/2;
+            background-image: url("imagenes/mapjapan.png");
+            background-position:-200px -200px;
+            filter: blur(10px);
+        }
+        .container3 {
+            width: 100%;
+            height: 500px;            
+            display: grid;
+            grid-template-columns: 15% 50% 30% 5%;
+            grid-template-rows: 100px auto;
+        }
+        .celda2_1{
+            grid-row: 2/3;
+            grid-column: 2/3;
+            padding: 30px;
+        }
+        .celda2_1 img{
+            height: auto;
+            width: 50%;
+        }
+        .celda2_2{
+            background-image: url("imagenes/geisha-montaje.jpg");
+            filter: blur(50px);
+            background-position: center;
         }
     </style>
 </head>
@@ -204,6 +237,14 @@
                 </div>
             </div>
         </div>
+        <div class="celda2"></div>
+        <div class="celda3"></div>
+    </div>    
+    <div class='container3'>
+        <div class='titulo'>Titulo geishas</div>
+        <div class="celda2_1"><img src="imagenes/geisha-montaje.jpg"></div>
+        <div class='celda2_2'></div>
+        
     </div>
 </body>
 
