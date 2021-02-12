@@ -8,18 +8,26 @@
 </head>
 <body>
     <script>
-        const tratarDatos = (misDatos)=>{
-            console.log(misDatos)
+        //const tratarDatos = (misDatos)=>{
+          //  console.log(misDatos)
           
+        //}
+        function b(a) {
+           console.log(a.nombre)
+           console.log(a.apellidos)
         }
-        async function getJSON(){
+        async function getJSON(callback){
             let response = await fetch("facil.json")
             let datosJSON = await response.json();
-            tratarDatos(datosJSON)
-            console.log(datosJSON.nombre +" " +datosJSON.apellidos)
+            // tratarDatos(datosJSON)
+            //console.log(datosJSON.nombre +" " +datosJSON.apellidos)
+       
+            callback(datosJSON)
         }
-
-        getJSON()
+       getJSON(b)
+    
+        
+        
     </script>
 </body>
 </html>
