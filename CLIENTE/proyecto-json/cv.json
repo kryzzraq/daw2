@@ -1,0 +1,90 @@
+{
+    "datos_basicos": {
+        "nombre": "Laura",
+        "apellidos": "Martín Vicente",
+        "email": "lauramartinv394@gmail.com",
+        "telefono": "(+34)680883622",
+        "concepto": "Desarrollador Aplicaciones Web",
+        "localizacion": {
+        "direccion": "Calle La Luna nº18",
+        "codigoPostal": "19290",
+        "municipio": "Fontanar",
+        "provincia": "Guadalajara"
+        },
+        "trabajos":  [
+            {
+                "empresa": "XPO Supply Chain Spain",
+                "fechaComienzo": "06/2016",
+                "fechaFin": "07/2016",
+                "ocupacion": "picking y empaquetado de pedidos"
+            },
+            {
+                "empresa": "XPO Supply Chain Spain",
+                "fechaInicio": "09/2016",
+                "fechaFin": "01/2018",
+                "ocupacion": "picking, ubicacion y empaquetado de pedidos"
+            },
+            {
+                "empresa": "Plataforma Lógistica Meco,",
+                "fechaInicio": "02/2018",
+                "fechaFin": "06/2018",
+                "ocupacion": "Sección de paquetería y apoyo a otras secciones." 
+            },
+            {
+                "empresa": "Plataforma Lógistica Meco,",
+                "fechaInicio": "07/2018",
+                "fechaFin": "11/2018",
+                "ocupacion": "Sección de paquetería y apoyo a otras secciones." 
+            },
+            {
+                "empresa": "Plataforma Lógistica Meco,",
+                "fechaInicio": "02/2019",
+                "fechaFin": "06/2019",
+                "ocupacion": "Sección de paquetería y apoyo a otras secciones." 
+            }
+        ],
+        "estudios": [
+            {
+                "instituto": "Escuela de Artes",
+                "area": "Artes",
+                "nivelEstudios": "Bachiller",
+                "fechaInicio": "2010",
+                "fechaFin": "2013"
+            }, 
+            {
+                "instituto": "IES Luis de Lucena",
+                "area": "Estetica y belleza",
+                "nivelEstudios": "FPM Estética Personal Decorativa",
+                "fechaInicio": "2014",
+                "fechaFin": "2015"
+            },  
+            {
+                "instituto": "IES Arcipreste de Hita",
+                "area": "Informática",
+                "nivelEstudios": "FPS Desarrollo de Aplicaciones Web",
+                "fechaInicio": "2019",
+                "fechaFin": "2021"
+            }
+        ],
+        "idiomas": [
+            {
+                "idioma": "Español",
+                "nivel": "Nativo"
+            },
+            {
+                "idioma": "Inglés",
+                "nivel": "B1+"
+            }
+        ],
+        "carnets":[
+            {
+                "tipo": "A2",
+                "vehiculoPropio": "si"
+            },
+            {
+                "tipo": "B",
+                "vehiculoPropio": "si"
+            }
+        ]
+    }
+}

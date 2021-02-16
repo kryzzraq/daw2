@@ -1,0 +1,87 @@
+body,html{
+    width: 100%;
+    margin: 0; 
+    background-image: linear-gradient(to left top, #00f9b8, #00feff, #95fbff, #e1f8ff, #ffffff);
+    background-repeat: no-repeat;
+    font-family: calibri;
+}
+.container{
+    width: 75%;
+    margin: auto;
+    display: flex;
+}
+.item1{
+    padding-top:40px;
+    background-color: rgb(167, 255, 226);
+    width: 30%;
+}
+.item2{
+    padding-top:40px;
+    width: 70%;
+    background-color: #fff;
+}
+.foto{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+}
+.foto img{
+    margin: auto;
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+}
+.titulo{
+    padding:5px;
+    padding-left: 15px;
+    margin-left: 30%;
+    color: rgb(206, 255, 239);
+    font-size: 30px;
+    background-color: rgb(30, 209, 150);
+    width: 66%;
+    text-transform: uppercase;
+    border-radius: 5px 0 0 5px;
+}
+.tit2{
+    color:rgb(30, 209, 150);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#nombreApe{
+    text-align: left;
+}
+#titNombre{
+    font-size: 50px;
+    margin: 0px 50px 0px 60px;
+    font-weight: bold;
+}
+#titConcepto{
+    margin: 0;
+    text-align: left;
+    margin-left: 60px;
+}
+.fas{
+    color: rgb(30, 209, 150);
+    text-align: center;
+}
+.contacto{
+    display: flex;
+    width: 70%;
+    margin: 10px 50px 0px 60px;
+}
+.email, .telefono{
+    display: flex;
+    margin-right: 40px;
+}
+.emailText, .telText{
+    margin:0;
+    padding-left: 10px;
+}
+.descripcion{
+    text-align: justify;
+    padding-left: 60px;
+    padding-right: 40px;
+}
+.educacion,.experienciaLaboral, .otrosDatos{
+    margin-left: 60px;
+}
