@@ -5,11 +5,12 @@
         "email": "lauramartinv394@gmail.com",
         "telefono": "(+34)680883622",
         "concepto": "Desarrollador Aplicaciones Web",
+        "descripcion": "Soy una persona trabajadora y con ganas de aprender. Me gusta trabajar en equipo y desarrollar cosas por mí misma. ",
         "localizacion": {
-        "direccion": "Calle La Luna nº18",
-        "codigoPostal": "19290",
-        "municipio": "Fontanar",
-        "provincia": "Guadalajara"
+            "direccion": "Calle La Luna nº18",
+            "codigoPostal": "19290",
+            "municipio": "Fontanar",
+            "provincia": "Guadalajara"
         },
         "trabajos":  [
             {
