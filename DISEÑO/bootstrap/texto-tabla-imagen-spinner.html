@@ -64,9 +64,135 @@
         <div class="m-2 mt-5 p-lg-5 p-md-3 p-sm-0">
             Lorem ipsum dolor sit amet consectetu Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus recusandae laborum saepe, nam sint culpa labore quibusdam odio sunt nostrum quaerat beatae dolorem, perferendis porro ab unde optio vero non? r adipisicing elit. Nesciunt cumque sunt provident vitae ea ipsum unde omnis, ipsam magnam culpa alias temporibus perspiciatis impedit non, earum facere qui mollitia adipisci.
         </div>
+        <h1>Botones</h1>
+        <button type="button" class="btn btn-primary">Boton 1</button>
+        <button type="button" class="btn btn-outline-danger">Boton 2</button>
+        <button type="button" class="btn btn-primary btn-sm">Boton 1</button>
+        <button type="button" class="btn btn-outline-danger btn-lg">Boton 2</button>
+        <button type="button" class="btn btn-primary active">Boton 1</button>
+        <button type="button" class="btn btn-outline-danger disabled">Boton 2</button><br><br><br>
+        
+        <h1>Grupos de botones</h1>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Boton 1</button>
+            <button type="button" class="btn btn-outline-dark">Boton 2</button>
+            <button type="button" class="btn btn-dark btn-sm">Boton 1</button>
+            <button type="button" class="btn btn-outline-danger btn-lg">Boton 2</button>
+        </div><br><br><br>
 
-    </div>
-    
+        <h1>Anidamiento de botones</h1>
+        <div class="btn-group">
+            <button type="button" class="btn btn-outline-dark">Boton 1</button>
+            <button type="button" class="btn btn-outline-dark">Boton 2</button>
+            <button type="button" class="btn btn-outline-dark ">Boton 1</button>
+            <button type="button" class="btn btn-outline-dark ">Boton 2</button>
+        </div><br><br><br>
 
+        <h1>Grupo de botones de anidamiento </h1>
+        <div class="btn-group">
+            <button type="button" class="btn btn-outline-dark">Boton 1</button>
+            <button type="button" class="btn btn-outline-dark">Boton 2</button>
+            <button type="button" class="btn btn-outline-dark ">Boton 2</button>
+            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown">Boton 1</button>
+            <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Enlace1</a>
+                <a href="" class="dropdown-item">Enlace2</a>
+            </div>
+        </div><br><br><br>
+
+        <h1>Spinners</h1>
+        <div class="spinner-border text-danger"></div>
+        <div class="spinner-grow text-warning"></div>
+        <button type="button" class="btn btn-outline-dark">
+            <span class="spinner-border text-primary"></span>
+            Loading...
+        </button>
+        <br><br><br>
+
+        <h1>Barras de progreso</h1>
+        <div class="progress">
+            <div class="progress-bar" style="width:70%;">70%</div>
+        </div><br>
+        <div class="progress">
+             <div class="progress-bar bg-secondary" style="width:50%;">50%</div>
+        </div><br>
+        <div class="progress">
+            <div class="progress-bar bg-dark progress-bar-striped" style="width:30%;">30%</div>
+        </div><br>
+        <div class="progress">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:90%;">90%</div>
+        </div><br>
+        <br><br><br>
+
+        <h1>Tarjeta básica</h1>
+        <div class="card"style="width:250px;">
+            <div class="card-header">Cabecera</div>
+            <div class="card-body">Cuerpo</div>
+            <div class="card-footer">Pie</div>
+        </div><br><br><br>
+
+        <h1>Tarjeta con título</h1>
+        <div class="card" style="width:250px;">
+            <div class="card-header">Cabecera</div>
+            <div class="card-body">
+                <h4 class="card-title">Cuerpo</h4>    
+                <p class="card-text"style="text-align:justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, voluptatem odit nam voluptas, animi vero eos earum ut ad maxime assumenda nemo ex ipsam, accusamus harum ipsa repellendus cupiditate vel?</p>
+                <a href="" class="card-link">Enlace</a>
+            </div>
+            <div class="card-footer">Pie</div>
+        </div><br><br><br>
+
+        <h1>Tarjeta con imagen</h1>
+        <div class="card" style="width:250px;">
+            <img src="https://picsum.photos/id/377/600/400" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Cuerpo</h4>    
+                <p class="card-text"style="text-align:justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, voluptatem odit nam voluptas, animi vero eos earum ut ad maxime assumenda nemo ex ipsam, accusamus harum ipsa repellendus cupiditate vel?</p>
+                <a href="" class="card-link">Enlace</a>
+            </div>
+        </div><br><br><br>
+
+        <h1>Tarjeta con imagen overlay</h1>
+        <div class="card" style="width:250px;">
+            <img src="https://picsum.photos/id/377/600/400" class="card-img-top">
+            <div class="card-body card-img-overlay">
+                <h4 class="card-title">Cuerpo</h4>    
+                <p class="card-text"style="text-align:justify;">Lorem ipsum dolor sit, acing elit. N, accusamus harum ipsa repellendus cupiditate vel?</p>
+                <a href="" class="card-link">Enlace</a>
+            </div>
+        </div><br><br><br>
+
+        <h1>Básico plegable</h1>
+        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#parrafito">Botón</button>
+        <div id="parrafito" class="collapse show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a totam ad magnam, ratione fuga alias reiciendis possimus sint quo tenetur delectus itaque labore commodi aut qui tempora? Id, vel.</div>    
+        <br><br><br>
+
+        <h1>Acordeón</h1>
+        <div id="accordion">
+            <div class="card">
+                <div class="header">
+                    <a href="#respuesta1" class="card-link" data-toggle="collapse">Pregunta1</a>
+                </div>
+                <div id="respuesta1" class="collapse">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptates. Dolorem, repellat aliquam quis sed dolor aspernatur aut nemo doloremque dos?
+                    </div>
+                </div> 
+            </div>
+            <div class="card">
+                <div class="header">
+                    <a href="#respuesta2" class="card-link" data-toggle="collapse">Pregunta2</a>
+                </div>
+                <div id="respuesta2" class="collapse">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, voluptates. Dolorem, repellat aliquam quis sed dolor aspernatur aut nemo doloremque dos?
+                    </div>
+                </div> 
+            </div>
+        </div>¡
+        <br><br><br><br><br>
+    </div>    
+    <script src="bootstrap-4.6.0-dist/js/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
