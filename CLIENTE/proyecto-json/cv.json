@@ -6,6 +6,7 @@
         "telefono": "(+34)680883622",
         "concepto": "Desarrollador Aplicaciones Web",
         "descripcion": "Soy una persona trabajadora y con ganas de aprender. Me gusta trabajar en equipo y desarrollar cosas por mí misma. ",
+        "trabajo":"Busco trabajo como desarrolladora web junior de front-end o back-end. También me gusta mucho diseñar webs y dejarlas bonitas, accesibles e intuitivas.",
         "localizacion": {
             "direccion": "Calle La Luna nº18",
             "codigoPostal": "19290",
@@ -75,6 +76,24 @@
             {
                 "idioma": "Inglés",
                 "nivel": "B1+"
+            }
+        ],
+        "lenguajes": [
+            {
+                "lenguaje": "Java",
+                "nivel": "3"
+            },
+            {
+                "lenguaje": "JavaScript",
+                "nivel": "4"
+            },
+            {
+                "lenguaje": "Php",
+                "nivel": "4"
+            },
+            {
+                "lenguaje": "Mysql",
+                "nivel": "4"
             }
         ],
         "carnets":[
