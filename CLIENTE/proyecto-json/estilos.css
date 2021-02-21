@@ -1,7 +1,7 @@
 body,html{
     width: 100%;
     margin: 0; 
-    background-image: linear-gradient(to left top, #00f9b8, #00feff, #95fbff, #e1f8ff, #ffffff);
+    background-image: linear-gradient(to left top, #6396c0, #7ebaeb, #bbe0ff, #c8f1fd, #fff);
     background-repeat: no-repeat;
     font-family: calibri;
 }
@@ -12,16 +12,17 @@ body,html{
 }
 .item1{
     padding-top:40px;
-    background-color: rgb(167, 255, 226);
+    background-color: #2b76b3;
     width: 30%;
 }
 .item2{
     padding-top:40px;
     width: 70%;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 }
 .foto{
     width: 100%;
+    margin-bottom:40px;
     display: flex;
     justify-items: center;
 }
@@ -32,22 +33,37 @@ body,html{
     border-radius: 50%;
 }
 .titulo{
-    padding:5px;
-    margin: 10px 0px 0px 30%;
-    color: rgb(206, 255, 239);
+    padding:5px 20px;
+    margin: 10px 30% 0px 0%;
+    color: #FFF;
     font-size: 30px;
-    background-color: rgb(30, 209, 150);
+    background-color: #173F5F;
     width: 66%;
     text-transform: uppercase;
-    border-radius: 5px 0 0 5px;
+    border-radius: 0px 5px 5px 0px;
+}
+#textPerfil{
+    font-size: 17px;
 }
 .text{
     text-align: justify;
-    padding: 15px;
+    padding: 25px;
+}
+.info{
+    display: flex;
+    margin: 5px 0px;
+}
+.leng, .infoIdioma{
+    font-size: 18px;
+    width: 90px;
+}
+.fa-star{
+    color:#F6D55C;
 }
 .tit2{
-    color:rgb(30, 209, 150);
+    color:#173f5f;
     font-size: 30px;
+    margin-bottom: 5px;
     text-transform: uppercase;
 }
 #nombreApe{
@@ -64,8 +80,7 @@ body,html{
     margin-left: 60px;
 }
 .fas{
-    color: rgb(30, 209, 150);
-    text-align: center;
+    color: #F6D55C;
 }
 .contacto{
     display: flex;
@@ -87,4 +102,25 @@ body,html{
 }
 .educacion,.experienciaLaboral, .otrosDatos{
     margin-left: 60px;
+}
+.estudios, .trabajos{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #F6D55C;
+    padding: 5px;;
+}
+.tituloEstudios, .tituloTrabajos{
+    font-size: 25px;
+}
+.fechas, .datos{
+    margin-left: 10px;
+}
+.fechas{
+    font-size:18px;
+}
+.leng, .infoIdioma{
+    font-size: 18px;
+}
+.fa-envelope, .fa-phone-alt{
+    color: #173f5f;
 }

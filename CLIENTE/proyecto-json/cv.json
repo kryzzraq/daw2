@@ -15,58 +15,64 @@
         },
         "trabajos":  [
             {
-                "empresa": "XPO Supply Chain Spain",
-                "fechaComienzo": "06/2016",
-                "fechaFin": "07/2016",
-                "ocupacion": "picking y empaquetado de pedidos"
+                "empresa": "Plataforma Lógistica Meco",
+                "fechaInicio": "02/2019",
+                "fechaFin": "06/2019",
+                "area":"Logistica",
+                "ocupacion": "Sección de paquetería y apoyo a otras secciones." 
             },
+            {
+                "empresa": "Plataforma Lógistica Meco",
+                "fechaInicio": "07/2018",
+                "fechaFin": "11/2018",
+                "area":"Logistica",
+                "ocupacion": "Sección de paquetería y apoyo a otras secciones." 
+            },            
+            {
+                "empresa": "Plataforma Lógistica Meco",
+                "fechaInicio": "02/2018",
+                "fechaFin": "06/2018",
+                "area":"Logistica",
+                "ocupacion": "Sección de paquetería y apoyo a otras secciones." 
+            },
+            
             {
                 "empresa": "XPO Supply Chain Spain",
                 "fechaInicio": "09/2016",
                 "fechaFin": "01/2018",
-                "ocupacion": "picking, ubicacion y empaquetado de pedidos"
+                "area":"Logistica",
+                "ocupacion": "Picking, ubicacion y empaquetado de pedidos"
             },
             {
-                "empresa": "Plataforma Lógistica Meco,",
-                "fechaInicio": "02/2018",
-                "fechaFin": "06/2018",
-                "ocupacion": "Sección de paquetería y apoyo a otras secciones." 
-            },
-            {
-                "empresa": "Plataforma Lógistica Meco,",
-                "fechaInicio": "07/2018",
-                "fechaFin": "11/2018",
-                "ocupacion": "Sección de paquetería y apoyo a otras secciones." 
-            },
-            {
-                "empresa": "Plataforma Lógistica Meco,",
-                "fechaInicio": "02/2019",
-                "fechaFin": "06/2019",
-                "ocupacion": "Sección de paquetería y apoyo a otras secciones." 
+                "empresa": "XPO Supply Chain Spain",
+                "fechaInicio": "06/2016",
+                "fechaFin": "07/2016",
+                "area":"Logistica",
+                "ocupacion": "Picking y empaquetado de pedidos"
             }
         ],
         "estudios": [
-            {
-                "instituto": "Escuela de Artes",
-                "area": "Artes",
-                "nivelEstudios": "Bachiller",
-                "fechaInicio": "2010",
-                "fechaFin": "2013"
-            }, 
-            {
-                "instituto": "IES Luis de Lucena",
-                "area": "Estetica y belleza",
-                "nivelEstudios": "FPM Estética Personal Decorativa",
-                "fechaInicio": "2014",
-                "fechaFin": "2015"
-            },  
             {
                 "instituto": "IES Arcipreste de Hita",
                 "area": "Informática",
                 "nivelEstudios": "FPS Desarrollo de Aplicaciones Web",
                 "fechaInicio": "2019",
                 "fechaFin": "2021"
-            }
+            },
+            {
+                "instituto": "IES Luis de Lucena",
+                "area": "Estetica y belleza",
+                "nivelEstudios": "FPM Estética Personal Decorativa",
+                "fechaInicio": "2014",
+                "fechaFin": "2015"
+            }, 
+            {
+                "instituto": "Escuela de Artes",
+                "area": "Artes",
+                "nivelEstudios": "Bachiller de artes plásticas, imagen y diseño",
+                "fechaInicio": "2010",
+                "fechaFin": "2013"
+            }     
         ],
         "idiomas": [
             {
@@ -94,7 +100,12 @@
             {
                 "lenguaje": "Mysql",
                 "nivel": "4"
+            },
+            {
+                "lenguaje": "CSS3",
+                "nivel": "5"
             }
+
         ],
         "carnets":[
             {
