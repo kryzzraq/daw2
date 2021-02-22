@@ -6,18 +6,18 @@ body,html{
     font-family: calibri;
 }
 .container{
-    width: 75%;
+    width: 1000px;
     margin: auto;
     display: flex;
 }
 .item1{
     padding-top:40px;
     background-color: #2b76b3;
-    width: 30%;
+    width: 300px;
 }
 .item2{
     padding-top:40px;
-    width: 70%;
+    width: 800px;
     background-color: rgb(255, 255, 255);
 }
 .foto{
