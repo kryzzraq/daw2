@@ -1,21 +1,24 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    
     <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
     <script src="bootstrap-4.6.0-dist/js/jquery-3.5.1.min.js"></script>
     <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/71665cb0fa.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Galería de arte Origins</title>
     <link rel="stylesheet" href="estilos.css">
-    <title>Servicios de Origins</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+</head>
+
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light  fixed-top">
         <!-- Logo -->
         <div class="container">
             <a href="index.html" class="navbar-brand"><img class="logo" src="imagenes/logo.png" alt="logo"></a>
@@ -25,27 +28,120 @@
             </button>
             <div id="menunavegacion1" class="collapse navbar-collapse ">
                 <ul class="navbar-nav  w-100 justify-content-around">
-                    <li class="nav-item active d-flex  ">
-                        <a href="exposiciones.html" class="nav-link">Exposiciones</a>
+                    <li class="nav-item d-flex  ">
+                        <a href="exposiciones.html" class="nav-link exposiciones">Exposiciones</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Artistas</a>
+                        <a href="" class="nav-link dropdown-toggle artistas" data-toggle="dropdown">Artistas</a>
                         <div class="dropdown-menu  ">
-                            <a href="munch.html" class="dropdown-item ">Edvard Munch</a>
-                            <a href="kandinski.html" class="dropdown-item ">Vasili Kandinski</a>
+                            <a href="munch.html" class="dropdown-item munch">Edvard Munch</a>
+                            <a href="kandinski.html" class="dropdown-item kandi">Vasili Kandinski</a>
                         </div>
                     </li>
                     <li class="nav-item ">
-                        <a href="servicios.html" class="nav-link">Servicios</a>
+                        <a href="servicios.html" class="nav-link servicios">Servicios</a>
                     </li>
                     <li class="nav-item ">
-                        <a href="contacto.html" class="nav-link">Contacto</a>
+                        <a href="contacto.html" class="nav-link contac">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- BODY -->
+    <div class="container container-principal">
+        <div class="row">
+            <div class="">
+                <h2 class="h2-servicios">Ofrecemos los siguientes servicios:</h2>
+                <p class="text-justify">La Galería ORIGEN, con más de 30 años de experiencia en el Arte Contemporáneo,
+                    se dedica a la promoción de artistas jóvenes y consagrados, nacionales e internacionales, en sus
+                    diferentes disciplinas artísticas, pintura, escultura, y fotografía, a través de la realización de
+                    exposiciones periódicas de obra inédita; la difusión y la venta de obra. Posee además un extenso
+                    fondo de obra gráfica original de artistas consagrados</p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class=" col-md-4 d-flex justify-content-end"><img src="imagenes/discobolo.png"
+                    class="img-servicios" alt=""></div>
+            <div class=" col-md-8">
+                <h2 class="h2-servicios">Asesoramiento en colecciones:</h2>
+                <p class="text-justify">Asesoramos y gestionamos colecciones de arte, así como proyectos culturales para
+                    empresas y
+                    particulares, ofreciendo todas las soluciones que se deriven del sector artístico y cultural.</p>
+                <p class="text-justify">Nuestro objetivo es ayudar y aconsejar en la adquisición de obras para crear o
+                    ampliar una colección
+                    de arte, siempre respetando el criterio estético del cliente.</p>
+            </div>
+        </div>
+        <div class="row mt-3 d-flex ">
+            <div class=" col-md-8 order-2 order order-md-1">
+                <h2 class="h2-servicios">Catalogación y valoración de obras:</h2>
+                <p class="text-justify">
+                    Nuestros expertos datarán las obras que nos traigan a través de radiografías y estudio de las
+                    pinceladas. Si
+                    se trata de un cuadro antiguo se comprobará la posible autenticidad del mismo si corresponde al
+                    artista mencionado
+                    por el cliente.
+                </p>
+                <p class="text-justify order-1">Trataremos de ayudarle a buscar un comprador adecuado para su obra, o...
+                    ¡Nosotros mismos se la compraremos! Disponemos de todo tipo de clientes.</p>
+            </div>
+            <div class=" col-md-4 order-1 order-md-2 d-flex justify-content-end">
+                <img src="imagenes/diploma.png" class="img-servicios" alt="">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class=" col-md-4 d-flex justify-content-end"> <img src="imagenes/brindis.png" class="img-servicios" alt=""></div>
+            <div class=" col-md-8">
+                <h2 class="h2-servicios">Espacio para eventos:</h2>
+                <p class="text-justify">Contamos con una infraestructura pensada para compaginar nuestras exposiciones
+                    de pintura ó escultura con la realización de eventos de empresa, conferencias y presentaciones
+                    corporativas. Disponemos de un espacio de más de 420 m2, de los cuales, más de 250 m2 están
+                    dedicados a la zona de exposición. La sala presenta un aforo para 150 personas simultáneamente y
+                    para la cabida de unas 100 personas con asiento.</p>
+            </div>
+        </div>
+    </div>
+    <!--- FOOTER -->
+    <footer class="mt-5">
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class=" col-md-3">
+                    <p class="tit-footer text-light">SOBRE NOSOTROS</p>
+                    <p class="text-light texto-footer text-justify pr-5">
+                        Somos una empresa dedicada a la compra-venta
+                        de arte desde cuadros a esculturas. Tenemos un trato excelente con nuestros clientes.
+                    </p>
 
-    
-  </body>
+                </div>
+                <div class="col-4 col-md-3 text-center">
+                    <p class="tit-footer text-light">LINKS RÁPIDOS</p>
+                    <p class="text-light texto-footer">Mi cuenta</p>
+                    <p class="text-light texto-footer">Blog</p>
+                    <p class="text-light texto-footer">Cerrar sesión</p>
+
+                </div>
+                <div class="col-4 col-md-3 text-center">
+                    <p class="tit-footer text-light">AYUDA</p>
+                    <p class="text-light texto-footer">Contacta con nosotros</p>
+                    <p class="text-light texto-footer">Lorem ipsuim</p>
+                    <p class="text-light texto-footer">F.A.Q</p>
+                </div>
+                <div class="col-4 col-md-3 text-center">
+                    <p class="tit-footer text-light">FOLLOW US</p>
+                    <div class="iconos text-center">
+                        <div class="iconos1">
+                            <i class="fab fa-instagram-square text-light"></i>
+                            <i class="fab fa-youtube-square text-light"></i>
+                        </div>
+                        <div class="iconos1">
+                            <i class="fab fa-facebook-square text-light"></i>
+                            <i class="fab fa-twitter-square text-light"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+
 </html>

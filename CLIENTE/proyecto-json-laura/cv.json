@@ -3,7 +3,7 @@
         "nombre": "Laura",
         "apellidos": "Martín Vicente",
         "email": "lauramartinv394@gmail.com",
-        "telefono": "(+34)680883622",
+        "telefono": "680883622",
         "concepto": "Desarrollador Aplicaciones Web",
         "descripcion": "Soy una persona trabajadora y con ganas de aprender. Me gusta trabajar en equipo y desarrollar cosas por mí misma. ",
         "trabajo":"Busco trabajo como desarrolladora web junior de front-end o back-end. También me gusta mucho diseñar webs y dejarlas bonitas, accesibles e intuitivas.",
@@ -18,21 +18,21 @@
                 "empresa": "Plataforma Lógistica Meco",
                 "fechaInicio": "02/2019",
                 "fechaFin": "06/2019",
-                "area":"Logistica",
+                "area":"Logística",
                 "ocupacion": "Sección de paquetería y apoyo a otras secciones." 
             },
             {
                 "empresa": "Plataforma Lógistica Meco",
                 "fechaInicio": "07/2018",
                 "fechaFin": "11/2018",
-                "area":"Logistica",
+                "area":"Logística",
                 "ocupacion": "Sección de paquetería y apoyo a otras secciones." 
             },            
             {
                 "empresa": "Plataforma Lógistica Meco",
                 "fechaInicio": "02/2018",
                 "fechaFin": "06/2018",
-                "area":"Logistica",
+                "area":"Logística",
                 "ocupacion": "Sección de paquetería y apoyo a otras secciones." 
             },
             
@@ -40,14 +40,14 @@
                 "empresa": "XPO Supply Chain Spain",
                 "fechaInicio": "09/2016",
                 "fechaFin": "01/2018",
-                "area":"Logistica",
+                "area":"Logística",
                 "ocupacion": "Picking, ubicacion y empaquetado de pedidos"
             },
             {
                 "empresa": "XPO Supply Chain Spain",
                 "fechaInicio": "06/2016",
                 "fechaFin": "07/2016",
-                "area":"Logistica",
+                "area":"Logística",
                 "ocupacion": "Picking y empaquetado de pedidos"
             }
         ],
@@ -76,30 +76,63 @@
         ],
         "idiomas": [
             {
-                "idioma": "Español",
-                "nivel": "Nativo"
+                "idioma": "Inglés",
+                "escrito":"3",
+                "hablado":"2",
+                "leido":"4",
+                "nivel": "B1+"
             },
             {
-                "idioma": "Inglés",
+                "idioma": "Español",
+                "escrito":"5",
+                "hablado":"5",
+                "leido":"5",
                 "nivel": "B1+"
             }
         ],
         "lenguajes": [
             {
-                "lenguaje": "Java",
-                "nivel": "3"
-            },
-            {
                 "lenguaje": "JavaScript",
                 "nivel": "4"
             },
             {
-                "lenguaje": "Php",
+                "lenguaje": "C#",
+                "nivel": "3"
+            },
+            {
+                "lenguaje": "Java",
+                "nivel": "3"
+            },
+            {
+                "lenguaje": "Php 7.1",
                 "nivel": "4"
+            },
+            {
+                "lenguaje": "JQuery",
+                "nivel": "3"
             },
             {
                 "lenguaje": "Mysql",
                 "nivel": "4"
+            },
+            {
+                "lenguaje": "MaríaDB",
+                "nivel": "4"
+            },
+            {
+                "lenguaje": "Oracle",
+                "nivel": "4"
+            },
+            {
+                "lenguaje": "MongoBD",
+                "nivel": "2"
+            },
+            {
+                "lenguaje": "HTML5",
+                "nivel": "5"
+            },{
+                "lenguaje": "Bootstrap",
+                "nivel": "5"
             },
             {
                 "lenguaje": "CSS3",

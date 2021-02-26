@@ -1,7 +1,153 @@
 .navbar{
     box-shadow: 0px 4px 22px -2px rgba(0,0,0,0.75);
 }
+.exposiciones{
+    border-radius: 10px;
+    transition: 1s;
+}
+.exposiciones:hover{
+    background-color: red;
+}
+.contac{
+    border-radius: 10px;
+    transition: 1s;
+}
+.contac:hover{
+    background-color: yellow;
+}
+.servicios{
+    border-radius: 10px;
+    transition: 1s;
+}
+.servicios:hover{
+    background-color: blue;
+}
+.artistas{
+    border-radius: 10px;
+    transition: 1s;
+}
+.artistas:hover, .artistas:focus{
+    background-color: yellow;
+}
 .logo{
     height: 70px;
     width: auto;
+}
+.carousel{
+    margin-top: 96px;
+    width: 100%;
+    height: 350px;
+}
+.carousel-inner{
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.carousel-item{
+    width: 100%;
+    height: 350px;
+}
+.img-carru{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.titulo1{
+    font-size: 50px;
+    font-family: 'Agency fb';
+}
+.texto-foto{
+    background-color: rgba(220, 220, 220, 0.74);
+    font-family: 'Bookman Old Style';
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+.titulo2{
+    display: inline-block;
+    font-size: 20px;
+    margin: auto;
+}
+.texto-footer{
+    font-size: 13px;
+}
+.tit-footer{
+    font-family: 'Agency fb';
+}
+.iconos{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    margin: auto;
+    width: 100px;
+}
+.iconos1{
+    display: flex;
+    height: 35px;
+    justify-content: space-evenly;
+  
+}
+footer{
+    background-image: url("imagenes/textura.jpg");
+}
+
+/* PÁG CONTACTO*/
+.container-principal{
+   padding-top: 150px;
+}
+.div-contacto{
+    box-shadow: 15px 22px 42px 0px rgb(114, 114, 114);
+
+    border-radius: 10px;
+    background-image: url("imagenes/van-gogh-2.jpg");
+    background-size: cover;
+
+}
+.boton{
+    position: relative;
+    top:0;
+    border: 0;
+    border-radius: 5px;
+    background: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0);
+    transition: 0.05s;
+    width: 100px;
+}
+.boton:hover{
+    top: 3px;
+    box-shadow: 0px 3px rgb(92, 92, 92);
+}
+.boton:active{
+    top: 6px;
+    box-shadow: 0px 0px rgb(39, 39, 39);
+}
+.div-boton-contacto{
+   
+    border-radius: 0 0 10px 10px;
+}
+.input-contato{
+    margin-top:15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.h2-contacto{
+    color:white;
+    font-family: 'Agency fb';
+    font-size: 50px;
+}
+
+/* PÁG SERVICIOS*/
+.container-servicios{
+    padding-top: 150px;
+}
+.h2-servicios{
+    font-family: 'Agency fb';
+    font-size: 40px;
+}
+
+.img-servicios{
+    height: 230px;
+    width: auto;
+    margin: auto;
 }

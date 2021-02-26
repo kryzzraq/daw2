@@ -118,9 +118,33 @@ body,html{
 .fechas{
     font-size:18px;
 }
-.leng, .infoIdioma{
-    font-size: 18px;
-}
 .fa-envelope, .fa-phone-alt{
     color: #173f5f;
+}
+.intereses{
+    font-size: 40px;
+    color: white;
+}
+.interes{
+    display: flex;
+    justify-content: space-around;
+}
+.idiom{
+    width: 90px;
+}
+.circulitos{
+    display: flex;
+    height: 19px;
+    align-items: center;
+    font-size: 12px;
+}
+.fa-circle{
+     color: #fff;
+}
+.infoIdi{
+    display: flex;
+    align-self: center;
+}
+.infoIdiomas{
+    margin-left: 10px;
 }

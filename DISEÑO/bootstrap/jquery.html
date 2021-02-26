@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>JQUERY</title>
+  </head>
+  <body>
+      <br>
+   <div class="container">
+       <button id="btnCambiarColor" class="btn btn-primary">Cambiar Color</button>
+       <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo earum, nisi, dignissimos sequi consequatur, culpa vero porro quaerat ipsum velit tempore veritatis assumenda natus quam mollitia facilis ex deserunt ducimus.</p>
+   </div>
+
+    <script src="bootstrap-4.6.0-dist/js/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function(){
+            $("#btnCambiarColor").click(function(){
+                $("#p1").css("color","orange");
+            });
+        })
+    </script>
+  </body>
+</html>

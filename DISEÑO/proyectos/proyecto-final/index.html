@@ -1,20 +1,24 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
-    <script src="bootstrap-4.6.0-dist/js/jquery-3.5.1.min.js"></script>
-    <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <title>Galería de arte Origins</title>
     <link rel="stylesheet" href="estilos.css">
-  </head>
-  <body>
-      
+    <script src="https://kit.fontawesome.com/71665cb0fa.js" crossorigin="anonymous"></script>
+    <title>Galería de arte Origins</title>
     
-    <nav class="navbar navbar-expand-sm navbar-light  fixed-top">
+</head>
+
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light  fixed-top">
         <!-- Logo -->
         <div class="container">
             <a href="index.html" class="navbar-brand"><img class="logo" src="imagenes/logo.png" alt="logo"></a>
@@ -24,26 +28,147 @@
             </button>
             <div id="menunavegacion1" class="collapse navbar-collapse ">
                 <ul class="navbar-nav  w-100 justify-content-around">
-                    <li class="nav-item active d-flex  ">
-                        <a href="exposiciones.html" class="nav-link">Exposiciones</a>
+                    <li class="nav-item d-flex  ">
+                        <a href="exposiciones.html" class="nav-link exposiciones">Exposiciones</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Artistas</a>
+                        <a href="" class="nav-link dropdown-toggle artistas" data-toggle="dropdown">Artistas</a>
                         <div class="dropdown-menu  ">
-                            <a href="munch.html" class="dropdown-item">Edvard Munch</a>
-                            <a href="kandinski.html"  class="dropdown-item">Vasili Kandinski</a>
+                            <a href="munch.html" class="dropdown-item ">Edvard Munch</a>
+                            <a href="kandinski.html" class="dropdown-item ">Vasili Kandinski</a>
                         </div>
                     </li>
                     <li class="nav-item ">
-                        <a href="servicios.html" class="nav-link">Servicios</a>
+                        <a href="servicios.html" class="nav-link servicios">Servicios</a>
                     </li>
                     <li class="nav-item ">
-                        <a href="contacto.html" class="nav-link">Contacto</a>
+                        <a href="contacto.html" class="nav-link contac">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-  </body>
+    <!---  CARRUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/van-gogh-2.jpg" class="img-carru d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/el-grito-2.jpg" class="img-carru d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/venecia-2.jpg" class="img-carru d-block w-100 " alt="">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- BODY -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class=" mt-2 mb-2  col-md-8 texto-foto p-2">
+                <h1 class="titulo1 p-4">Galería de arte online</h1>
+                <div class="p-2">
+                    Origen pone al alcance de tu mano la posibilidad de comprar obras de arte de modo online a través de
+                    cualquier dispositivo sin desplazarte. Podrás acceder a la pintura y escultura más contemporánea de
+                    manera cómoda y sencilla. En nuestra galería de arte virtual cualquier persona, desde cualquier
+                    lugar,
+                    puede comprar arte de primera calidad con tan sólo un clic, cumpliendo así el objetivo por el que
+                    Origen
+                    se suma a las nuevas tecnologías:
+                </div>
+                <h3 class="titulo2">Llevar arte a todo el mundo.</h3>
+            </div>
+            <img class="mt-2 mb-2  col-md-4 " src="imagenes/img1.jpg" alt="">
+        </div>
+        <div class="row mt-5">
+            <div class="col d-flex justify-content-center">
+                <div class="titulo1 mb-3">El arte es un salvavidas</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p class="text-justify p-1">
+                    La palabra “arte” es uno de los conceptos más difíciles de encorsetar. Quizá, porque no se puede
+                    definir aquello que continuamente está reinventándose.
+                    Existen tantos tipos de arte como ojos que lo miran. La percepción que tiene del mundo el creador
+                    queda plasmada en su obra. Pero, ¿y si el mundo que conocía se derrumbara? ¿Cambiaría su arte?
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p class="text-justify p-1">De aquellos rollos de papel higiénico crecían flores durante el
+                    confinamiento.
+                    De esta manera lo plasmaba Castejón. La artista tiene un estilo ‘muy suyo’ una mezcla de pintura y
+                    poesía visual que estalla los sentidos para quien lo observa: “para mi el arte es un acto de
+                    rebeldía. “En mis obras hay un terremoto invisible que busca cambiar el
+                    rumbo de las cosas”.
+
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p class="text-justify p-1">Su arte es una reinvención constante se transforma todo el rato.
+                    Cambian las temáticas, las influencias y los objetivos. Incluso, los impulsos que preceden a que me
+                    siente y pinte. La artista lleva creando desde que es un ser consciente, sin embargo, asegura que,
+                    aunque la cuarentena haya sido un parón mundial a nivel personal, me sirvió para explotar la
+                    creatividad. </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class=" col-md-3">
+                    <p class="tit-footer text-light">SOBRE NOSOTROS</p>
+                    <p class="text-light texto-footer text-justify pr-5">
+                        Somos una empresa dedicada a la compra-venta 
+                        de arte desde cuadros a esculturas. Tenemos un trato excelente con nuestros clientes.
+                    </p>
+
+                </div>
+                <div class="col-4 col-md-3 text-center">
+                    <p class="tit-footer text-light">LINKS RÁPIDOS</p>
+                    <p class="text-light texto-footer">Mi cuenta</p>
+                    <p class="text-light texto-footer">Blog</p>
+                    <p class="text-light texto-footer">Cerrar sesión</p>
+
+                </div>
+                <div class="col-4 col-md-3 text-center">
+                    <p class="tit-footer text-light">AYUDA</p>
+                    <p class="text-light texto-footer">Contacta con nosotros</p>
+                    <p class="text-light texto-footer">Lorem ipsuim</p>
+                    <p class="text-light texto-footer">F.A.Q</p>
+                </div>
+                <div class="col-4 col-md-3 text-center">
+                    <p class="tit-footer text-light">FOLLOW US</p>
+                    <div class="iconos text-center">
+                        <div class="iconos1">
+                            <i class="fab fa-instagram-square text-light"></i>
+                            <i class="fab fa-youtube-square text-light"></i>
+                        </div>
+                        <div class="iconos1">
+                            <i class="fab fa-facebook-square text-light"></i>
+                            <i class="fab fa-twitter-square text-light"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+<script src="bootstrap-4.6.0-dist/js/jquery-3.5.1.min.js"></script>
+<script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
 </html>
