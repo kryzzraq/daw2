@@ -12,60 +12,76 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Galería de arte Origins</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 
 <body>
-
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light  fixed-top">
-        <!-- Logo -->
-        <div class="container">
-            <a href="index.html" class="navbar-brand"><img class="logo" src="imagenes/logo.png" alt="logo"></a>
-            <!-- boton menu hamburguesa -->
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#menunavegacion1">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="menunavegacion1" class="collapse navbar-collapse ">
-                <ul class="navbar-nav  w-100 justify-content-around">
-                    <li class="nav-item d-flex  ">
-                        <a href="exposiciones.html" class="nav-link exposiciones">Exposiciones</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="" class="nav-link dropdown-toggle artistas" data-toggle="dropdown">Artistas</a>
-                        <div class="dropdown-menu  ">
-                            <a href="munch.html" class="dropdown-item ">Edvard Munch</a>
-                            <a href="kandinski.html" class="dropdown-item">Vasili Kandinski</a>
-                        </div>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="servicios.html" class="nav-link servicios">Servicios</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="contacto.html" class="nav-link contac">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+<!-- MENÚ DE NAVEGACIÓN -->
+<nav class="navbar navbar-expand-sm navbar-light bg-light  fixed-top">
+    <!-- Logo -->
+    <div class="container">
+        <a href="index.html" class="navbar-brand"><img class="logo" src="estilos/imagenes/logo.png" alt="logo"></a>
+        <!-- boton menu hamburguesa -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menunavegacion1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="menunavegacion1" class="collapse navbar-collapse ">
+            <ul class="navbar-nav  w-100 justify-content-around">
+                <li class="nav-item d-flex  cont">
+                    <div class="borde bordeArriba"></div>
+                    <div class="borde bordeDerecha"></div>
+                    <div class="borde bordeAbajo"></div>
+                    <div class="borde bordeIzquierda"></div>
+                    <a href="exposiciones.html" class="nav-link exposiciones">Exposiciones</a>
+                </li>
+                <li class="nav-item dropdown cont">
+                    <div class="borde bordeArriba"></div>
+                    <div class="borde bordeDerecha"></div>
+                    <div class="borde bordeAbajo"></div>
+                    <div class="borde bordeIzquierda"></div>
+                    <a href="" class="nav-link dropdown-toggle artistas" data-toggle="dropdown">Artistas</a>
+                    <div class="dropdown-menu  ">
+                        <a href="munch.html" class="dropdown-item ">Edvard Munch</a>
+                        <a href="kandinski.html" class="dropdown-item ">Vasili Kandinski</a>
+                    </div>
+                </li>
+                <li class="nav-item cont">
+                    <div class="borde bordeArriba"></div>
+                    <div class="borde bordeDerecha"></div>
+                    <div class="borde bordeAbajo"></div>
+                    <div class="borde bordeIzquierda"></div>
+                    <a href="servicios.html" class="nav-link servicios">Servicios</a>
+                </li>
+                <li class="nav-item cont">
+                    <div class="borde bordeArriba"></div>
+                    <div class="borde bordeDerecha"></div>
+                    <div class="borde bordeAbajo"></div>
+                    <div class="borde bordeIzquierda"></div>
+                    <a href="contacto.html" class="nav-link contac">Contacto</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <!---  BODY -->
 <div class="container-fluid container-principal">
     <div class="row pt-5 d-flex justify-content-center w-100 ">
-        <div class="pt-5 col-10 col-md-7 div-contacto bg-light">
+        <div class="pt-5 col-10 col-md-7 div-contacto bg-light mb-5">
             <h2 class="text-center h2-contacto">Contáctanos</h2>
             <div class="row ">
-                <div class="col-12 col-md-6 mt-4 d-flex flex-column justify-content-between">
+                <div class="col-12 col-md-6 mt-4 d-flex flex-column justify-content-between p-4">
                     <input type="text" class="w-100 input-contato " placeholder="Nombre:">
                     <input type="text"  class="w-100 input-contato "placeholder="Apellidos:">
                     <input type="email" class="w-100 input-contato " placeholder="Correo electrónico:">
                 </div>
-                <div class="col-12 col-md-6 mt-4">
+                <div class="col-12 col-md-6 mt-4 p-4">
                     <textarea name="mensaje" id="" class="w-100 h-auto input-contato " rows="5" placeholder="¿En qué te podemos ayudar?"></textarea>
                 </div>
             </div>
             <div class="row">
-                <div class="col6 pt-3 pb-3 div-boton-contacto d-flex justify-content-end">
+                <div class="col6 pt-3 pb-3 div-boton-contacto d-flex justify-content-end p-4">
                     <button class=" mt-4 boton">Enviar</button>
                 </div>
             </div>

@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Galería de arte Origins</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 
 <body>
@@ -21,34 +21,128 @@
     <nav class="navbar navbar-expand-sm navbar-light bg-light  fixed-top">
         <!-- Logo -->
         <div class="container">
-            <a href="index.html" class="navbar-brand"><img class="logo" src="imagenes/logo.png" alt="logo"></a>
+            <a href="index.html" class="navbar-brand"><img class="logo" src="estilos/imagenes/logo.png" alt="logo"></a>
             <!-- boton menu hamburguesa -->
             <button class="navbar-toggler" data-toggle="collapse" data-target="#menunavegacion1">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="menunavegacion1" class="collapse navbar-collapse ">
                 <ul class="navbar-nav  w-100 justify-content-around">
-                    <li class="nav-item d-flex  ">
+                    <li class="nav-item d-flex  cont">
+                        <div class="borde bordeArriba"></div>
+                        <div class="borde bordeDerecha"></div>
+                        <div class="borde bordeAbajo"></div>
+                        <div class="borde bordeIzquierda"></div>
                         <a href="exposiciones.html" class="nav-link exposiciones">Exposiciones</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown cont">
+                        <div class="borde bordeArriba"></div>
+                        <div class="borde bordeDerecha"></div>
+                        <div class="borde bordeAbajo"></div>
+                        <div class="borde bordeIzquierda"></div>
                         <a href="" class="nav-link dropdown-toggle artistas" data-toggle="dropdown">Artistas</a>
                         <div class="dropdown-menu  ">
-                            <a href="munch.html" class="dropdown-item">Edvard Munch</a>
-                            <a href="kandinski.html" class="dropdown-item">Vasili Kandinski</a>
+                            <a href="munch.html" class="dropdown-item ">Edvard Munch</a>
+                            <a href="kandinski.html" class="dropdown-item ">Vasili Kandinski</a>
                         </div>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item cont">
+                        <div class="borde bordeArriba"></div>
+                        <div class="borde bordeDerecha"></div>
+                        <div class="borde bordeAbajo"></div>
+                        <div class="borde bordeIzquierda"></div>
                         <a href="servicios.html" class="nav-link servicios">Servicios</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item cont">
+                        <div class="borde bordeArriba"></div>
+                        <div class="borde bordeDerecha"></div>
+                        <div class="borde bordeAbajo"></div>
+                        <div class="borde bordeIzquierda"></div>
                         <a href="contacto.html" class="nav-link contac">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!---  BODY -->
+    <div class="container  container-servicios">
+        <img src="estilos/imagenes/vas-kand.png" alt="">
+        <div class="row ">
+            <div class="col-md-8">
+                <p class="text-justify">
+                    Vasili Vasílievich Kandinski nació en Moscú el 4 de diciembre
+                    1866 fue un pinto precursor del arte
+                    abstracto en pintura y teórico del arte. Se considera que con él comienzan la abstracción lírica y
+                    el expresionismo.
+                </p>
+                <p class="text-justify">
+                    Ruso, alemán y después francés, el pintor Wassily Kandinsky fue el gran teórico (y práctico) del
+                    arte abstracto, es decir, este arte en el que la representación del objeto es secundaria e incluso
+                    perjudicial: la belleza del arte reside en la riqueza cromática y la simplificación formal. Es la
+                    representación de lo esencial del arte, no una burda imitación de la naturaleza, que es de por si
+                    insuperable.
+
+                </p>
+            </div>
+            <div class="col-md-4 voltear m-auto">
+                <div class="atras">
+                    <div class="info">
+                        <div>1923</div>
+                        <div>Óleo sobre lienzo.</div>
+                        <div>105cm x 98 cm.</div>
+                        <div>Museo nacional de arte moderno, París.</div>
+                    </div>
+                </div>
+                <div class="delante"><img class="img-tarj-v" src="estilos/imagenes/kand-2.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4  mt-sm-4">
+                <div class="card">
+                    <img class="card-img-top img-tarj" src="estilos/imagenes/kand-1.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Interior: mi comedor</h5>
+                        <div class="card-text">
+                            <div>1909</div>
+                            <div>Óleo sobre lienzo.</div>
+                            <div>65cm x 50cm.</div>
+                            <div>Museo Lenbachhaus, Munich.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mt-sm-4">
+                <div class="card">
+                    <img class="card-img-top img-tarj" src="estilos/imagenes/kand-3.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Fuga</h5>
+                        <div class="card-text">
+                            <div>1891</div>
+                            <div>Óleo sobre tela.</div>
+                            <div>129,5cm x 129,5cm.</div>
+                            <div>Colección Ernst Beyler, Basilea.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-4  mt-sm-4">
+                <div class="card">
+                    <img class="card-img-top img-tarj" src="estilos/imagenes/kand-4.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Muchos círculos</h5>
+                        <div class="card-text">
+                            <div>1926</div>
+                            <div>Óleo sobre lienzo.</div>
+                            <div> 109,5 x 84 cm. </div>
+                            <div>Museo Guggenheim, Nueva York.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!---  FOOTER -->
     <footer class="mt-5">
         <div class="container-fluid p-5">
@@ -56,7 +150,7 @@
                 <div class="col-12 col-md-3">
                     <p class="tit-footer text-light">SOBRE NOSOTROS</p>
                     <p class="text-light texto-footer text-justify pr-5">
-                        Somos una empresa dedicada a la compra-venta 
+                        Somos una empresa dedicada a la compra-venta
                         de arte desde cuadros a esculturas. Tenemos un trato excelente con nuestros clientes.
                     </p>
 

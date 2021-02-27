@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        .container-fluid{
+            position: relative;
+        }
+        .fondo-blanco{
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            
+            width: 100%;
+            height: 100%;
+        }
+        .boton{
+            width: 100px;
+            height: 40px;
+            position: absolute;
+            left: 0;
+            padding:25px;
+        }
+        .boton:hover .linea-central{
+            display: none;
+        }
+        .boton:hover .linea{
+          transform: rotate(-45deg);
+        }
+        .boton:hover .linea-1{
+          transform: rotate(45deg);
+        }
+        ul{
+            list-style: none;
+            text-align: center;
+            display: none;
+        }
+        li{
+            padding:20px;
+        }
+        li:hover{
+            font-size: 80px;
+        }
+        .fondo{
+            background-color: #ffffff86;
+        }
+        .linea, .linea-central, .linea-1{
+            border-top: 4px solid white;
+            border-radius: 3px;
+            width: 40px;
+            color: white;
+            padding:2px;
+            transition: 1s;
+        }
+        
+    </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <div class="container-fluid">
+        <div class="fondo-blanco">
+            <div class="boton">
+                <div class="linea-1"> </div>
+                <div class="linea"></div>
+                <div class="linea-central"> </div>
+            </div>
+            <ul class="lista">
+                <li>opcion 1</li>
+                <li>opcion 2</li>
+                <li>opcion 3</li>
+                <li>opcion 4</li>
+            </ul>
+        </div>
+        <img src="van-gogh.jpg" class="w-100 h-100 imagen" alt="">
+      </div>
+    
+    <script src="bootstrap-4.6.0-dist/js/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    $(function () {
+      //funciones para cambiar el css (colores, margenes,displays...)
+      $(".boton").click(function () {
+        $(".fondo-blanco").toggleClass("fondo");
+        $(".lista").toggle("slow");
+        $(".ralla-central").toggle();
+      });
+    });
+    </script>
+  </body>
+</html>

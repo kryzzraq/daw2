@@ -1,32 +1,167 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    
-    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>JQUERY</title>
-  </head>
-  <body>
-      <br>
-   <div class="container">
-       <button id="btnCambiarColor" class="btn btn-primary">Cambiar Color</button>
-       <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo earum, nisi, dignissimos sequi consequatur, culpa vero porro quaerat ipsum velit tempore veritatis assumenda natus quam mollitia facilis ex deserunt ducimus.</p>
-   </div>
+  <!-- Bootstrap CSS -->
 
-    <script src="bootstrap-4.6.0-dist/js/jquery-3.5.1.min.js"></script>
-    <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        $(function(){
-            $("#btnCambiarColor").click(function(){
-                $("#p1").css("color","orange");
-            });
-        })
-    </script>
-  </body>
+  <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <title>JQUERY</title>
+</head>
+
+<body>
+  <br>
+  <div class="container">
+    <button id="btnCambiarColor" class="btn btn-primary">Cambiar Color</button>
+    <button id="btnQuitarClases" class="btn btn-primary">Quitar Clases</button>
+    <button id="btnAlternar" class="btn btn-primary">Alternar Clases</button>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo earum, nisi, dignissimos sequi consequatur,
+      culpa vero porro quaerat ipsum velit tempore veritatis assumenda natus quam mollitia facilis ex deserunt ducimus.
+    </p>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ab necessitatibus minus dolorum aperiam
+      nesciunt suscipit ad ullam! Consectetur beatae, quis consequuntur repudiandae repellat nesciunt sint debitis
+      doloremque pariatur aliquam?</p>
+    <p id="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, sit quae eveniet velit molestias
+      asperiores odit neque adipisci nostrum esse laudantium, nihil doloribus tempore repellat blanditiis vero facilis,
+      consectetur quibusdam.</p>
+
+    <h1>Hide y Show</h1>
+    <button id="bntOcultar" class="btn btn-primary">Ocultar</button>
+    <button id="bntMostrar" class="btn btn-primary">Mostrar</button>
+    <button id="bntAlternar2" class="btn btn-primary">Alternar</button>
+
+    <p id="p0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sapiente ipsa expedita maxime tempora
+      aperiam, ab, possimus dicta placeat voluptate quae. Voluptas nostrum, ullam harum et ipsa voluptatum eligendi
+      facilis.</p>
+
+    <h1>Fade in / Fade out</h1>
+    <button id="bntOcultar3" class="btn btn-primary">Ocultar</button>
+    <button id="bntMostrar3" class="btn btn-primary">Mostrar</button>
+    <button id="bntAlternar3" class="btn btn-primary">Alternar</button><br>
+    <img id="imagen3" src="https://picsum.photos/id/1003/600/400" alt="">
+
+    <h1>Slide</h1>
+    <button id="bntOcultar4" class="btn btn-primary">Ocultar</button>
+    <button id="bntMostrar4" class="btn btn-primary">Mostrar</button>
+    <button id="bntAlternar4" class="btn btn-primary">Alternar</button><br>
+    <p id="p4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis minus porro id repellat commodi, saepe
+      quo! Nobis dolorem obcaecati, architecto autem exercitationem dignissimos expedita atque, non sunt harum corrupti
+      consequatur!</p>
+    <img id="imagen4" src="https://picsum.photos/id/318/600/400" alt="">
+
+    <h1>Animaciones</h1>
+    <button id="bntAnimate" class="btn btn-primary">Animar</button>
+    <div id="capa" class="jumbotron">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quae excepturi
+      earum officia reiciendis voluptatum corporis non, vitae tempore officiis nostrum cupiditate quo iure neque
+      provident mollitia assumenda commodi at?</div>
+
+
+      <h1>Animate</h1>
+    <button id="bntAnimate1" class="btn btn-primary">Animar</button>
+    <p id="animacion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis nam ipsum pariatur quis. In, voluptatibus laborum? Officiis doloremque assumenda aspernatur aliquam, doloribus provident quisquam reiciendis. Laborum ipsa pariatur ipsum repudiandae?</p>
+
+
+
+  </div>
+
+  <script src="bootstrap-4.6.0-dist/js/jquery-3.5.1.min.js"></script>
+  <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+    $(function () {
+      //funciones para cambiar el css (colores, margenes,displays...)
+      $("#btnCambiarColor").click(function () {
+        $("#p1").css("color", "orange");
+      });
+      //----//
+      $("#btnCambiarColor").mouseenter(function () {
+        $("#p2").css("color", "pink");
+      });
+      $("#btnCambiarColor").mouseleave(function () {
+        $("#p2").css("font-family", "impact");
+      });
+
+      //Funciones de clases
+      $("#btnCambiarColor").click(function () {
+        $("#p3").addClass("text-primary");
+        $("#p3").addClass("bg-danger");
+      });
+
+      $("#btnQuitarClases").click(function () {
+        $("#p3").removeClass("text-primary");
+        $("#p3").removeClass("bg-danger");
+      });
+
+      $("#btnAlternar").click(function () {
+        $("#p2").toggleClass("text-primary");
+        $("#p2").toggleClass("bg-danger");
+      });
+
+      //Funciones para animaciones
+      $("#bntOcultar").click(function () {
+        $("#p0").hide(2000);
+      });
+
+      $("#bntMostrar").click(function () {
+        $("#p0").show("slow");
+      });
+
+      $("#bntAlternar2").click(function () {
+        $("#p0").toggle("slow");
+      });
+
+      //Fadein FadeOut
+      $("#bntOcultar3").click(function () {
+        $("#imagen3").fadeOut(4000);
+      });
+
+      $("#bntMostrar3").click(function () {
+        $("#imagen3").fadeIn("slow");
+      });
+
+      $("#bntAlternar3").click(function () {
+        $("#imagen3").fadeToggle("fast");
+      });
+
+      //Slide
+      $("#bntOcultar4").click(function () {
+        $("#p4").slideUp(4000);
+        $("#imagen4").delay(4000).slideUp();
+      });
+
+      $("#bntMostrar4").click(function () {
+        $("#p4").slideDown("slow");
+        $("#imagen4").delay("slow").slideDown();
+      });
+
+      $("#bntAlternar4").click(function () {
+        $("#p4").slideToggle("fast");
+        $("#imagen4").delay("fast").slideToggle();
+      });
+
+        //Animaciones
+      $("#bntAnimate").click(function(){
+        $("#capa").animate({
+          height:'350px',
+          width:'250px'
+        },1500);
+      });
+
+      $("#bntAnimate1").click(function(){
+        $("#animacion").animate({
+          width:'250px'
+        },1500);
+      });
+
+
+    });
+  </script>
+</body>
+
 </html>
