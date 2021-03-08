@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //inicializar map
+        const miMap = new Map()
+        console.log(miMap)
+
+        //añadir valores a map:        
+        console.log('añadiendo valores')
+
+        miMap.set('nombre','laura')
+        miMap.set('apellido','martin')
+        miMap.set('edad', 26)
+        miMap.set('apellido','garrido')
+
+        console.log(miMap)
+
+        //Obteniendo valores de un objeto map:
+        console.log("¿Mi map tiene 'nombre'? Usando la propiedad has")
+        console.log(miMap.has('nombre'))
+
+        console.log("¿Mi map tiene 'botella'? Usando la propiedad has")
+        console.log(miMap.has('botella'))
+
+        //Obtener el tamaño de mi map
+        console.log("Obteniendo tamaño con la propiedad size")
+        console.log(miMap.size)
+       
+        //Borrar un elemento del objeto map
+        console.log("Borrando un elemento de mi objeto map con la propiedad delete:")
+        miMap.delete('apellido')
+        console.log(miMap)
+
+        //Claves, valores y entradas para un objeto map
+        //voy a añadir alguna propiedad más a mi objeto:
+        miMap.set('apellido1','martin')
+        miMap.set('apellido2','vicente')
+        miMap.set('altura',166)
+        console.log(miMap)
+
+        //obteniendo las claves:
+        console.log("obteniendo las claves")
+        console.log(miMap.keys())
+
+        //obteniendo los valores:
+        console.log("obteniendo los valores")
+        console.log(miMap.values())
+
+        //obteniendo una matriz de los pares clave:valor
+        console.log("obteniendo un array con los pares clave:valor")
+        console.log(miMap.entries())
+
+        //recorriendo mi objeto map:
+        miMap.forEach((value,key)=>{
+            console.log(`${key}: ${value}`)
+        })
+
+        //borrado de un objeto map:
+        console.log("Borrado de un objeto map con el metodo clear()")
+        miMap.clear()
+        console.log(miMap)
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Set</title>
+</head>
+<body>
+    <script>
+        //Creando un objeto set:
+        console.log("Creando un objeto set")
+        const miSet = new Set();
+        console.log(miSet)
+
+        //Añadir elementos a un objeto set:
+        console.log("Añadiendo elementos a un objeto set")
+        miSet.add("laura")
+        miSet.add("martin")
+        miSet.add(26)
+        console.log(miSet)
+
+        console.log("Si intento añadir un elemento que ya existe, se ignorará")
+        miSet.add("laura")
+        console.log(miSet)
+
+        //convertir a un array:
+        console.log("Convertir a un array")
+        const miArray = [... miSet]
+        console.log(miArray)
+
+        //borrar un elemento del objeto set:
+        console.log("Borrar un elemento del objeto set")
+        miSet.delete("laura")
+        console.log(miSet)
+
+        console.log("Comprobar si tiene un elemento en su interior")
+        console.log(miSet.has("laura"))
+        console.log(miSet.has("martin"))
+
+        console.log("Comprobar la longitud de un objeto set")
+        console.log(miSet.size)
+
+        console.log("Ver los valores de mi objeto set")
+        console.log(miSet.values())
+
+        console.log("Recorrer un objeto set")
+        
+        miSet.forEach((value)=>{
+            console.log(value)
+        })
+
+        for(value of miSet){
+            console.log(value)
+        }
+
+        console.log("borrar todo de mi objeto set")
+        miSet.clear()
+
+        console.log(miSet)
+    </script>
+</body>
+</html>

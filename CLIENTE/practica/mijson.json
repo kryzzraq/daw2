@@ -1,0 +1,6 @@
+{
+    "velocidad_maxima" :100,
+    "intervalo":20,
+    "multa": 50,
+    "grua":200
+}

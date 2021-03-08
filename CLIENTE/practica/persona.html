@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Persona{
+            nombre;
+            apellido1;
+            apellido2;
+            edad;
+            nacionalidad;
+
+            constructor(nom, ape1, ape2, ed,nac){
+                this.nombre = nom;
+                this.apellido1 = ape1;
+                this.apellido2 = ape2;
+                this.edad = ed;
+                this.nacionalidad = nac
+            }
+
+            getEdad(){
+                return this.edad;
+            }
+
+            setEdad(numero){
+                this.edad = numero;
+            }
+        }
+
+        let laura = new Persona("laura","martin","vicente",26,"española");
+        console.log(laura)
+        console.log(laura.getEdad())
+        laura.setEdad(27);
+        console.log(laura.getEdad())
+
+
+    </script>
+</body>
+</html>

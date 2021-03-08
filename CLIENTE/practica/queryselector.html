@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illo, quis praesentium accusamus, eaque, maiores quod facilis nesciunt amet natus fuga possimus! Est nesciunt vel sed facere culpa in praesentium?</p>
+        <a href="" class="enlace" name="nParrafo">Enlace1</a>
+        <a href=""  name="nParrafo">Enlace2</a>
+        <a href="" class="enlace" name="nParrafo">Enlace3</a>
+        <a href="" class="enlace">Enlace4</a>
+        <span id="span">1</span>
+        <span id="provisional">2</span>
+        <span id="span">3</span>
+        <span id="span">4</span>
+        <p class="provisional">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illo, quis praesentium accusamus, eaque, maiores quod facilis nesciunt amet natus fuga possimus! Est nesciunt vel sed facere culpa in praesentium?</p>
+    </div>
+    <script>
+
+        const recorrer = () => {
+            for(let i = 0; i<querySelectorAll.length; i++){
+                console.log(querySelectorAll[i].textContent)
+            }
+
+        }
+        //El query selector coge el primero
+        var querySelector = document.querySelector(".enlace")
+        console.log(`querySelector class:`)
+        console.log(querySelector)
+
+        //El query selector all coge todos los elementos
+        var querySelectorAll = document.querySelectorAll(".enlace")
+        console.log(`querySelectorAll class:`)
+        console.log(querySelectorAll)
+
+        //El query selector coge el primero
+        var querySelector = document.querySelector("#span")
+        console.log(`querySelector id:`)
+        console.log(querySelector)
+
+        //El query selector all coge todos los elementos
+        var querySelectorAll = document.querySelectorAll("#span")
+        console.log(`querySelectorAll id:`)
+        console.log(querySelectorAll)
+        recorrer();
+
+        //El query selector coge el primero
+        var querySelector = document.querySelector("p")
+        console.log(`querySelector tag:`)
+        console.log(querySelector)
+
+        //El query selector all coge todos los elementos
+        var querySelectorAll = document.querySelectorAll("p")
+        console.log(`querySelectorAll tag:`)
+        console.log(querySelectorAll)
+
+        var parrafo = document.createElement("p");
+        // Crear nodo de tipo Text
+        var contenido = document.createTextNode("Hola Mundo!");
+        // Añadir el nodo Text como hijo del nodo Element
+        parrafo.appendChild(contenido);
+        // Añadir el nodo Element como hijo de la pagina
+        document.body.appendChild(parrafo);
+
+        var parrafo = document.getElementById("provisional");
+        parrafo.parentNode.removeChild(parrafo);   
+        
+        var parrafo = document.getElementsByName("nParrafo");
+        console.log(parrafo)
+
+        var parrafo = document.getElementsByTagName("a");
+        console.log(parrafo)
+
+        var span = document.getElementById("span");
+        console.log(span)
+
+    </script>
+</body>
+</html>

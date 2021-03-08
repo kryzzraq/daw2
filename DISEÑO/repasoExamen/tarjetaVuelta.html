@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.voltear{
+    width: 240px;
+    height: 240px;
+    margin:10px;
+}
+.voltear > .delante{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    background-color: rgba(0, 0, 255);
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: 1s linear;
+    
+}
+.voltear > .atras{
+    position: absolute;
+    flex-direction: column;
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(253, 246, 206);    
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: 1s linear;
+    
+}
+.voltear:hover > .delante{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.voltear:hover > .atras{
+    transform: perspective(600px) rotateY(0deg);
+}
+.img-tarj-v{
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+.tit-cuadro{
+    font-size: 20px;
+}
+.info{
+    padding:20px;
+}
+    </style>
+</head>
+<body>
+    <div class="voltear">
+        <div class="atras">
+            <div class="info">
+                <div>1923</div>
+                <div>Óleo sobre lienzo.</div>
+                <div>105cm x 98 cm.</div>
+                <div>Museo nacional de arte moderno, París.</div>
+            </div>
+        </div>
+        <div class="delante">
+            <img src="https://picsum.photos/id/1025/240/200" alt="">
+        </div>
+    </div>
+</body>
+</html>

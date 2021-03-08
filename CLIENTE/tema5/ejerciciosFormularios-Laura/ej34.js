@@ -8,8 +8,8 @@ var incorrecto =''
 boton.addEventListener('click',()=>{validar()})
 
 const validar = () => {
-    let regexDNI = /\d{8}[a-zA-Z]$/
-    var regexNombreApe = /( ?[a-zA-Z]+)+/
+    let regexDNI = /^(\d{8})[a-zA-Z]$/
+    var regexNombreApe = /( ?[a-zA-Z]+)+$/
     var regexTel = /\d{9}/
 
     for(let i = 0; i<form.curso.length; i++){
